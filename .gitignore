@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Data files
+dem_files/*
+*.dem
+temp_*.dem
+
+# Jupyter notebooks
+*.ipynb
+
+# Output files
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Python cache
+.pytest_cache/
+
+# Streamlit
+.streamlit/

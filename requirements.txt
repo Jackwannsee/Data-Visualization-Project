@@ -1,0 +1,20 @@
+# Data Processing and Analysis
+pandas
+numpy
+awpy
+
+# Visualization
+matplotlib
+seaborn
+plotly
+streamlit
+
+# Dashboard (Streamlit)
+streamlit-option-menu
+
+# Utility
+python-dotenv
+
+# Jupyter (for notebooks)
+notebook
+ipython
