@@ -10,7 +10,7 @@ from awpy import Demo
 # ---------------------------------------------------------------------------
 # Paths
 # ---------------------------------------------------------------------------
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 DEM_DIR = PROJECT_ROOT / "dem_files"
 JSON_PATH = PROJECT_ROOT / "src" / "budapest_major.json"
 OUTPUT_CSV = PROJECT_ROOT / "analysis_results" / "budapest_major_stats.csv"
@@ -40,6 +40,7 @@ GRENADE_COL: dict[str, str] = {
 }
 
 STAT_COLS = ["Kills", "Assists", "Deaths", "Smokes Thrown", "Molotovs Thrown", "Grenades"]
+ROUNDS_COL = "Rounds Played"
 
 
 # ---------------------------------------------------------------------------
@@ -131,11 +132,26 @@ def get_player_team_map(dem_path: Path, teams_in_match: list[str]) -> dict[str, 
     return {str(row["steamid"]): row["team"] for _, row in player_clan.iterrows()}
 
 
+def _calc_rounds_played(demo: Demo) -> pd.DataFrame:
+    """Calculate rounds played per player per side from ticks DataFrame.
+    
+    Returns DataFrame with columns: steamid, name, side, Rounds Played
+    """
+    ticks_pd = demo.ticks.select(["steamid", "name", "side", "round_num"]).to_pandas()
+    # Count unique (steamid, side, round_num) combinations
+    rounds_count = (
+        ticks_pd.groupby(["steamid", "name", "side"])["round_num"]
+        .nunique()
+        .reset_index(name=ROUNDS_COL)
+    )
+    return rounds_count
+
+
 def parse_demo_stats(demo: Demo) -> pd.DataFrame:
     """Return per-player per-side stats DataFrame from a parsed Demo object.
 
     Columns: steamid, name, side (ct|t), Kills, Assists, Deaths,
-             Smokes Thrown, Molotovs Thrown, Grenades
+             Smokes Thrown, Molotovs Thrown, Grenades, Rounds Played
     """
     kills_df = demo.kills.to_pandas()
 
@@ -248,6 +264,15 @@ def parse_demo_stats(demo: Demo) -> pd.DataFrame:
         ]
         stats = stats.merge(grenade_stats[g_cols], on=["steamid", "side"], how="left")
 
+    # ---- Merge rounds played -----------------------------------------------
+    rounds_df = _calc_rounds_played(demo)
+    if not rounds_df.empty:
+        stats = stats.merge(
+            rounds_df[["steamid", "side", ROUNDS_COL]], on=["steamid", "side"], how="left"
+        )
+    else:
+        stats[ROUNDS_COL] = float("nan")
+
     # Fill 0 for all stat columns (player played this side → 0 is correct for missing stats)
     for col in STAT_COLS:
         if col not in stats.columns:
@@ -308,7 +333,7 @@ def main() -> None:
                         if row_df.empty:
                             return None
                         r = row_df.iloc[0]
-                        return {col: r[col] for col in STAT_COLS}
+                        return {col: r[col] for col in STAT_COLS + [ROUNDS_COL]}
 
                     ct_stats = side_stats(ct_row)
                     t_stats = side_stats(t_row)
@@ -323,17 +348,17 @@ def main() -> None:
 
                     # CT row
                     ct_entry = {**base, "side": "Counter Terrorist"}
-                    ct_entry.update(ct_stats if ct_stats else {col: float("nan") for col in STAT_COLS})
+                    ct_entry.update(ct_stats if ct_stats else {col: float("nan") for col in STAT_COLS + [ROUNDS_COL]})
                     all_rows.append(ct_entry)
 
                     # T row
                     t_entry = {**base, "side": "Terrorist"}
-                    t_entry.update(t_stats if t_stats else {col: float("nan") for col in STAT_COLS})
+                    t_entry.update(t_stats if t_stats else {col: float("nan") for col in STAT_COLS + [ROUNDS_COL]})
                     all_rows.append(t_entry)
 
                     # Both row — sum CT + T; NaN only if both sides are NaN
                     both_entry = {**base, "side": "Both"}
-                    for col in STAT_COLS:
+                    for col in STAT_COLS + [ROUNDS_COL]:
                         cv = ct_stats[col] if ct_stats else float("nan")
                         tv = t_stats[col] if t_stats else float("nan")
                         if pd.isna(cv) and pd.isna(tv):
@@ -356,7 +381,7 @@ def main() -> None:
     )
 
     # Numeric columns
-    for col in STAT_COLS:
+    for col in STAT_COLS + [ROUNDS_COL]:
         df[col] = pd.to_numeric(df[col], errors="coerce")
 
     df.to_csv(OUTPUT_CSV, index=False)
