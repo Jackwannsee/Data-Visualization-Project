@@ -1,0 +1,13 @@
+T_COLOR = "#FAB200"
+CT_COLOR = "#0091D4"
+BOTH_COLOR = "#AFAFAF"
+
+LINE_COLOR_1 = "#0077bb"
+LINE_COLOR_2 = "#ee7733"
+
+WIN_COLOR = "#228B22"
+LOSS_COLOR = "#DC143C"
+LINE_ALPHA = 0.8
+
+CT_LOGO_PATH = "assets/ct-logo.png"
+T_LOGO_PATH = "assets/t-logo.png"
