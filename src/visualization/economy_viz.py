@@ -2,11 +2,31 @@ import numpy as np
 import os
 import pandas as pd
 import plotly.graph_objects as go
-from config import T_COLOR, CT_COLOR, BOTH_COLOR, WIN_COLOR, LOSS_COLOR, LINE_ALPHA, LINE_COLOR_1, LINE_COLOR_2
-
-
 # Get script directory and resolve paths relative to it
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Import config colors - handle absolute path import to prevent collisions with other 'config' modules
+try:
+    import importlib.util
+    config_path = os.path.join(SCRIPT_DIR, "config.py")
+    spec = importlib.util.spec_from_file_location("viz_config", config_path)
+    viz_config = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(viz_config)
+    T_COLOR = viz_config.T_COLOR
+    CT_COLOR = viz_config.CT_COLOR
+    BOTH_COLOR = viz_config.BOTH_COLOR
+    WIN_COLOR = viz_config.WIN_COLOR
+    LOSS_COLOR = viz_config.LOSS_COLOR
+    LINE_ALPHA = viz_config.LINE_ALPHA
+    LINE_COLOR_1 = viz_config.LINE_COLOR_1
+    LINE_COLOR_2 = viz_config.LINE_COLOR_2
+except Exception:
+    # Fallback to standard imports if path-based import fails
+    try:
+        from config import T_COLOR, CT_COLOR, BOTH_COLOR, WIN_COLOR, LOSS_COLOR, LINE_ALPHA, LINE_COLOR_1, LINE_COLOR_2
+    except (ModuleNotFoundError, ImportError):
+        sys.path.append(SCRIPT_DIR)
+        from config import T_COLOR, CT_COLOR, BOTH_COLOR, WIN_COLOR, LOSS_COLOR, LINE_ALPHA, LINE_COLOR_1, LINE_COLOR_2
 DATA_PATH = os.path.join(SCRIPT_DIR, "../../analysis_results/budapest_major_economy.csv")
 OUTCOMES_PATH = os.path.join(SCRIPT_DIR, "../../analysis_results/budapest_major_team_outcomes.csv")
 

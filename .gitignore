@@ -45,3 +45,6 @@ Thumbs.db
 .streamlit/credentials.toml
 .streamlit/config.toml
 ~/.streamlit/
+
+scratch/
+Misc/

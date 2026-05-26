@@ -35,7 +35,7 @@ st.markdown("""
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
     /* Global typography */
-    .stApp, .stMarkdown, p, span, li {
+    .stApp, .stMarkdown, p, li {
         font-family: 'Inter', sans-serif !important;
     }
 
@@ -208,16 +208,17 @@ tournament = load_tournament_data()
 with st.sidebar:
     st.markdown('<div class="sidebar-brand">🎮 CS2 Dashboard</div>', unsafe_allow_html=True)
     st.markdown("---")
+    st.markdown("##### 📊 Pages")
+    st.page_link("app.py", label="Home", icon="🏠")
+    st.page_link("pages/1_💰_Economy_Analysis.py", label="Economy Analysis", icon="💰")
+    st.page_link("pages/2_🕷️_Player_Performance.py", label="Player Performance", icon="🕷️")
+    st.page_link("pages/3_🎯_Headshot_Analysis.py", label="Headshot Analysis", icon="🎯")
+    st.markdown("---")
     st.markdown("**StarLadder Budapest Major 2025**")
     st.markdown(
         "Interactive analysis of professional CS2 "
         "matches from the Budapest Major tournament."
     )
-    st.markdown("---")
-    st.markdown("##### 📊 Pages")
-    st.page_link("app.py", label="Home", icon="🏠")
-    st.page_link("pages/1_💰_Economy_Analysis.py", label="Economy Analysis", icon="💰")
-    st.page_link("pages/2_🕷️_Player_Performance.py", label="Player Performance", icon="🕷️")
 
 
 # ── Hero Section ─────────────────────────────────────────────────────────────
@@ -246,7 +247,7 @@ st.markdown(
 # ── Navigation Cards ─────────────────────────────────────────────────────────
 st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
 
-col1, col2 = st.columns(2, gap="large")
+col1, col2, col3 = st.columns(3, gap="medium")
 
 with col1:
     st.markdown(
@@ -288,6 +289,26 @@ with col2:
         "pages/2_🕷️_Player_Performance.py",
         label="Open Player Performance  →",
         icon="🕷️",
+    )
+
+with col3:
+    st.markdown(
+        """
+        <div class="nav-card">
+            <div class="icon">🎯</div>
+            <h3>Headshot Analysis</h3>
+            <p>
+                Analyze player headshot percentages against kills or Kills Per Round (KPR).
+                See statistical trendlines, tournament averages, and size-scaled round counts.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    st.page_link(
+        "pages/3_🎯_Headshot_Analysis.py",
+        label="Open Headshot Analysis  →",
+        icon="🎯",
     )
 
 # ── Tournament Bracket ───────────────────────────────────────────────────────

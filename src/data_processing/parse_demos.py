@@ -39,7 +39,7 @@ GRENADE_COL: dict[str, str] = {
     "CHEGrenadeProjectile": "Grenades",
 }
 
-STAT_COLS = ["Kills", "Assists", "Deaths", "Smokes Thrown", "Molotovs Thrown", "Grenades"]
+STAT_COLS = ["Kills", "Assists", "Deaths", "Smokes Thrown", "Molotovs Thrown", "Grenades", "Headshots"]
 ROUNDS_COL = "Rounds Played"
 
 
@@ -194,6 +194,19 @@ def parse_demo_stats(demo: Demo) -> pd.DataFrame:
     else:
         death_counts = pd.DataFrame(columns=["steamid", "name", "side", "Deaths"])
 
+    # ---- Headshots (attacker_side, headshot = True) ----------------------
+    if "attacker_steamid" in kills_df.columns and "attacker_side" in kills_df.columns and "headshot" in kills_df.columns:
+        headshot_counts = (
+            kills_df[kills_df["headshot"] == True]
+            .dropna(subset=["attacker_steamid", "attacker_side"])
+            .groupby(["attacker_steamid", "attacker_side"])
+            .size()
+            .reset_index(name="Headshots")
+            .rename(columns={"attacker_steamid": "steamid", "attacker_side": "side"})
+        )
+    else:
+        headshot_counts = pd.DataFrame(columns=["steamid", "side", "Headshots"])
+
     # ---- Grenades --------------------------------------------------------
     # grenades DataFrame has: thrower_steamid, thrower, grenade_type, tick, round_num
     # We join with ticks on (thrower_steamid=steamid, tick) to get the thrower's side.
@@ -250,6 +263,7 @@ def parse_demo_stats(demo: Demo) -> pd.DataFrame:
         (kill_counts, "Kills"),
         (assist_counts, "Assists"),
         (death_counts, "Deaths"),
+        (headshot_counts, "Headshots"),
     ]:
         if not merge_df.empty and col in merge_df.columns:
             stats = stats.merge(
@@ -383,6 +397,9 @@ def main() -> None:
     # Numeric columns
     for col in STAT_COLS + [ROUNDS_COL]:
         df[col] = pd.to_numeric(df[col], errors="coerce")
+
+    # Calculate Headshot Percentage (Option A)
+    df["Headshot %"] = (df["Headshots"] / df["Kills"] * 100).fillna(0.0).round(2)
 
     df.to_csv(OUTPUT_CSV, index=False)
     print(f"\nCSV written to: {OUTPUT_CSV}")

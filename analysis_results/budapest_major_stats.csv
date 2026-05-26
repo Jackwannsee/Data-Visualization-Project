@@ -1,541 +1,541 @@
-stages,map,team,player_name,player_steamid,side,Kills,Assists,Deaths,Smokes Thrown,Molotovs Thrown,Grenades,Rounds Played
-Final,Dust2,FaZe Clan,Twistzz,76561198016255205,Counter Terrorist,6.0,7.0,10.0,5.0,6.0,3.0,12.0
-Final,Dust2,FaZe Clan,Twistzz,76561198016255205,Terrorist,0.0,0.0,4.0,3.0,0.0,0.0,4.0
-Final,Dust2,FaZe Clan,Twistzz,76561198016255205,Both,6.0,7.0,14.0,8.0,6.0,3.0,16.0
-Final,Dust2,FaZe Clan,broky,76561198201620490,Counter Terrorist,12.0,3.0,7.0,6.0,2.0,5.0,12.0
-Final,Dust2,FaZe Clan,broky,76561198201620490,Terrorist,0.0,0.0,4.0,0.0,0.0,0.0,4.0
-Final,Dust2,FaZe Clan,broky,76561198201620490,Both,12.0,3.0,11.0,6.0,2.0,5.0,16.0
-Final,Dust2,FaZe Clan,frozen,76561198068422762,Counter Terrorist,13.0,2.0,7.0,5.0,11.0,6.0,12.0
-Final,Dust2,FaZe Clan,frozen,76561198068422762,Terrorist,3.0,0.0,4.0,1.0,1.0,0.0,4.0
-Final,Dust2,FaZe Clan,frozen,76561198068422762,Both,16.0,2.0,11.0,6.0,12.0,6.0,16.0
-Final,Dust2,FaZe Clan,jcobbb,76561198178737429,Counter Terrorist,5.0,2.0,9.0,1.0,9.0,1.0,12.0
-Final,Dust2,FaZe Clan,jcobbb,76561198178737429,Terrorist,0.0,0.0,4.0,0.0,1.0,0.0,4.0
-Final,Dust2,FaZe Clan,jcobbb,76561198178737429,Both,5.0,2.0,13.0,1.0,10.0,1.0,16.0
-Final,Dust2,FaZe Clan,karrigan,76561197989430253,Counter Terrorist,3.0,2.0,9.0,4.0,8.0,0.0,12.0
-Final,Dust2,FaZe Clan,karrigan,76561197989430253,Terrorist,0.0,0.0,4.0,1.0,1.0,0.0,4.0
-Final,Dust2,FaZe Clan,karrigan,76561197989430253,Both,3.0,2.0,13.0,5.0,9.0,0.0,16.0
-Final,Dust2,Team Vitality,ZywOo,76561198113666193,Counter Terrorist,6.0,2.0,0.0,1.0,1.0,1.0,4.0
-Final,Dust2,Team Vitality,ZywOo,76561198113666193,Terrorist,11.0,2.0,8.0,6.0,2.0,1.0,12.0
-Final,Dust2,Team Vitality,ZywOo,76561198113666193,Both,17.0,4.0,8.0,7.0,3.0,2.0,16.0
-Final,Dust2,Team Vitality,apEX,76561197989744167,Counter Terrorist,4.0,2.0,1.0,1.0,1.0,2.0,4.0
-Final,Dust2,Team Vitality,apEX,76561197989744167,Terrorist,5.0,5.0,11.0,7.0,6.0,2.0,12.0
-Final,Dust2,Team Vitality,apEX,76561197989744167,Both,9.0,7.0,12.0,8.0,7.0,4.0,16.0
-Final,Dust2,Team Vitality,flameZ,76561197978835160,Counter Terrorist,1.0,0.0,0.0,2.0,2.0,1.0,4.0
-Final,Dust2,Team Vitality,flameZ,76561197978835160,Terrorist,11.0,1.0,9.0,2.0,7.0,1.0,12.0
-Final,Dust2,Team Vitality,flameZ,76561197978835160,Both,12.0,1.0,9.0,4.0,9.0,2.0,16.0
-Final,Dust2,Team Vitality,mezii,76561197973140692,Counter Terrorist,6.0,2.0,1.0,0.0,1.0,1.0,4.0
-Final,Dust2,Team Vitality,mezii,76561197973140692,Terrorist,7.0,3.0,5.0,8.0,5.0,0.0,12.0
-Final,Dust2,Team Vitality,mezii,76561197973140692,Both,13.0,5.0,6.0,8.0,6.0,1.0,16.0
-Final,Dust2,Team Vitality,ropz,76561197991272318,Counter Terrorist,3.0,0.0,1.0,4.0,4.0,0.0,4.0
-Final,Dust2,Team Vitality,ropz,76561197991272318,Terrorist,7.0,2.0,8.0,5.0,4.0,2.0,12.0
-Final,Dust2,Team Vitality,ropz,76561197991272318,Both,10.0,2.0,9.0,9.0,8.0,2.0,16.0
-Final,Inferno,FaZe Clan,Twistzz,76561198016255205,Counter Terrorist,4.0,3.0,3.0,2.0,5.0,1.0,10.0
-Final,Inferno,FaZe Clan,Twistzz,76561198016255205,Terrorist,7.0,1.0,9.0,7.0,8.0,2.0,12.0
-Final,Inferno,FaZe Clan,Twistzz,76561198016255205,Both,11.0,4.0,12.0,9.0,13.0,3.0,22.0
-Final,Inferno,FaZe Clan,broky,76561198201620490,Counter Terrorist,7.0,0.0,5.0,3.0,2.0,0.0,10.0
-Final,Inferno,FaZe Clan,broky,76561198201620490,Terrorist,12.0,4.0,10.0,9.0,4.0,2.0,12.0
-Final,Inferno,FaZe Clan,broky,76561198201620490,Both,19.0,4.0,15.0,12.0,6.0,2.0,22.0
-Final,Inferno,FaZe Clan,frozen,76561198068422762,Counter Terrorist,8.0,3.0,6.0,0.0,6.0,2.0,10.0
-Final,Inferno,FaZe Clan,frozen,76561198068422762,Terrorist,6.0,5.0,9.0,4.0,6.0,4.0,12.0
-Final,Inferno,FaZe Clan,frozen,76561198068422762,Both,14.0,8.0,15.0,4.0,12.0,6.0,22.0
-Final,Inferno,FaZe Clan,jcobbb,76561198178737429,Counter Terrorist,4.0,2.0,3.0,2.0,4.0,1.0,10.0
-Final,Inferno,FaZe Clan,jcobbb,76561198178737429,Terrorist,7.0,4.0,10.0,5.0,6.0,2.0,12.0
-Final,Inferno,FaZe Clan,jcobbb,76561198178737429,Both,11.0,6.0,13.0,7.0,10.0,3.0,22.0
-Final,Inferno,FaZe Clan,karrigan,76561197989430253,Counter Terrorist,6.0,1.0,6.0,3.0,6.0,1.0,10.0
-Final,Inferno,FaZe Clan,karrigan,76561197989430253,Terrorist,6.0,1.0,11.0,6.0,3.0,4.0,12.0
-Final,Inferno,FaZe Clan,karrigan,76561197989430253,Both,12.0,2.0,17.0,9.0,9.0,5.0,22.0
-Final,Inferno,Team Vitality,ZywOo,76561198113666193,Counter Terrorist,9.0,0.0,7.0,3.0,5.0,1.0,12.0
-Final,Inferno,Team Vitality,ZywOo,76561198113666193,Terrorist,7.0,3.0,5.0,2.0,0.0,1.0,10.0
-Final,Inferno,Team Vitality,ZywOo,76561198113666193,Both,16.0,3.0,12.0,5.0,5.0,2.0,22.0
-Final,Inferno,Team Vitality,apEX,76561197989744167,Counter Terrorist,6.0,5.0,10.0,4.0,8.0,7.0,12.0
-Final,Inferno,Team Vitality,apEX,76561197989744167,Terrorist,1.0,5.0,6.0,2.0,2.0,1.0,10.0
-Final,Inferno,Team Vitality,apEX,76561197989744167,Both,7.0,10.0,16.0,6.0,10.0,8.0,22.0
-Final,Inferno,Team Vitality,flameZ,76561197978835160,Counter Terrorist,5.0,5.0,9.0,9.0,10.0,5.0,12.0
-Final,Inferno,Team Vitality,flameZ,76561197978835160,Terrorist,6.0,4.0,7.0,2.0,0.0,2.0,10.0
-Final,Inferno,Team Vitality,flameZ,76561197978835160,Both,11.0,9.0,16.0,11.0,10.0,7.0,22.0
-Final,Inferno,Team Vitality,mezii,76561197973140692,Counter Terrorist,14.0,1.0,3.0,7.0,7.0,0.0,12.0
-Final,Inferno,Team Vitality,mezii,76561197973140692,Terrorist,9.0,1.0,5.0,3.0,2.0,1.0,10.0
-Final,Inferno,Team Vitality,mezii,76561197973140692,Both,23.0,2.0,8.0,10.0,9.0,1.0,22.0
-Final,Inferno,Team Vitality,ropz,76561197991272318,Counter Terrorist,14.0,3.0,8.0,5.0,8.0,5.0,12.0
-Final,Inferno,Team Vitality,ropz,76561197991272318,Terrorist,0.0,3.0,6.0,2.0,2.0,0.0,10.0
-Final,Inferno,Team Vitality,ropz,76561197991272318,Both,14.0,6.0,14.0,7.0,10.0,5.0,22.0
-Final,Nuke,FaZe Clan,Twistzz,76561198016255205,Counter Terrorist,8.0,0.0,4.0,1.0,2.0,1.0,7.0
-Final,Nuke,FaZe Clan,Twistzz,76561198016255205,Terrorist,11.0,2.0,7.0,12.0,7.0,3.0,12.0
-Final,Nuke,FaZe Clan,Twistzz,76561198016255205,Both,19.0,2.0,11.0,13.0,9.0,4.0,19.0
-Final,Nuke,FaZe Clan,broky,76561198201620490,Counter Terrorist,6.0,1.0,4.0,1.0,1.0,2.0,7.0
-Final,Nuke,FaZe Clan,broky,76561198201620490,Terrorist,6.0,4.0,10.0,7.0,7.0,0.0,12.0
-Final,Nuke,FaZe Clan,broky,76561198201620490,Both,12.0,5.0,14.0,8.0,8.0,2.0,19.0
-Final,Nuke,FaZe Clan,frozen,76561198068422762,Counter Terrorist,4.0,2.0,4.0,3.0,3.0,2.0,7.0
-Final,Nuke,FaZe Clan,frozen,76561198068422762,Terrorist,8.0,2.0,7.0,4.0,6.0,11.0,12.0
-Final,Nuke,FaZe Clan,frozen,76561198068422762,Both,12.0,4.0,11.0,7.0,9.0,13.0,19.0
-Final,Nuke,FaZe Clan,jcobbb,76561198178737429,Counter Terrorist,8.0,2.0,4.0,4.0,3.0,0.0,7.0
-Final,Nuke,FaZe Clan,jcobbb,76561198178737429,Terrorist,9.0,3.0,8.0,1.0,7.0,0.0,12.0
-Final,Nuke,FaZe Clan,jcobbb,76561198178737429,Both,17.0,5.0,12.0,5.0,10.0,0.0,19.0
-Final,Nuke,FaZe Clan,karrigan,76561197989430253,Counter Terrorist,13.0,1.0,4.0,2.0,5.0,2.0,7.0
-Final,Nuke,FaZe Clan,karrigan,76561197989430253,Terrorist,6.0,3.0,9.0,22.0,8.0,3.0,12.0
-Final,Nuke,FaZe Clan,karrigan,76561197989430253,Both,19.0,4.0,13.0,24.0,13.0,5.0,19.0
-Final,Nuke,Team Vitality,ZywOo,76561198113666193,Counter Terrorist,8.0,2.0,6.0,2.0,14.0,5.0,12.0
-Final,Nuke,Team Vitality,ZywOo,76561198113666193,Terrorist,4.0,1.0,8.0,0.0,0.0,0.0,7.0
-Final,Nuke,Team Vitality,ZywOo,76561198113666193,Both,12.0,3.0,14.0,2.0,14.0,5.0,19.0
-Final,Nuke,Team Vitality,apEX,76561197989744167,Counter Terrorist,7.0,3.0,7.0,3.0,6.0,8.0,12.0
-Final,Nuke,Team Vitality,apEX,76561197989744167,Terrorist,1.0,1.0,8.0,1.0,1.0,0.0,7.0
-Final,Nuke,Team Vitality,apEX,76561197989744167,Both,8.0,4.0,15.0,4.0,7.0,8.0,19.0
-Final,Nuke,Team Vitality,flameZ,76561197978835160,Counter Terrorist,10.0,1.0,11.0,11.0,13.0,5.0,12.0
-Final,Nuke,Team Vitality,flameZ,76561197978835160,Terrorist,3.0,2.0,8.0,1.0,0.0,0.0,7.0
-Final,Nuke,Team Vitality,flameZ,76561197978835160,Both,13.0,3.0,19.0,12.0,13.0,5.0,19.0
-Final,Nuke,Team Vitality,mezii,76561197973140692,Counter Terrorist,8.0,1.0,7.0,7.0,13.0,4.0,12.0
-Final,Nuke,Team Vitality,mezii,76561197973140692,Terrorist,5.0,0.0,7.0,4.0,0.0,0.0,7.0
-Final,Nuke,Team Vitality,mezii,76561197973140692,Both,13.0,1.0,14.0,11.0,13.0,4.0,19.0
-Final,Nuke,Team Vitality,ropz,76561197991272318,Counter Terrorist,8.0,3.0,9.0,8.0,10.0,4.0,12.0
-Final,Nuke,Team Vitality,ropz,76561197991272318,Terrorist,7.0,2.0,8.0,1.0,0.0,2.0,7.0
-Final,Nuke,Team Vitality,ropz,76561197991272318,Both,15.0,5.0,17.0,9.0,10.0,6.0,19.0
-Final,Overpass,FaZe Clan,Twistzz,76561198016255205,Counter Terrorist,5.0,0.0,11.0,5.0,20.0,6.0,12.0
-Final,Overpass,FaZe Clan,Twistzz,76561198016255205,Terrorist,3.0,0.0,2.0,1.0,0.0,1.0,3.0
-Final,Overpass,FaZe Clan,Twistzz,76561198016255205,Both,8.0,0.0,13.0,6.0,20.0,7.0,15.0
-Final,Overpass,FaZe Clan,broky,76561198201620490,Counter Terrorist,4.0,3.0,9.0,6.0,2.0,2.0,12.0
-Final,Overpass,FaZe Clan,broky,76561198201620490,Terrorist,2.0,3.0,2.0,1.0,0.0,0.0,3.0
-Final,Overpass,FaZe Clan,broky,76561198201620490,Both,6.0,6.0,11.0,7.0,2.0,2.0,15.0
-Final,Overpass,FaZe Clan,frozen,76561198068422762,Counter Terrorist,7.0,2.0,9.0,6.0,8.0,2.0,12.0
-Final,Overpass,FaZe Clan,frozen,76561198068422762,Terrorist,5.0,0.0,2.0,0.0,1.0,0.0,3.0
-Final,Overpass,FaZe Clan,frozen,76561198068422762,Both,12.0,2.0,11.0,6.0,9.0,2.0,15.0
-Final,Overpass,FaZe Clan,jcobbb,76561198178737429,Counter Terrorist,3.0,2.0,12.0,6.0,10.0,2.0,12.0
-Final,Overpass,FaZe Clan,jcobbb,76561198178737429,Terrorist,1.0,2.0,3.0,1.0,0.0,0.0,3.0
-Final,Overpass,FaZe Clan,jcobbb,76561198178737429,Both,4.0,4.0,15.0,7.0,10.0,2.0,15.0
-Final,Overpass,FaZe Clan,karrigan,76561197989430253,Counter Terrorist,6.0,0.0,10.0,7.0,5.0,4.0,12.0
-Final,Overpass,FaZe Clan,karrigan,76561197989430253,Terrorist,0.0,1.0,2.0,0.0,0.0,0.0,3.0
-Final,Overpass,FaZe Clan,karrigan,76561197989430253,Both,6.0,1.0,12.0,7.0,5.0,4.0,15.0
-Final,Overpass,Team Vitality,ZywOo,76561198113666193,Counter Terrorist,4.0,0.0,2.0,1.0,0.0,0.0,3.0
-Final,Overpass,Team Vitality,ZywOo,76561198113666193,Terrorist,10.0,5.0,4.0,6.0,3.0,2.0,12.0
-Final,Overpass,Team Vitality,ZywOo,76561198113666193,Both,14.0,5.0,6.0,7.0,3.0,2.0,15.0
-Final,Overpass,Team Vitality,apEX,76561197989744167,Counter Terrorist,2.0,1.0,2.0,0.0,0.0,0.0,3.0
-Final,Overpass,Team Vitality,apEX,76561197989744167,Terrorist,9.0,6.0,6.0,6.0,10.0,4.0,12.0
-Final,Overpass,Team Vitality,apEX,76561197989744167,Both,11.0,7.0,8.0,6.0,10.0,4.0,15.0
-Final,Overpass,Team Vitality,flameZ,76561197978835160,Counter Terrorist,3.0,2.0,2.0,0.0,1.0,1.0,3.0
-Final,Overpass,Team Vitality,flameZ,76561197978835160,Terrorist,6.0,2.0,7.0,4.0,1.0,2.0,12.0
-Final,Overpass,Team Vitality,flameZ,76561197978835160,Both,9.0,4.0,9.0,4.0,2.0,3.0,15.0
-Final,Overpass,Team Vitality,mezii,76561197973140692,Counter Terrorist,0.0,1.0,3.0,0.0,1.0,1.0,3.0
-Final,Overpass,Team Vitality,mezii,76561197973140692,Terrorist,6.0,4.0,3.0,8.0,12.0,1.0,12.0
-Final,Overpass,Team Vitality,mezii,76561197973140692,Both,6.0,5.0,6.0,8.0,13.0,2.0,15.0
-Final,Overpass,Team Vitality,ropz,76561197991272318,Counter Terrorist,2.0,1.0,2.0,2.0,1.0,0.0,3.0
-Final,Overpass,Team Vitality,ropz,76561197991272318,Terrorist,20.0,4.0,5.0,8.0,8.0,6.0,12.0
-Final,Overpass,Team Vitality,ropz,76561197991272318,Both,22.0,5.0,7.0,10.0,9.0,6.0,15.0
-Quarterfinals,Dust2,Team Falcons,NiKo,76561198041683378,Counter Terrorist,11.0,4.0,8.0,8.0,13.0,12.0,13.0
-Quarterfinals,Dust2,Team Falcons,NiKo,76561198041683378,Terrorist,11.0,1.0,12.0,4.0,2.0,2.0,15.0
-Quarterfinals,Dust2,Team Falcons,NiKo,76561198041683378,Both,22.0,5.0,20.0,12.0,15.0,14.0,28.0
-Quarterfinals,Dust2,Team Falcons,TeSeS,76561197996678278,Counter Terrorist,6.0,7.0,9.0,9.0,11.0,2.0,13.0
-Quarterfinals,Dust2,Team Falcons,TeSeS,76561197996678278,Terrorist,7.0,3.0,12.0,2.0,4.0,0.0,15.0
-Quarterfinals,Dust2,Team Falcons,TeSeS,76561197996678278,Both,13.0,10.0,21.0,11.0,15.0,2.0,28.0
-Quarterfinals,Dust2,Team Falcons,kyousuke,76561199032006224,Counter Terrorist,10.0,3.0,7.0,4.0,9.0,3.0,13.0
-Quarterfinals,Dust2,Team Falcons,kyousuke,76561199032006224,Terrorist,9.0,3.0,14.0,2.0,2.0,0.0,15.0
-Quarterfinals,Dust2,Team Falcons,kyousuke,76561199032006224,Both,19.0,6.0,21.0,6.0,11.0,3.0,28.0
-Quarterfinals,Dust2,Team Falcons,kyxsan,76561198057282432,Counter Terrorist,8.0,0.0,9.0,14.0,14.0,5.0,13.0
-Quarterfinals,Dust2,Team Falcons,kyxsan,76561198057282432,Terrorist,8.0,3.0,12.0,8.0,4.0,0.0,15.0
-Quarterfinals,Dust2,Team Falcons,kyxsan,76561198057282432,Both,16.0,3.0,21.0,22.0,18.0,5.0,28.0
-Quarterfinals,Dust2,Team Falcons,m0NESY,76561198074762801,Counter Terrorist,12.0,4.0,6.0,7.0,14.0,5.0,13.0
-Quarterfinals,Dust2,Team Falcons,m0NESY,76561198074762801,Terrorist,6.0,2.0,10.0,2.0,3.0,0.0,15.0
-Quarterfinals,Dust2,Team Falcons,m0NESY,76561198074762801,Both,18.0,6.0,16.0,9.0,17.0,5.0,28.0
-Quarterfinals,Dust2,Team Spirit,chopper,76561198045898864,Counter Terrorist,5.0,5.0,10.0,5.0,5.0,6.0,15.0
-Quarterfinals,Dust2,Team Spirit,chopper,76561198045898864,Terrorist,1.0,1.0,9.0,12.0,8.0,0.0,13.0
-Quarterfinals,Dust2,Team Spirit,chopper,76561198045898864,Both,6.0,6.0,19.0,17.0,13.0,6.0,28.0
-Quarterfinals,Dust2,Team Spirit,donk,76561198386265483,Counter Terrorist,13.0,2.0,7.0,5.0,4.0,2.0,15.0
-Quarterfinals,Dust2,Team Spirit,donk,76561198386265483,Terrorist,17.0,0.0,9.0,1.0,7.0,3.0,13.0
-Quarterfinals,Dust2,Team Spirit,donk,76561198386265483,Both,30.0,2.0,16.0,6.0,11.0,5.0,28.0
-Quarterfinals,Dust2,Team Spirit,sh1ro,76561198081484775,Counter Terrorist,15.0,5.0,6.0,6.0,2.0,3.0,15.0
-Quarterfinals,Dust2,Team Spirit,sh1ro,76561198081484775,Terrorist,8.0,4.0,9.0,6.0,4.0,0.0,13.0
-Quarterfinals,Dust2,Team Spirit,sh1ro,76561198081484775,Both,23.0,9.0,15.0,12.0,6.0,3.0,28.0
-Quarterfinals,Dust2,Team Spirit,tN1R,76561198872013168,Counter Terrorist,8.0,8.0,9.0,2.0,6.0,1.0,15.0
-Quarterfinals,Dust2,Team Spirit,tN1R,76561198872013168,Terrorist,7.0,5.0,9.0,4.0,4.0,4.0,13.0
-Quarterfinals,Dust2,Team Spirit,tN1R,76561198872013168,Both,15.0,13.0,18.0,6.0,10.0,5.0,28.0
-Quarterfinals,Dust2,Team Spirit,zweih,76561198210626739,Counter Terrorist,18.0,4.0,9.0,2.0,4.0,2.0,15.0
-Quarterfinals,Dust2,Team Spirit,zweih,76561198210626739,Terrorist,4.0,1.0,11.0,7.0,1.0,1.0,13.0
-Quarterfinals,Dust2,Team Spirit,zweih,76561198210626739,Both,22.0,5.0,20.0,9.0,5.0,3.0,28.0
-Quarterfinals,Dust2,Team Vitality,ZywOo,76561198113666193,Counter Terrorist,6.0,1.0,3.0,0.0,0.0,0.0,5.0
-Quarterfinals,Dust2,Team Vitality,ZywOo,76561198113666193,Terrorist,15.0,4.0,7.0,5.0,4.0,0.0,12.0
-Quarterfinals,Dust2,Team Vitality,ZywOo,76561198113666193,Both,21.0,5.0,10.0,5.0,4.0,0.0,17.0
-Quarterfinals,Dust2,Team Vitality,apEX,76561197989744167,Counter Terrorist,4.0,2.0,0.0,0.0,1.0,0.0,5.0
-Quarterfinals,Dust2,Team Vitality,apEX,76561197989744167,Terrorist,5.0,2.0,11.0,3.0,1.0,0.0,12.0
-Quarterfinals,Dust2,Team Vitality,apEX,76561197989744167,Both,9.0,4.0,11.0,3.0,2.0,0.0,17.0
-Quarterfinals,Dust2,Team Vitality,flameZ,76561197978835160,Counter Terrorist,5.0,2.0,2.0,0.0,0.0,0.0,5.0
-Quarterfinals,Dust2,Team Vitality,flameZ,76561197978835160,Terrorist,6.0,5.0,9.0,1.0,4.0,1.0,12.0
-Quarterfinals,Dust2,Team Vitality,flameZ,76561197978835160,Both,11.0,7.0,11.0,1.0,4.0,1.0,17.0
-Quarterfinals,Dust2,Team Vitality,mezii,76561197973140692,Counter Terrorist,5.0,1.0,2.0,0.0,0.0,0.0,5.0
-Quarterfinals,Dust2,Team Vitality,mezii,76561197973140692,Terrorist,7.0,4.0,8.0,2.0,2.0,0.0,12.0
-Quarterfinals,Dust2,Team Vitality,mezii,76561197973140692,Both,12.0,5.0,10.0,2.0,2.0,0.0,17.0
-Quarterfinals,Dust2,Team Vitality,ropz,76561197991272318,Counter Terrorist,5.0,0.0,1.0,0.0,0.0,0.0,5.0
-Quarterfinals,Dust2,Team Vitality,ropz,76561197991272318,Terrorist,13.0,3.0,7.0,2.0,1.0,1.0,12.0
-Quarterfinals,Dust2,Team Vitality,ropz,76561197991272318,Both,18.0,3.0,8.0,2.0,1.0,1.0,17.0
-Quarterfinals,Dust2,The MongolZ,910,76561199203563345,Counter Terrorist,12.0,2.0,9.0,4.0,2.0,3.0,12.0
-Quarterfinals,Dust2,The MongolZ,910,76561199203563345,Terrorist,2.0,0.0,5.0,0.0,0.0,0.0,5.0
-Quarterfinals,Dust2,The MongolZ,910,76561199203563345,Both,14.0,2.0,14.0,4.0,2.0,3.0,17.0
-Quarterfinals,Dust2,The MongolZ,Mzinho,76561198838822582,Counter Terrorist,14.0,1.0,9.0,3.0,6.0,1.0,12.0
-Quarterfinals,Dust2,The MongolZ,Mzinho,76561198838822582,Terrorist,1.0,1.0,5.0,0.0,0.0,0.0,5.0
-Quarterfinals,Dust2,The MongolZ,Mzinho,76561198838822582,Both,15.0,2.0,14.0,3.0,6.0,1.0,17.0
-Quarterfinals,Dust2,The MongolZ,Techno4K,76561198966340160,Counter Terrorist,6.0,3.0,8.0,6.0,6.0,1.0,12.0
-Quarterfinals,Dust2,The MongolZ,Techno4K,76561198966340160,Terrorist,1.0,0.0,5.0,0.0,0.0,0.0,5.0
-Quarterfinals,Dust2,The MongolZ,Techno4K,76561198966340160,Both,7.0,3.0,13.0,6.0,6.0,1.0,17.0
-Quarterfinals,Dust2,The MongolZ,bLitz,76561198959824088,Counter Terrorist,4.0,5.0,11.0,3.0,4.0,3.0,12.0
-Quarterfinals,Dust2,The MongolZ,bLitz,76561198959824088,Terrorist,3.0,1.0,5.0,0.0,1.0,0.0,5.0
-Quarterfinals,Dust2,The MongolZ,bLitz,76561198959824088,Both,7.0,6.0,16.0,3.0,5.0,3.0,17.0
-Quarterfinals,Dust2,The MongolZ,controlez,76561198362438171,Counter Terrorist,5.0,1.0,9.0,0.0,4.0,1.0,12.0
-Quarterfinals,Dust2,The MongolZ,controlez,76561198362438171,Terrorist,1.0,0.0,5.0,0.0,0.0,0.0,5.0
-Quarterfinals,Dust2,The MongolZ,controlez,76561198362438171,Both,6.0,1.0,14.0,0.0,4.0,1.0,17.0
-Quarterfinals,Inferno,FURIA Esports,FalleN,76561197960690195,Counter Terrorist,14.0,3.0,3.0,2.0,5.0,2.0,15.0
-Quarterfinals,Inferno,FURIA Esports,FalleN,76561197960690195,Terrorist,6.0,3.0,8.0,10.0,5.0,0.0,14.0
-Quarterfinals,Inferno,FURIA Esports,FalleN,76561197960690195,Both,20.0,6.0,11.0,12.0,10.0,2.0,29.0
-Quarterfinals,Inferno,FURIA Esports,KSCERATO,76561198058500492,Counter Terrorist,15.0,3.0,8.0,6.0,8.0,3.0,15.0
-Quarterfinals,Inferno,FURIA Esports,KSCERATO,76561198058500492,Terrorist,6.0,4.0,13.0,3.0,4.0,2.0,14.0
-Quarterfinals,Inferno,FURIA Esports,KSCERATO,76561198058500492,Both,21.0,7.0,21.0,9.0,12.0,5.0,29.0
-Quarterfinals,Inferno,FURIA Esports,YEKINDAR,76561198134401925,Counter Terrorist,8.0,7.0,8.0,1.0,8.0,3.0,15.0
-Quarterfinals,Inferno,FURIA Esports,YEKINDAR,76561198134401925,Terrorist,8.0,3.0,8.0,3.0,4.0,1.0,14.0
-Quarterfinals,Inferno,FURIA Esports,YEKINDAR,76561198134401925,Both,16.0,10.0,16.0,4.0,12.0,4.0,29.0
-Quarterfinals,Inferno,FURIA Esports,molodoy,76561198200982290,Counter Terrorist,9.0,3.0,9.0,2.0,5.0,0.0,15.0
-Quarterfinals,Inferno,FURIA Esports,molodoy,76561198200982290,Terrorist,9.0,3.0,11.0,3.0,0.0,4.0,14.0
-Quarterfinals,Inferno,FURIA Esports,molodoy,76561198200982290,Both,18.0,6.0,20.0,5.0,5.0,4.0,29.0
-Quarterfinals,Inferno,FURIA Esports,yuurih,76561198164970560,Counter Terrorist,12.0,2.0,9.0,3.0,6.0,0.0,15.0
-Quarterfinals,Inferno,FURIA Esports,yuurih,76561198164970560,Terrorist,7.0,4.0,10.0,4.0,5.0,2.0,14.0
-Quarterfinals,Inferno,FURIA Esports,yuurih,76561198164970560,Both,19.0,6.0,19.0,7.0,11.0,2.0,29.0
-Quarterfinals,Inferno,FaZe Clan,Twistzz,76561198016255205,Counter Terrorist,14.0,3.0,4.0,8.0,10.0,4.0,12.0
-Quarterfinals,Inferno,FaZe Clan,Twistzz,76561198016255205,Terrorist,2.0,0.0,1.0,2.0,1.0,0.0,3.0
-Quarterfinals,Inferno,FaZe Clan,Twistzz,76561198016255205,Both,16.0,3.0,5.0,10.0,11.0,4.0,15.0
-Quarterfinals,Inferno,FaZe Clan,broky,76561198201620490,Counter Terrorist,12.0,3.0,6.0,8.0,9.0,4.0,12.0
-Quarterfinals,Inferno,FaZe Clan,broky,76561198201620490,Terrorist,5.0,1.0,0.0,1.0,0.0,1.0,3.0
-Quarterfinals,Inferno,FaZe Clan,broky,76561198201620490,Both,17.0,4.0,6.0,9.0,9.0,5.0,15.0
-Quarterfinals,Inferno,FaZe Clan,frozen,76561198068422762,Counter Terrorist,15.0,5.0,5.0,6.0,13.0,9.0,12.0
-Quarterfinals,Inferno,FaZe Clan,frozen,76561198068422762,Terrorist,4.0,0.0,1.0,1.0,1.0,0.0,3.0
-Quarterfinals,Inferno,FaZe Clan,frozen,76561198068422762,Both,19.0,5.0,6.0,7.0,14.0,9.0,15.0
-Quarterfinals,Inferno,FaZe Clan,jcobbb,76561198178737429,Counter Terrorist,8.0,2.0,8.0,6.0,14.0,3.0,12.0
-Quarterfinals,Inferno,FaZe Clan,jcobbb,76561198178737429,Terrorist,3.0,0.0,0.0,0.0,2.0,0.0,3.0
-Quarterfinals,Inferno,FaZe Clan,jcobbb,76561198178737429,Both,11.0,2.0,8.0,6.0,16.0,3.0,15.0
-Quarterfinals,Inferno,FaZe Clan,karrigan,76561197989430253,Counter Terrorist,7.0,4.0,7.0,4.0,15.0,10.0,12.0
-Quarterfinals,Inferno,FaZe Clan,karrigan,76561197989430253,Terrorist,1.0,2.0,1.0,1.0,0.0,0.0,3.0
-Quarterfinals,Inferno,FaZe Clan,karrigan,76561197989430253,Both,8.0,6.0,8.0,5.0,15.0,10.0,15.0
-Quarterfinals,Inferno,MOUZ,Brollan,76561198138828475,Counter Terrorist,0.0,0.0,3.0,0.0,0.0,0.0,3.0
-Quarterfinals,Inferno,MOUZ,Brollan,76561198138828475,Terrorist,1.0,1.0,12.0,6.0,4.0,2.0,12.0
-Quarterfinals,Inferno,MOUZ,Brollan,76561198138828475,Both,1.0,1.0,15.0,6.0,4.0,2.0,15.0
-Quarterfinals,Inferno,MOUZ,Jimpphat,76561198855375325,Counter Terrorist,0.0,0.0,3.0,0.0,0.0,1.0,3.0
-Quarterfinals,Inferno,MOUZ,Jimpphat,76561198855375325,Terrorist,5.0,3.0,11.0,1.0,2.0,1.0,12.0
-Quarterfinals,Inferno,MOUZ,Jimpphat,76561198855375325,Both,5.0,3.0,14.0,1.0,2.0,2.0,15.0
-Quarterfinals,Inferno,MOUZ,Spinx,76561198063336407,Counter Terrorist,0.0,1.0,3.0,0.0,0.0,0.0,3.0
-Quarterfinals,Inferno,MOUZ,Spinx,76561198063336407,Terrorist,7.0,2.0,12.0,4.0,3.0,1.0,12.0
-Quarterfinals,Inferno,MOUZ,Spinx,76561198063336407,Both,7.0,3.0,15.0,4.0,3.0,1.0,15.0
-Quarterfinals,Inferno,MOUZ,torzsi,76561198355739212,Counter Terrorist,2.0,0.0,3.0,1.0,0.0,0.0,3.0
-Quarterfinals,Inferno,MOUZ,torzsi,76561198355739212,Terrorist,14.0,0.0,10.0,4.0,2.0,0.0,12.0
-Quarterfinals,Inferno,MOUZ,torzsi,76561198355739212,Both,16.0,0.0,13.0,5.0,2.0,0.0,15.0
-Quarterfinals,Inferno,MOUZ,xertioN,76561198193174134,Counter Terrorist,1.0,0.0,3.0,1.0,0.0,1.0,3.0
-Quarterfinals,Inferno,MOUZ,xertioN,76561198193174134,Terrorist,3.0,6.0,11.0,3.0,7.0,4.0,12.0
-Quarterfinals,Inferno,MOUZ,xertioN,76561198193174134,Both,4.0,6.0,14.0,4.0,7.0,5.0,15.0
-Quarterfinals,Inferno,Natus Vincere,Aleksib,76561198013243326,Counter Terrorist,10.0,4.0,9.0,6.0,18.0,6.0,14.0
-Quarterfinals,Inferno,Natus Vincere,Aleksib,76561198013243326,Terrorist,3.0,4.0,11.0,2.0,1.0,0.0,15.0
-Quarterfinals,Inferno,Natus Vincere,Aleksib,76561198013243326,Both,13.0,8.0,20.0,8.0,19.0,6.0,29.0
-Quarterfinals,Inferno,Natus Vincere,b1t,76561198246607476,Counter Terrorist,9.0,3.0,5.0,7.0,16.0,3.0,14.0
-Quarterfinals,Inferno,Natus Vincere,b1t,76561198246607476,Terrorist,8.0,2.0,9.0,2.0,0.0,0.0,15.0
-Quarterfinals,Inferno,Natus Vincere,b1t,76561198246607476,Both,17.0,5.0,14.0,9.0,16.0,3.0,29.0
-Quarterfinals,Inferno,Natus Vincere,iM,76561198050250233,Counter Terrorist,14.0,4.0,5.0,11.0,7.0,3.0,14.0
-Quarterfinals,Inferno,Natus Vincere,iM,76561198050250233,Terrorist,10.0,3.0,13.0,3.0,0.0,0.0,15.0
-Quarterfinals,Inferno,Natus Vincere,iM,76561198050250233,Both,24.0,7.0,18.0,14.0,7.0,3.0,29.0
-Quarterfinals,Inferno,Natus Vincere,makazze,76561199076189612,Counter Terrorist,8.0,5.0,10.0,6.0,15.0,10.0,14.0
-Quarterfinals,Inferno,Natus Vincere,makazze,76561199076189612,Terrorist,9.0,2.0,14.0,4.0,2.0,1.0,15.0
-Quarterfinals,Inferno,Natus Vincere,makazze,76561199076189612,Both,17.0,7.0,24.0,10.0,17.0,11.0,29.0
-Quarterfinals,Inferno,Natus Vincere,w0nderful,76561199063068840,Counter Terrorist,9.0,5.0,7.0,2.0,10.0,4.0,14.0
-Quarterfinals,Inferno,Natus Vincere,w0nderful,76561199063068840,Terrorist,7.0,4.0,11.0,2.0,1.0,1.0,15.0
-Quarterfinals,Inferno,Natus Vincere,w0nderful,76561199063068840,Both,16.0,9.0,18.0,4.0,11.0,5.0,29.0
-Quarterfinals,Mirage,FURIA Esports,FalleN,76561197960690195,Counter Terrorist,5.0,2.0,11.0,3.0,3.0,1.0,12.0
-Quarterfinals,Mirage,FURIA Esports,FalleN,76561197960690195,Terrorist,0.0,2.0,6.0,1.0,0.0,0.0,6.0
-Quarterfinals,Mirage,FURIA Esports,FalleN,76561197960690195,Both,5.0,4.0,17.0,4.0,3.0,1.0,18.0
-Quarterfinals,Mirage,FURIA Esports,KSCERATO,76561198058500492,Counter Terrorist,12.0,0.0,12.0,2.0,1.0,2.0,12.0
-Quarterfinals,Mirage,FURIA Esports,KSCERATO,76561198058500492,Terrorist,3.0,1.0,6.0,0.0,0.0,0.0,6.0
-Quarterfinals,Mirage,FURIA Esports,KSCERATO,76561198058500492,Both,15.0,1.0,18.0,2.0,1.0,2.0,18.0
-Quarterfinals,Mirage,FURIA Esports,YEKINDAR,76561198134401925,Counter Terrorist,9.0,4.0,11.0,3.0,6.0,0.0,12.0
-Quarterfinals,Mirage,FURIA Esports,YEKINDAR,76561198134401925,Terrorist,2.0,2.0,6.0,0.0,0.0,0.0,6.0
-Quarterfinals,Mirage,FURIA Esports,YEKINDAR,76561198134401925,Both,11.0,6.0,17.0,3.0,6.0,0.0,18.0
-Quarterfinals,Mirage,FURIA Esports,molodoy,76561198200982290,Counter Terrorist,4.0,4.0,12.0,0.0,4.0,0.0,12.0
-Quarterfinals,Mirage,FURIA Esports,molodoy,76561198200982290,Terrorist,7.0,0.0,5.0,0.0,0.0,0.0,6.0
-Quarterfinals,Mirage,FURIA Esports,molodoy,76561198200982290,Both,11.0,4.0,17.0,0.0,4.0,0.0,18.0
-Quarterfinals,Mirage,FURIA Esports,yuurih,76561198164970560,Counter Terrorist,8.0,1.0,11.0,6.0,3.0,3.0,12.0
-Quarterfinals,Mirage,FURIA Esports,yuurih,76561198164970560,Terrorist,2.0,1.0,5.0,0.0,0.0,0.0,6.0
-Quarterfinals,Mirage,FURIA Esports,yuurih,76561198164970560,Both,10.0,2.0,16.0,6.0,3.0,3.0,18.0
-Quarterfinals,Mirage,Natus Vincere,Aleksib,76561198013243326,Counter Terrorist,7.0,1.0,1.0,2.0,1.0,0.0,6.0
-Quarterfinals,Mirage,Natus Vincere,Aleksib,76561198013243326,Terrorist,6.0,6.0,6.0,6.0,4.0,2.0,12.0
-Quarterfinals,Mirage,Natus Vincere,Aleksib,76561198013243326,Both,13.0,7.0,7.0,8.0,5.0,2.0,18.0
-Quarterfinals,Mirage,Natus Vincere,b1t,76561198246607476,Counter Terrorist,5.0,2.0,4.0,2.0,0.0,0.0,6.0
-Quarterfinals,Mirage,Natus Vincere,b1t,76561198246607476,Terrorist,13.0,1.0,6.0,4.0,2.0,1.0,12.0
-Quarterfinals,Mirage,Natus Vincere,b1t,76561198246607476,Both,18.0,3.0,10.0,6.0,2.0,1.0,18.0
-Quarterfinals,Mirage,Natus Vincere,iM,76561198050250233,Counter Terrorist,5.0,1.0,2.0,0.0,2.0,0.0,6.0
-Quarterfinals,Mirage,Natus Vincere,iM,76561198050250233,Terrorist,15.0,5.0,9.0,2.0,2.0,1.0,12.0
-Quarterfinals,Mirage,Natus Vincere,iM,76561198050250233,Both,20.0,6.0,11.0,2.0,4.0,1.0,18.0
-Quarterfinals,Mirage,Natus Vincere,makazze,76561199076189612,Counter Terrorist,7.0,3.0,2.0,1.0,3.0,0.0,6.0
-Quarterfinals,Mirage,Natus Vincere,makazze,76561199076189612,Terrorist,7.0,2.0,10.0,5.0,0.0,1.0,12.0
-Quarterfinals,Mirage,Natus Vincere,makazze,76561199076189612,Both,14.0,5.0,12.0,6.0,3.0,1.0,18.0
-Quarterfinals,Mirage,Natus Vincere,w0nderful,76561199063068840,Counter Terrorist,4.0,2.0,5.0,0.0,0.0,0.0,6.0
-Quarterfinals,Mirage,Natus Vincere,w0nderful,76561199063068840,Terrorist,16.0,3.0,7.0,3.0,4.0,3.0,12.0
-Quarterfinals,Mirage,Natus Vincere,w0nderful,76561199063068840,Both,20.0,5.0,12.0,3.0,4.0,3.0,18.0
-Quarterfinals,Mirage,Team Vitality,ZywOo,76561198113666193,Counter Terrorist,11.0,3.0,8.0,5.0,5.0,0.0,12.0
-Quarterfinals,Mirage,Team Vitality,ZywOo,76561198113666193,Terrorist,15.0,1.0,1.0,0.0,0.0,0.0,6.0
-Quarterfinals,Mirage,Team Vitality,ZywOo,76561198113666193,Both,26.0,4.0,9.0,5.0,5.0,0.0,18.0
-Quarterfinals,Mirage,Team Vitality,apEX,76561197989744167,Counter Terrorist,6.0,4.0,8.0,3.0,5.0,2.0,12.0
-Quarterfinals,Mirage,Team Vitality,apEX,76561197989744167,Terrorist,0.0,1.0,5.0,0.0,0.0,0.0,6.0
-Quarterfinals,Mirage,Team Vitality,apEX,76561197989744167,Both,6.0,5.0,13.0,3.0,5.0,2.0,18.0
-Quarterfinals,Mirage,Team Vitality,flameZ,76561197978835160,Counter Terrorist,12.0,1.0,8.0,4.0,3.0,4.0,12.0
-Quarterfinals,Mirage,Team Vitality,flameZ,76561197978835160,Terrorist,4.0,2.0,5.0,2.0,0.0,0.0,6.0
-Quarterfinals,Mirage,Team Vitality,flameZ,76561197978835160,Both,16.0,3.0,13.0,6.0,3.0,4.0,18.0
-Quarterfinals,Mirage,Team Vitality,mezii,76561197973140692,Counter Terrorist,14.0,2.0,6.0,4.0,7.0,3.0,12.0
-Quarterfinals,Mirage,Team Vitality,mezii,76561197973140692,Terrorist,5.0,1.0,6.0,1.0,0.0,0.0,6.0
-Quarterfinals,Mirage,Team Vitality,mezii,76561197973140692,Both,19.0,3.0,12.0,5.0,7.0,3.0,18.0
-Quarterfinals,Mirage,Team Vitality,ropz,76561197991272318,Counter Terrorist,7.0,4.0,6.0,3.0,3.0,0.0,12.0
-Quarterfinals,Mirage,Team Vitality,ropz,76561197991272318,Terrorist,5.0,1.0,4.0,0.0,0.0,0.0,6.0
-Quarterfinals,Mirage,Team Vitality,ropz,76561197991272318,Both,12.0,5.0,10.0,3.0,3.0,0.0,18.0
-Quarterfinals,Mirage,The MongolZ,910,76561199203563345,Counter Terrorist,4.0,0.0,6.0,0.0,0.0,0.0,6.0
-Quarterfinals,Mirage,The MongolZ,910,76561199203563345,Terrorist,6.0,2.0,11.0,1.0,5.0,0.0,12.0
-Quarterfinals,Mirage,The MongolZ,910,76561199203563345,Both,10.0,2.0,17.0,1.0,5.0,0.0,18.0
-Quarterfinals,Mirage,The MongolZ,Mzinho,76561198838822582,Counter Terrorist,4.0,1.0,6.0,0.0,0.0,0.0,6.0
-Quarterfinals,Mirage,The MongolZ,Mzinho,76561198838822582,Terrorist,11.0,2.0,9.0,2.0,4.0,1.0,12.0
-Quarterfinals,Mirage,The MongolZ,Mzinho,76561198838822582,Both,15.0,3.0,15.0,2.0,4.0,1.0,18.0
-Quarterfinals,Mirage,The MongolZ,Techno4K,76561198966340160,Counter Terrorist,5.0,3.0,5.0,0.0,0.0,0.0,6.0
-Quarterfinals,Mirage,The MongolZ,Techno4K,76561198966340160,Terrorist,8.0,0.0,10.0,3.0,2.0,1.0,12.0
-Quarterfinals,Mirage,The MongolZ,Techno4K,76561198966340160,Both,13.0,3.0,15.0,3.0,2.0,1.0,18.0
-Quarterfinals,Mirage,The MongolZ,bLitz,76561198959824088,Counter Terrorist,4.0,3.0,6.0,0.0,0.0,0.0,6.0
-Quarterfinals,Mirage,The MongolZ,bLitz,76561198959824088,Terrorist,8.0,3.0,10.0,7.0,2.0,3.0,12.0
-Quarterfinals,Mirage,The MongolZ,bLitz,76561198959824088,Both,12.0,6.0,16.0,7.0,2.0,3.0,18.0
-Quarterfinals,Mirage,The MongolZ,controlez,76561198362438171,Counter Terrorist,4.0,1.0,6.0,0.0,0.0,0.0,6.0
-Quarterfinals,Mirage,The MongolZ,controlez,76561198362438171,Terrorist,3.0,2.0,10.0,3.0,1.0,2.0,12.0
-Quarterfinals,Mirage,The MongolZ,controlez,76561198362438171,Both,7.0,3.0,16.0,3.0,1.0,2.0,18.0
-Quarterfinals,Nuke,FaZe Clan,Twistzz,76561198016255205,Counter Terrorist,8.0,1.0,8.0,4.0,3.0,5.0,12.0
-Quarterfinals,Nuke,FaZe Clan,Twistzz,76561198016255205,Terrorist,8.0,0.0,7.0,7.0,8.0,0.0,12.0
-Quarterfinals,Nuke,FaZe Clan,Twistzz,76561198016255205,Both,16.0,1.0,15.0,11.0,11.0,5.0,24.0
-Quarterfinals,Nuke,FaZe Clan,broky,76561198201620490,Counter Terrorist,13.0,0.0,7.0,2.0,2.0,2.0,12.0
-Quarterfinals,Nuke,FaZe Clan,broky,76561198201620490,Terrorist,11.0,6.0,5.0,6.0,9.0,0.0,12.0
-Quarterfinals,Nuke,FaZe Clan,broky,76561198201620490,Both,24.0,6.0,12.0,8.0,11.0,2.0,24.0
-Quarterfinals,Nuke,FaZe Clan,frozen,76561198068422762,Counter Terrorist,10.0,2.0,10.0,3.0,2.0,0.0,12.0
-Quarterfinals,Nuke,FaZe Clan,frozen,76561198068422762,Terrorist,8.0,3.0,8.0,10.0,5.0,9.0,12.0
-Quarterfinals,Nuke,FaZe Clan,frozen,76561198068422762,Both,18.0,5.0,18.0,13.0,7.0,9.0,24.0
-Quarterfinals,Nuke,FaZe Clan,jcobbb,76561198178737429,Counter Terrorist,6.0,4.0,9.0,3.0,4.0,2.0,12.0
-Quarterfinals,Nuke,FaZe Clan,jcobbb,76561198178737429,Terrorist,10.0,3.0,9.0,2.0,6.0,2.0,12.0
-Quarterfinals,Nuke,FaZe Clan,jcobbb,76561198178737429,Both,16.0,7.0,18.0,5.0,10.0,4.0,24.0
-Quarterfinals,Nuke,FaZe Clan,karrigan,76561197989430253,Counter Terrorist,7.0,2.0,10.0,2.0,4.0,2.0,12.0
-Quarterfinals,Nuke,FaZe Clan,karrigan,76561197989430253,Terrorist,4.0,3.0,6.0,19.0,8.0,1.0,12.0
-Quarterfinals,Nuke,FaZe Clan,karrigan,76561197989430253,Both,11.0,5.0,16.0,21.0,12.0,3.0,24.0
-Quarterfinals,Nuke,MOUZ,Brollan,76561198138828475,Counter Terrorist,9.0,2.0,8.0,11.0,9.0,1.0,12.0
-Quarterfinals,Nuke,MOUZ,Brollan,76561198138828475,Terrorist,10.0,3.0,9.0,9.0,5.0,0.0,12.0
-Quarterfinals,Nuke,MOUZ,Brollan,76561198138828475,Both,19.0,5.0,17.0,20.0,14.0,1.0,24.0
-Quarterfinals,Nuke,MOUZ,Jimpphat,76561198855375325,Counter Terrorist,6.0,5.0,8.0,8.0,10.0,3.0,12.0
-Quarterfinals,Nuke,MOUZ,Jimpphat,76561198855375325,Terrorist,10.0,0.0,9.0,2.0,1.0,4.0,12.0
-Quarterfinals,Nuke,MOUZ,Jimpphat,76561198855375325,Both,16.0,5.0,17.0,10.0,11.0,7.0,24.0
-Quarterfinals,Nuke,MOUZ,Spinx,76561198063336407,Counter Terrorist,5.0,2.0,9.0,9.0,12.0,7.0,12.0
-Quarterfinals,Nuke,MOUZ,Spinx,76561198063336407,Terrorist,10.0,2.0,10.0,1.0,2.0,1.0,12.0
-Quarterfinals,Nuke,MOUZ,Spinx,76561198063336407,Both,15.0,4.0,19.0,10.0,14.0,8.0,24.0
-Quarterfinals,Nuke,MOUZ,torzsi,76561198355739212,Counter Terrorist,9.0,1.0,8.0,4.0,10.0,7.0,12.0
-Quarterfinals,Nuke,MOUZ,torzsi,76561198355739212,Terrorist,6.0,3.0,8.0,1.0,4.0,0.0,12.0
-Quarterfinals,Nuke,MOUZ,torzsi,76561198355739212,Both,15.0,4.0,16.0,5.0,14.0,7.0,24.0
-Quarterfinals,Nuke,MOUZ,xertioN,76561198193174134,Counter Terrorist,6.0,2.0,8.0,5.0,11.0,7.0,12.0
-Quarterfinals,Nuke,MOUZ,xertioN,76561198193174134,Terrorist,9.0,6.0,9.0,5.0,3.0,1.0,12.0
-Quarterfinals,Nuke,MOUZ,xertioN,76561198193174134,Both,15.0,8.0,17.0,10.0,14.0,8.0,24.0
-Quarterfinals,Nuke,Team Falcons,NiKo,76561198041683378,Counter Terrorist,1.0,0.0,5.0,1.0,0.0,1.0,5.0
-Quarterfinals,Nuke,Team Falcons,NiKo,76561198041683378,Terrorist,6.0,0.0,11.0,4.0,3.0,0.0,12.0
-Quarterfinals,Nuke,Team Falcons,NiKo,76561198041683378,Both,7.0,0.0,16.0,5.0,3.0,1.0,17.0
-Quarterfinals,Nuke,Team Falcons,TeSeS,76561197996678278,Counter Terrorist,2.0,0.0,5.0,1.0,2.0,0.0,5.0
-Quarterfinals,Nuke,Team Falcons,TeSeS,76561197996678278,Terrorist,1.0,0.0,10.0,5.0,4.0,8.0,12.0
-Quarterfinals,Nuke,Team Falcons,TeSeS,76561197996678278,Both,3.0,0.0,15.0,6.0,6.0,8.0,17.0
-Quarterfinals,Nuke,Team Falcons,kyousuke,76561199032006224,Counter Terrorist,3.0,0.0,5.0,0.0,1.0,0.0,5.0
-Quarterfinals,Nuke,Team Falcons,kyousuke,76561199032006224,Terrorist,11.0,5.0,11.0,2.0,1.0,1.0,12.0
-Quarterfinals,Nuke,Team Falcons,kyousuke,76561199032006224,Both,14.0,5.0,16.0,2.0,2.0,1.0,17.0
-Quarterfinals,Nuke,Team Falcons,kyxsan,76561198057282432,Counter Terrorist,0.0,1.0,5.0,1.0,0.0,0.0,5.0
-Quarterfinals,Nuke,Team Falcons,kyxsan,76561198057282432,Terrorist,3.0,3.0,10.0,19.0,6.0,1.0,12.0
-Quarterfinals,Nuke,Team Falcons,kyxsan,76561198057282432,Both,3.0,4.0,15.0,20.0,6.0,1.0,17.0
-Quarterfinals,Nuke,Team Falcons,m0NESY,76561198074762801,Counter Terrorist,0.0,0.0,5.0,0.0,1.0,0.0,5.0
-Quarterfinals,Nuke,Team Falcons,m0NESY,76561198074762801,Terrorist,11.0,1.0,8.0,3.0,2.0,3.0,12.0
-Quarterfinals,Nuke,Team Falcons,m0NESY,76561198074762801,Both,11.0,1.0,13.0,3.0,3.0,3.0,17.0
-Quarterfinals,Nuke,Team Spirit,chopper,76561198045898864,Counter Terrorist,6.0,3.0,8.0,8.0,13.0,7.0,12.0
-Quarterfinals,Nuke,Team Spirit,chopper,76561198045898864,Terrorist,5.0,0.0,1.0,4.0,1.0,0.0,5.0
-Quarterfinals,Nuke,Team Spirit,chopper,76561198045898864,Both,11.0,3.0,9.0,12.0,14.0,7.0,17.0
-Quarterfinals,Nuke,Team Spirit,donk,76561198386265483,Counter Terrorist,10.0,0.0,5.0,6.0,13.0,4.0,12.0
-Quarterfinals,Nuke,Team Spirit,donk,76561198386265483,Terrorist,6.0,0.0,1.0,2.0,0.0,0.0,5.0
-Quarterfinals,Nuke,Team Spirit,donk,76561198386265483,Both,16.0,0.0,6.0,8.0,13.0,4.0,17.0
-Quarterfinals,Nuke,Team Spirit,sh1ro,76561198081484775,Counter Terrorist,9.0,3.0,4.0,6.0,10.0,6.0,12.0
-Quarterfinals,Nuke,Team Spirit,sh1ro,76561198081484775,Terrorist,2.0,2.0,1.0,4.0,1.0,1.0,5.0
-Quarterfinals,Nuke,Team Spirit,sh1ro,76561198081484775,Both,11.0,5.0,5.0,10.0,11.0,7.0,17.0
-Quarterfinals,Nuke,Team Spirit,tN1R,76561198872013168,Counter Terrorist,7.0,4.0,7.0,9.0,14.0,7.0,12.0
-Quarterfinals,Nuke,Team Spirit,tN1R,76561198872013168,Terrorist,9.0,0.0,2.0,0.0,2.0,2.0,5.0
-Quarterfinals,Nuke,Team Spirit,tN1R,76561198872013168,Both,16.0,4.0,9.0,9.0,16.0,9.0,17.0
-Quarterfinals,Nuke,Team Spirit,zweih,76561198210626739,Counter Terrorist,18.0,2.0,8.0,7.0,14.0,3.0,12.0
-Quarterfinals,Nuke,Team Spirit,zweih,76561198210626739,Terrorist,3.0,0.0,1.0,1.0,3.0,0.0,5.0
-Quarterfinals,Nuke,Team Spirit,zweih,76561198210626739,Both,21.0,2.0,9.0,8.0,17.0,3.0,17.0
-Quarterfinals,Train,FURIA Esports,FalleN,76561197960690195,Counter Terrorist,6.0,1.0,10.0,5.0,10.0,5.0,12.0
-Quarterfinals,Train,FURIA Esports,FalleN,76561197960690195,Terrorist,2.0,0.0,3.0,0.0,1.0,0.0,4.0
-Quarterfinals,Train,FURIA Esports,FalleN,76561197960690195,Both,8.0,1.0,13.0,5.0,11.0,5.0,16.0
-Quarterfinals,Train,FURIA Esports,KSCERATO,76561198058500492,Counter Terrorist,10.0,4.0,9.0,12.0,8.0,8.0,12.0
-Quarterfinals,Train,FURIA Esports,KSCERATO,76561198058500492,Terrorist,2.0,1.0,3.0,2.0,1.0,2.0,4.0
-Quarterfinals,Train,FURIA Esports,KSCERATO,76561198058500492,Both,12.0,5.0,12.0,14.0,9.0,10.0,16.0
-Quarterfinals,Train,FURIA Esports,YEKINDAR,76561198134401925,Counter Terrorist,6.0,5.0,10.0,8.0,12.0,3.0,12.0
-Quarterfinals,Train,FURIA Esports,YEKINDAR,76561198134401925,Terrorist,1.0,1.0,4.0,2.0,1.0,0.0,4.0
-Quarterfinals,Train,FURIA Esports,YEKINDAR,76561198134401925,Both,7.0,6.0,14.0,10.0,13.0,3.0,16.0
-Quarterfinals,Train,FURIA Esports,molodoy,76561198200982290,Counter Terrorist,4.0,1.0,9.0,3.0,2.0,2.0,12.0
-Quarterfinals,Train,FURIA Esports,molodoy,76561198200982290,Terrorist,3.0,1.0,4.0,1.0,1.0,0.0,4.0
-Quarterfinals,Train,FURIA Esports,molodoy,76561198200982290,Both,7.0,2.0,13.0,4.0,3.0,2.0,16.0
-Quarterfinals,Train,FURIA Esports,yuurih,76561198164970560,Counter Terrorist,6.0,2.0,8.0,9.0,10.0,7.0,12.0
-Quarterfinals,Train,FURIA Esports,yuurih,76561198164970560,Terrorist,0.0,0.0,3.0,0.0,0.0,1.0,4.0
-Quarterfinals,Train,FURIA Esports,yuurih,76561198164970560,Both,6.0,2.0,11.0,9.0,10.0,8.0,16.0
-Quarterfinals,Train,Natus Vincere,Aleksib,76561198013243326,Counter Terrorist,2.0,0.0,1.0,2.0,2.0,1.0,4.0
-Quarterfinals,Train,Natus Vincere,Aleksib,76561198013243326,Terrorist,6.0,3.0,7.0,10.0,10.0,9.0,12.0
-Quarterfinals,Train,Natus Vincere,Aleksib,76561198013243326,Both,8.0,3.0,8.0,12.0,12.0,10.0,16.0
-Quarterfinals,Train,Natus Vincere,b1t,76561198246607476,Counter Terrorist,3.0,1.0,1.0,0.0,1.0,0.0,4.0
-Quarterfinals,Train,Natus Vincere,b1t,76561198246607476,Terrorist,10.0,5.0,5.0,8.0,9.0,7.0,12.0
-Quarterfinals,Train,Natus Vincere,b1t,76561198246607476,Both,13.0,6.0,6.0,8.0,10.0,7.0,16.0
-Quarterfinals,Train,Natus Vincere,iM,76561198050250233,Counter Terrorist,3.0,1.0,2.0,0.0,1.0,1.0,4.0
-Quarterfinals,Train,Natus Vincere,iM,76561198050250233,Terrorist,6.0,3.0,9.0,10.0,10.0,6.0,12.0
-Quarterfinals,Train,Natus Vincere,iM,76561198050250233,Both,9.0,4.0,11.0,10.0,11.0,7.0,16.0
-Quarterfinals,Train,Natus Vincere,makazze,76561199076189612,Counter Terrorist,9.0,1.0,1.0,0.0,1.0,1.0,4.0
-Quarterfinals,Train,Natus Vincere,makazze,76561199076189612,Terrorist,11.0,2.0,7.0,7.0,12.0,8.0,12.0
-Quarterfinals,Train,Natus Vincere,makazze,76561199076189612,Both,20.0,3.0,8.0,7.0,13.0,9.0,16.0
-Quarterfinals,Train,Natus Vincere,w0nderful,76561199063068840,Counter Terrorist,0.0,0.0,3.0,1.0,0.0,1.0,4.0
-Quarterfinals,Train,Natus Vincere,w0nderful,76561199063068840,Terrorist,13.0,1.0,4.0,14.0,5.0,0.0,12.0
-Quarterfinals,Train,Natus Vincere,w0nderful,76561199063068840,Both,13.0,1.0,7.0,15.0,5.0,1.0,16.0
-Semifinals,Ancient,FaZe Clan,Twistzz,76561198016255205,Counter Terrorist,6.0,1.0,9.0,3.0,7.0,2.0,12.0
-Semifinals,Ancient,FaZe Clan,Twistzz,76561198016255205,Terrorist,3.0,2.0,6.0,0.0,0.0,0.0,6.0
-Semifinals,Ancient,FaZe Clan,Twistzz,76561198016255205,Both,9.0,3.0,15.0,3.0,7.0,2.0,18.0
-Semifinals,Ancient,FaZe Clan,broky,76561198201620490,Counter Terrorist,6.0,1.0,9.0,7.0,2.0,1.0,12.0
-Semifinals,Ancient,FaZe Clan,broky,76561198201620490,Terrorist,4.0,4.0,4.0,1.0,1.0,1.0,6.0
-Semifinals,Ancient,FaZe Clan,broky,76561198201620490,Both,10.0,5.0,13.0,8.0,3.0,2.0,18.0
-Semifinals,Ancient,FaZe Clan,frozen,76561198068422762,Counter Terrorist,3.0,1.0,10.0,0.0,4.0,0.0,12.0
-Semifinals,Ancient,FaZe Clan,frozen,76561198068422762,Terrorist,2.0,0.0,3.0,1.0,1.0,0.0,6.0
-Semifinals,Ancient,FaZe Clan,frozen,76561198068422762,Both,5.0,1.0,13.0,1.0,5.0,0.0,18.0
-Semifinals,Ancient,FaZe Clan,jcobbb,76561198178737429,Counter Terrorist,3.0,3.0,7.0,3.0,10.0,4.0,12.0
-Semifinals,Ancient,FaZe Clan,jcobbb,76561198178737429,Terrorist,7.0,1.0,4.0,1.0,0.0,0.0,6.0
-Semifinals,Ancient,FaZe Clan,jcobbb,76561198178737429,Both,10.0,4.0,11.0,4.0,10.0,4.0,18.0
-Semifinals,Ancient,FaZe Clan,karrigan,76561197989430253,Counter Terrorist,5.0,4.0,10.0,4.0,5.0,2.0,12.0
-Semifinals,Ancient,FaZe Clan,karrigan,76561197989430253,Terrorist,3.0,1.0,4.0,2.0,0.0,1.0,6.0
-Semifinals,Ancient,FaZe Clan,karrigan,76561197989430253,Both,8.0,5.0,14.0,6.0,5.0,3.0,18.0
-Semifinals,Ancient,Natus Vincere,Aleksib,76561198013243326,Counter Terrorist,2.0,3.0,5.0,0.0,0.0,0.0,6.0
-Semifinals,Ancient,Natus Vincere,Aleksib,76561198013243326,Terrorist,7.0,3.0,8.0,3.0,4.0,2.0,12.0
-Semifinals,Ancient,Natus Vincere,Aleksib,76561198013243326,Both,9.0,6.0,13.0,3.0,4.0,2.0,18.0
-Semifinals,Ancient,Natus Vincere,b1t,76561198246607476,Counter Terrorist,3.0,2.0,3.0,1.0,2.0,0.0,6.0
-Semifinals,Ancient,Natus Vincere,b1t,76561198246607476,Terrorist,6.0,2.0,5.0,6.0,3.0,2.0,12.0
-Semifinals,Ancient,Natus Vincere,b1t,76561198246607476,Both,9.0,4.0,8.0,7.0,5.0,2.0,18.0
-Semifinals,Ancient,Natus Vincere,iM,76561198050250233,Counter Terrorist,6.0,1.0,5.0,0.0,0.0,1.0,6.0
-Semifinals,Ancient,Natus Vincere,iM,76561198050250233,Terrorist,10.0,3.0,4.0,5.0,4.0,4.0,12.0
-Semifinals,Ancient,Natus Vincere,iM,76561198050250233,Both,16.0,4.0,9.0,5.0,4.0,5.0,18.0
-Semifinals,Ancient,Natus Vincere,makazze,76561199076189612,Counter Terrorist,5.0,2.0,4.0,0.0,0.0,1.0,6.0
-Semifinals,Ancient,Natus Vincere,makazze,76561199076189612,Terrorist,16.0,5.0,4.0,0.0,4.0,4.0,12.0
-Semifinals,Ancient,Natus Vincere,makazze,76561199076189612,Both,21.0,7.0,8.0,0.0,4.0,5.0,18.0
-Semifinals,Ancient,Natus Vincere,w0nderful,76561199063068840,Counter Terrorist,5.0,1.0,2.0,1.0,0.0,0.0,6.0
-Semifinals,Ancient,Natus Vincere,w0nderful,76561199063068840,Terrorist,5.0,5.0,3.0,6.0,5.0,0.0,12.0
-Semifinals,Ancient,Natus Vincere,w0nderful,76561199063068840,Both,10.0,6.0,5.0,7.0,5.0,0.0,18.0
-Semifinals,Dust2,Team Spirit,chopper,76561198045898864,Counter Terrorist,3.0,1.0,5.0,0.0,1.0,0.0,9.0
-Semifinals,Dust2,Team Spirit,chopper,76561198045898864,Terrorist,4.0,0.0,10.0,4.0,2.0,0.0,12.0
-Semifinals,Dust2,Team Spirit,chopper,76561198045898864,Both,7.0,1.0,15.0,4.0,3.0,0.0,21.0
-Semifinals,Dust2,Team Spirit,donk,76561198386265483,Counter Terrorist,6.0,2.0,7.0,0.0,0.0,2.0,9.0
-Semifinals,Dust2,Team Spirit,donk,76561198386265483,Terrorist,7.0,1.0,8.0,0.0,3.0,0.0,12.0
-Semifinals,Dust2,Team Spirit,donk,76561198386265483,Both,13.0,3.0,15.0,0.0,3.0,2.0,21.0
-Semifinals,Dust2,Team Spirit,sh1ro,76561198081484775,Counter Terrorist,4.0,0.0,8.0,0.0,0.0,1.0,9.0
-Semifinals,Dust2,Team Spirit,sh1ro,76561198081484775,Terrorist,6.0,3.0,7.0,3.0,2.0,0.0,12.0
-Semifinals,Dust2,Team Spirit,sh1ro,76561198081484775,Both,10.0,3.0,15.0,3.0,2.0,1.0,21.0
-Semifinals,Dust2,Team Spirit,tN1R,76561198872013168,Counter Terrorist,4.0,7.0,5.0,2.0,0.0,0.0,9.0
-Semifinals,Dust2,Team Spirit,tN1R,76561198872013168,Terrorist,7.0,3.0,8.0,1.0,1.0,0.0,12.0
-Semifinals,Dust2,Team Spirit,tN1R,76561198872013168,Both,11.0,10.0,13.0,3.0,1.0,0.0,21.0
-Semifinals,Dust2,Team Spirit,zweih,76561198210626739,Counter Terrorist,3.0,1.0,7.0,0.0,0.0,0.0,9.0
-Semifinals,Dust2,Team Spirit,zweih,76561198210626739,Terrorist,9.0,2.0,8.0,3.0,0.0,1.0,12.0
-Semifinals,Dust2,Team Spirit,zweih,76561198210626739,Both,12.0,3.0,15.0,3.0,0.0,1.0,21.0
-Semifinals,Dust2,Team Vitality,ZywOo,76561198113666193,Counter Terrorist,10.0,3.0,7.0,4.0,3.0,2.0,12.0
-Semifinals,Dust2,Team Vitality,ZywOo,76561198113666193,Terrorist,8.0,5.0,2.0,1.0,0.0,0.0,9.0
-Semifinals,Dust2,Team Vitality,ZywOo,76561198113666193,Both,18.0,8.0,9.0,5.0,3.0,2.0,21.0
-Semifinals,Dust2,Team Vitality,apEX,76561197989744167,Counter Terrorist,8.0,6.0,5.0,2.0,4.0,3.0,12.0
-Semifinals,Dust2,Team Vitality,apEX,76561197989744167,Terrorist,4.0,1.0,5.0,0.0,0.0,0.0,9.0
-Semifinals,Dust2,Team Vitality,apEX,76561197989744167,Both,12.0,7.0,10.0,2.0,4.0,3.0,21.0
-Semifinals,Dust2,Team Vitality,flameZ,76561197978835160,Counter Terrorist,9.0,1.0,5.0,3.0,9.0,3.0,12.0
-Semifinals,Dust2,Team Vitality,flameZ,76561197978835160,Terrorist,9.0,2.0,4.0,0.0,0.0,0.0,9.0
-Semifinals,Dust2,Team Vitality,flameZ,76561197978835160,Both,18.0,3.0,9.0,3.0,9.0,3.0,21.0
-Semifinals,Dust2,Team Vitality,mezii,76561197973140692,Counter Terrorist,5.0,3.0,10.0,1.0,6.0,0.0,12.0
-Semifinals,Dust2,Team Vitality,mezii,76561197973140692,Terrorist,5.0,3.0,4.0,0.0,0.0,0.0,9.0
-Semifinals,Dust2,Team Vitality,mezii,76561197973140692,Both,10.0,6.0,14.0,1.0,6.0,0.0,21.0
-Semifinals,Dust2,Team Vitality,ropz,76561197991272318,Counter Terrorist,9.0,1.0,6.0,2.0,5.0,3.0,12.0
-Semifinals,Dust2,Team Vitality,ropz,76561197991272318,Terrorist,6.0,2.0,5.0,0.0,0.0,2.0,9.0
-Semifinals,Dust2,Team Vitality,ropz,76561197991272318,Both,15.0,3.0,11.0,2.0,5.0,5.0,21.0
-Semifinals,Inferno,FaZe Clan,Twistzz,76561198016255205,Counter Terrorist,10.0,3.0,5.0,9.0,14.0,3.0,12.0
-Semifinals,Inferno,FaZe Clan,Twistzz,76561198016255205,Terrorist,10.0,2.0,5.0,2.0,2.0,2.0,9.0
-Semifinals,Inferno,FaZe Clan,Twistzz,76561198016255205,Both,20.0,5.0,10.0,11.0,16.0,5.0,21.0
-Semifinals,Inferno,FaZe Clan,broky,76561198201620490,Counter Terrorist,11.0,5.0,6.0,4.0,16.0,2.0,12.0
-Semifinals,Inferno,FaZe Clan,broky,76561198201620490,Terrorist,9.0,2.0,7.0,4.0,1.0,0.0,9.0
-Semifinals,Inferno,FaZe Clan,broky,76561198201620490,Both,20.0,7.0,13.0,8.0,17.0,2.0,21.0
-Semifinals,Inferno,FaZe Clan,frozen,76561198068422762,Counter Terrorist,9.0,6.0,6.0,5.0,15.0,4.0,12.0
-Semifinals,Inferno,FaZe Clan,frozen,76561198068422762,Terrorist,4.0,3.0,8.0,2.0,1.0,1.0,9.0
-Semifinals,Inferno,FaZe Clan,frozen,76561198068422762,Both,13.0,9.0,14.0,7.0,16.0,5.0,21.0
-Semifinals,Inferno,FaZe Clan,jcobbb,76561198178737429,Counter Terrorist,14.0,2.0,3.0,5.0,14.0,3.0,12.0
-Semifinals,Inferno,FaZe Clan,jcobbb,76561198178737429,Terrorist,3.0,2.0,7.0,0.0,0.0,0.0,9.0
-Semifinals,Inferno,FaZe Clan,jcobbb,76561198178737429,Both,17.0,4.0,10.0,5.0,14.0,3.0,21.0
-Semifinals,Inferno,FaZe Clan,karrigan,76561197989430253,Counter Terrorist,9.0,3.0,4.0,3.0,16.0,6.0,12.0
-Semifinals,Inferno,FaZe Clan,karrigan,76561197989430253,Terrorist,3.0,1.0,8.0,1.0,3.0,0.0,9.0
-Semifinals,Inferno,FaZe Clan,karrigan,76561197989430253,Both,12.0,4.0,12.0,4.0,19.0,6.0,21.0
-Semifinals,Inferno,Natus Vincere,Aleksib,76561198013243326,Counter Terrorist,8.0,2.0,5.0,0.0,4.0,1.0,9.0
-Semifinals,Inferno,Natus Vincere,Aleksib,76561198013243326,Terrorist,2.0,5.0,10.0,6.0,4.0,1.0,12.0
-Semifinals,Inferno,Natus Vincere,Aleksib,76561198013243326,Both,10.0,7.0,15.0,6.0,8.0,2.0,21.0
-Semifinals,Inferno,Natus Vincere,b1t,76561198246607476,Counter Terrorist,8.0,2.0,6.0,0.0,3.0,1.0,9.0
-Semifinals,Inferno,Natus Vincere,b1t,76561198246607476,Terrorist,7.0,2.0,10.0,4.0,5.0,1.0,12.0
-Semifinals,Inferno,Natus Vincere,b1t,76561198246607476,Both,15.0,4.0,16.0,4.0,8.0,2.0,21.0
-Semifinals,Inferno,Natus Vincere,iM,76561198050250233,Counter Terrorist,4.0,4.0,6.0,2.0,1.0,0.0,9.0
-Semifinals,Inferno,Natus Vincere,iM,76561198050250233,Terrorist,4.0,2.0,11.0,2.0,3.0,0.0,12.0
-Semifinals,Inferno,Natus Vincere,iM,76561198050250233,Both,8.0,6.0,17.0,4.0,4.0,0.0,21.0
-Semifinals,Inferno,Natus Vincere,makazze,76561199076189612,Counter Terrorist,10.0,3.0,5.0,3.0,8.0,2.0,9.0
-Semifinals,Inferno,Natus Vincere,makazze,76561199076189612,Terrorist,4.0,3.0,11.0,6.0,9.0,3.0,12.0
-Semifinals,Inferno,Natus Vincere,makazze,76561199076189612,Both,14.0,6.0,16.0,9.0,17.0,5.0,21.0
-Semifinals,Inferno,Natus Vincere,w0nderful,76561199063068840,Counter Terrorist,5.0,2.0,7.0,2.0,2.0,2.0,9.0
-Semifinals,Inferno,Natus Vincere,w0nderful,76561199063068840,Terrorist,7.0,2.0,11.0,5.0,1.0,0.0,12.0
-Semifinals,Inferno,Natus Vincere,w0nderful,76561199063068840,Both,12.0,4.0,18.0,7.0,3.0,2.0,21.0
-Semifinals,Mirage,Team Spirit,chopper,76561198045898864,Counter Terrorist,13.0,8.0,10.0,6.0,10.0,5.0,18.0
-Semifinals,Mirage,Team Spirit,chopper,76561198045898864,Terrorist,5.0,4.0,16.0,0.0,0.0,0.0,18.0
-Semifinals,Mirage,Team Spirit,chopper,76561198045898864,Both,18.0,12.0,26.0,6.0,10.0,5.0,36.0
-Semifinals,Mirage,Team Spirit,donk,76561198386265483,Counter Terrorist,22.0,8.0,12.0,5.0,8.0,3.0,18.0
-Semifinals,Mirage,Team Spirit,donk,76561198386265483,Terrorist,13.0,1.0,14.0,0.0,0.0,0.0,18.0
-Semifinals,Mirage,Team Spirit,donk,76561198386265483,Both,35.0,9.0,26.0,5.0,8.0,3.0,36.0
-Semifinals,Mirage,Team Spirit,sh1ro,76561198081484775,Counter Terrorist,12.0,3.0,10.0,1.0,6.0,3.0,18.0
-Semifinals,Mirage,Team Spirit,sh1ro,76561198081484775,Terrorist,12.0,3.0,12.0,3.0,0.0,0.0,18.0
-Semifinals,Mirage,Team Spirit,sh1ro,76561198081484775,Both,24.0,6.0,22.0,4.0,6.0,3.0,36.0
-Semifinals,Mirage,Team Spirit,tN1R,76561198872013168,Counter Terrorist,14.0,3.0,13.0,6.0,6.0,4.0,18.0
-Semifinals,Mirage,Team Spirit,tN1R,76561198872013168,Terrorist,17.0,2.0,12.0,0.0,0.0,0.0,18.0
-Semifinals,Mirage,Team Spirit,tN1R,76561198872013168,Both,31.0,5.0,25.0,6.0,6.0,4.0,36.0
-Semifinals,Mirage,Team Spirit,zweih,76561198210626739,Counter Terrorist,11.0,3.0,14.0,5.0,9.0,2.0,18.0
-Semifinals,Mirage,Team Spirit,zweih,76561198210626739,Terrorist,5.0,3.0,16.0,0.0,0.0,0.0,18.0
-Semifinals,Mirage,Team Spirit,zweih,76561198210626739,Both,16.0,6.0,30.0,5.0,9.0,2.0,36.0
-Semifinals,Mirage,Team Vitality,ZywOo,76561198113666193,Counter Terrorist,14.0,2.0,10.0,0.0,1.0,0.0,18.0
-Semifinals,Mirage,Team Vitality,ZywOo,76561198113666193,Terrorist,12.0,1.0,14.0,0.0,1.0,0.0,18.0
-Semifinals,Mirage,Team Vitality,ZywOo,76561198113666193,Both,26.0,3.0,24.0,0.0,2.0,0.0,36.0
-Semifinals,Mirage,Team Vitality,apEX,76561197989744167,Counter Terrorist,10.0,4.0,11.0,0.0,0.0,0.0,18.0
-Semifinals,Mirage,Team Vitality,apEX,76561197989744167,Terrorist,6.0,6.0,15.0,4.0,1.0,0.0,18.0
-Semifinals,Mirage,Team Vitality,apEX,76561197989744167,Both,16.0,10.0,26.0,4.0,1.0,0.0,36.0
-Semifinals,Mirage,Team Vitality,flameZ,76561197978835160,Counter Terrorist,13.0,4.0,13.0,0.0,1.0,0.0,18.0
-Semifinals,Mirage,Team Vitality,flameZ,76561197978835160,Terrorist,8.0,7.0,17.0,6.0,2.0,1.0,18.0
-Semifinals,Mirage,Team Vitality,flameZ,76561197978835160,Both,21.0,11.0,30.0,6.0,3.0,1.0,36.0
-Semifinals,Mirage,Team Vitality,mezii,76561197973140692,Counter Terrorist,18.0,4.0,9.0,0.0,1.0,0.0,18.0
-Semifinals,Mirage,Team Vitality,mezii,76561197973140692,Terrorist,15.0,2.0,14.0,4.0,3.0,0.0,18.0
-Semifinals,Mirage,Team Vitality,mezii,76561197973140692,Both,33.0,6.0,23.0,4.0,4.0,0.0,36.0
-Semifinals,Mirage,Team Vitality,ropz,76561197991272318,Counter Terrorist,15.0,3.0,9.0,0.0,1.0,0.0,18.0
-Semifinals,Mirage,Team Vitality,ropz,76561197991272318,Terrorist,17.0,3.0,12.0,2.0,1.0,0.0,18.0
-Semifinals,Mirage,Team Vitality,ropz,76561197991272318,Both,32.0,6.0,21.0,2.0,2.0,0.0,36.0
-Semifinals,Nuke,FaZe Clan,Twistzz,76561198016255205,Counter Terrorist,8.0,1.0,10.0,2.0,8.0,1.0,12.0
-Semifinals,Nuke,FaZe Clan,Twistzz,76561198016255205,Terrorist,11.0,1.0,9.0,6.0,5.0,0.0,12.0
-Semifinals,Nuke,FaZe Clan,Twistzz,76561198016255205,Both,19.0,2.0,19.0,8.0,13.0,1.0,24.0
-Semifinals,Nuke,FaZe Clan,broky,76561198201620490,Counter Terrorist,10.0,2.0,6.0,2.0,5.0,4.0,12.0
-Semifinals,Nuke,FaZe Clan,broky,76561198201620490,Terrorist,4.0,3.0,11.0,3.0,6.0,0.0,12.0
-Semifinals,Nuke,FaZe Clan,broky,76561198201620490,Both,14.0,5.0,17.0,5.0,11.0,4.0,24.0
-Semifinals,Nuke,FaZe Clan,frozen,76561198068422762,Counter Terrorist,13.0,3.0,4.0,3.0,2.0,1.0,12.0
-Semifinals,Nuke,FaZe Clan,frozen,76561198068422762,Terrorist,5.0,0.0,10.0,4.0,4.0,8.0,12.0
-Semifinals,Nuke,FaZe Clan,frozen,76561198068422762,Both,18.0,3.0,14.0,7.0,6.0,9.0,24.0
-Semifinals,Nuke,FaZe Clan,jcobbb,76561198178737429,Counter Terrorist,5.0,5.0,9.0,2.0,9.0,1.0,12.0
-Semifinals,Nuke,FaZe Clan,jcobbb,76561198178737429,Terrorist,4.0,1.0,11.0,2.0,3.0,0.0,12.0
-Semifinals,Nuke,FaZe Clan,jcobbb,76561198178737429,Both,9.0,6.0,20.0,4.0,12.0,1.0,24.0
-Semifinals,Nuke,FaZe Clan,karrigan,76561197989430253,Counter Terrorist,13.0,4.0,4.0,2.0,5.0,3.0,12.0
-Semifinals,Nuke,FaZe Clan,karrigan,76561197989430253,Terrorist,6.0,2.0,11.0,22.0,6.0,2.0,12.0
-Semifinals,Nuke,FaZe Clan,karrigan,76561197989430253,Both,19.0,6.0,15.0,24.0,11.0,5.0,24.0
-Semifinals,Nuke,Natus Vincere,Aleksib,76561198013243326,Counter Terrorist,11.0,4.0,5.0,11.0,17.0,4.0,12.0
-Semifinals,Nuke,Natus Vincere,Aleksib,76561198013243326,Terrorist,5.0,2.0,9.0,8.0,2.0,0.0,12.0
-Semifinals,Nuke,Natus Vincere,Aleksib,76561198013243326,Both,16.0,6.0,14.0,19.0,19.0,4.0,24.0
-Semifinals,Nuke,Natus Vincere,b1t,76561198246607476,Counter Terrorist,9.0,4.0,5.0,7.0,8.0,3.0,12.0
-Semifinals,Nuke,Natus Vincere,b1t,76561198246607476,Terrorist,7.0,2.0,11.0,0.0,3.0,1.0,12.0
-Semifinals,Nuke,Natus Vincere,b1t,76561198246607476,Both,16.0,6.0,16.0,7.0,11.0,4.0,24.0
-Semifinals,Nuke,Natus Vincere,iM,76561198050250233,Counter Terrorist,13.0,1.0,9.0,9.0,15.0,7.0,12.0
-Semifinals,Nuke,Natus Vincere,iM,76561198050250233,Terrorist,7.0,4.0,10.0,1.0,2.0,4.0,12.0
-Semifinals,Nuke,Natus Vincere,iM,76561198050250233,Both,20.0,5.0,19.0,10.0,17.0,11.0,24.0
-Semifinals,Nuke,Natus Vincere,makazze,76561199076189612,Counter Terrorist,6.0,2.0,7.0,4.0,14.0,9.0,12.0
-Semifinals,Nuke,Natus Vincere,makazze,76561199076189612,Terrorist,4.0,3.0,10.0,4.0,0.0,2.0,12.0
-Semifinals,Nuke,Natus Vincere,makazze,76561199076189612,Both,10.0,5.0,17.0,8.0,14.0,11.0,24.0
-Semifinals,Nuke,Natus Vincere,w0nderful,76561199063068840,Counter Terrorist,13.0,2.0,4.0,6.0,18.0,2.0,12.0
-Semifinals,Nuke,Natus Vincere,w0nderful,76561199063068840,Terrorist,9.0,1.0,9.0,1.0,4.0,0.0,12.0
-Semifinals,Nuke,Natus Vincere,w0nderful,76561199063068840,Both,22.0,3.0,13.0,7.0,22.0,2.0,24.0
+stages,map,team,player_name,player_steamid,side,Kills,Assists,Deaths,Smokes Thrown,Molotovs Thrown,Grenades,Headshots,Rounds Played,Headshot %
+Final,Dust2,FaZe Clan,Twistzz,76561198016255205,Counter Terrorist,6.0,7.0,10.0,5.0,6.0,3.0,2.0,12.0,33.33
+Final,Dust2,FaZe Clan,Twistzz,76561198016255205,Terrorist,0.0,0.0,4.0,3.0,0.0,0.0,0.0,4.0,0.0
+Final,Dust2,FaZe Clan,Twistzz,76561198016255205,Both,6.0,7.0,14.0,8.0,6.0,3.0,2.0,16.0,33.33
+Final,Dust2,FaZe Clan,broky,76561198201620490,Counter Terrorist,12.0,3.0,7.0,6.0,2.0,5.0,2.0,12.0,16.67
+Final,Dust2,FaZe Clan,broky,76561198201620490,Terrorist,0.0,0.0,4.0,0.0,0.0,0.0,0.0,4.0,0.0
+Final,Dust2,FaZe Clan,broky,76561198201620490,Both,12.0,3.0,11.0,6.0,2.0,5.0,2.0,16.0,16.67
+Final,Dust2,FaZe Clan,frozen,76561198068422762,Counter Terrorist,13.0,2.0,7.0,5.0,11.0,6.0,6.0,12.0,46.15
+Final,Dust2,FaZe Clan,frozen,76561198068422762,Terrorist,3.0,0.0,4.0,1.0,1.0,0.0,1.0,4.0,33.33
+Final,Dust2,FaZe Clan,frozen,76561198068422762,Both,16.0,2.0,11.0,6.0,12.0,6.0,7.0,16.0,43.75
+Final,Dust2,FaZe Clan,jcobbb,76561198178737429,Counter Terrorist,5.0,2.0,9.0,1.0,9.0,1.0,2.0,12.0,40.0
+Final,Dust2,FaZe Clan,jcobbb,76561198178737429,Terrorist,0.0,0.0,4.0,0.0,1.0,0.0,0.0,4.0,0.0
+Final,Dust2,FaZe Clan,jcobbb,76561198178737429,Both,5.0,2.0,13.0,1.0,10.0,1.0,2.0,16.0,40.0
+Final,Dust2,FaZe Clan,karrigan,76561197989430253,Counter Terrorist,3.0,2.0,9.0,4.0,8.0,0.0,2.0,12.0,66.67
+Final,Dust2,FaZe Clan,karrigan,76561197989430253,Terrorist,0.0,0.0,4.0,1.0,1.0,0.0,0.0,4.0,0.0
+Final,Dust2,FaZe Clan,karrigan,76561197989430253,Both,3.0,2.0,13.0,5.0,9.0,0.0,2.0,16.0,66.67
+Final,Dust2,Team Vitality,ZywOo,76561198113666193,Counter Terrorist,6.0,2.0,0.0,1.0,1.0,1.0,4.0,4.0,66.67
+Final,Dust2,Team Vitality,ZywOo,76561198113666193,Terrorist,11.0,2.0,8.0,6.0,2.0,1.0,1.0,12.0,9.09
+Final,Dust2,Team Vitality,ZywOo,76561198113666193,Both,17.0,4.0,8.0,7.0,3.0,2.0,5.0,16.0,29.41
+Final,Dust2,Team Vitality,apEX,76561197989744167,Counter Terrorist,4.0,2.0,1.0,1.0,1.0,2.0,1.0,4.0,25.0
+Final,Dust2,Team Vitality,apEX,76561197989744167,Terrorist,5.0,5.0,11.0,7.0,6.0,2.0,3.0,12.0,60.0
+Final,Dust2,Team Vitality,apEX,76561197989744167,Both,9.0,7.0,12.0,8.0,7.0,4.0,4.0,16.0,44.44
+Final,Dust2,Team Vitality,flameZ,76561197978835160,Counter Terrorist,1.0,0.0,0.0,2.0,2.0,1.0,1.0,4.0,100.0
+Final,Dust2,Team Vitality,flameZ,76561197978835160,Terrorist,11.0,1.0,9.0,2.0,7.0,1.0,6.0,12.0,54.55
+Final,Dust2,Team Vitality,flameZ,76561197978835160,Both,12.0,1.0,9.0,4.0,9.0,2.0,7.0,16.0,58.33
+Final,Dust2,Team Vitality,mezii,76561197973140692,Counter Terrorist,6.0,2.0,1.0,0.0,1.0,1.0,3.0,4.0,50.0
+Final,Dust2,Team Vitality,mezii,76561197973140692,Terrorist,7.0,3.0,5.0,8.0,5.0,0.0,4.0,12.0,57.14
+Final,Dust2,Team Vitality,mezii,76561197973140692,Both,13.0,5.0,6.0,8.0,6.0,1.0,7.0,16.0,53.85
+Final,Dust2,Team Vitality,ropz,76561197991272318,Counter Terrorist,3.0,0.0,1.0,4.0,4.0,0.0,3.0,4.0,100.0
+Final,Dust2,Team Vitality,ropz,76561197991272318,Terrorist,7.0,2.0,8.0,5.0,4.0,2.0,2.0,12.0,28.57
+Final,Dust2,Team Vitality,ropz,76561197991272318,Both,10.0,2.0,9.0,9.0,8.0,2.0,5.0,16.0,50.0
+Final,Inferno,FaZe Clan,Twistzz,76561198016255205,Counter Terrorist,4.0,3.0,3.0,2.0,5.0,1.0,3.0,10.0,75.0
+Final,Inferno,FaZe Clan,Twistzz,76561198016255205,Terrorist,7.0,1.0,9.0,7.0,8.0,2.0,4.0,12.0,57.14
+Final,Inferno,FaZe Clan,Twistzz,76561198016255205,Both,11.0,4.0,12.0,9.0,13.0,3.0,7.0,22.0,63.64
+Final,Inferno,FaZe Clan,broky,76561198201620490,Counter Terrorist,7.0,0.0,5.0,3.0,2.0,0.0,4.0,10.0,57.14
+Final,Inferno,FaZe Clan,broky,76561198201620490,Terrorist,12.0,4.0,10.0,9.0,4.0,2.0,5.0,12.0,41.67
+Final,Inferno,FaZe Clan,broky,76561198201620490,Both,19.0,4.0,15.0,12.0,6.0,2.0,9.0,22.0,47.37
+Final,Inferno,FaZe Clan,frozen,76561198068422762,Counter Terrorist,8.0,3.0,6.0,0.0,6.0,2.0,3.0,10.0,37.5
+Final,Inferno,FaZe Clan,frozen,76561198068422762,Terrorist,6.0,5.0,9.0,4.0,6.0,4.0,4.0,12.0,66.67
+Final,Inferno,FaZe Clan,frozen,76561198068422762,Both,14.0,8.0,15.0,4.0,12.0,6.0,7.0,22.0,50.0
+Final,Inferno,FaZe Clan,jcobbb,76561198178737429,Counter Terrorist,4.0,2.0,3.0,2.0,4.0,1.0,4.0,10.0,100.0
+Final,Inferno,FaZe Clan,jcobbb,76561198178737429,Terrorist,7.0,4.0,10.0,5.0,6.0,2.0,4.0,12.0,57.14
+Final,Inferno,FaZe Clan,jcobbb,76561198178737429,Both,11.0,6.0,13.0,7.0,10.0,3.0,8.0,22.0,72.73
+Final,Inferno,FaZe Clan,karrigan,76561197989430253,Counter Terrorist,6.0,1.0,6.0,3.0,6.0,1.0,2.0,10.0,33.33
+Final,Inferno,FaZe Clan,karrigan,76561197989430253,Terrorist,6.0,1.0,11.0,6.0,3.0,4.0,2.0,12.0,33.33
+Final,Inferno,FaZe Clan,karrigan,76561197989430253,Both,12.0,2.0,17.0,9.0,9.0,5.0,4.0,22.0,33.33
+Final,Inferno,Team Vitality,ZywOo,76561198113666193,Counter Terrorist,9.0,0.0,7.0,3.0,5.0,1.0,3.0,12.0,33.33
+Final,Inferno,Team Vitality,ZywOo,76561198113666193,Terrorist,7.0,3.0,5.0,2.0,0.0,1.0,0.0,10.0,0.0
+Final,Inferno,Team Vitality,ZywOo,76561198113666193,Both,16.0,3.0,12.0,5.0,5.0,2.0,3.0,22.0,18.75
+Final,Inferno,Team Vitality,apEX,76561197989744167,Counter Terrorist,6.0,5.0,10.0,4.0,8.0,7.0,1.0,12.0,16.67
+Final,Inferno,Team Vitality,apEX,76561197989744167,Terrorist,1.0,5.0,6.0,2.0,2.0,1.0,1.0,10.0,100.0
+Final,Inferno,Team Vitality,apEX,76561197989744167,Both,7.0,10.0,16.0,6.0,10.0,8.0,2.0,22.0,28.57
+Final,Inferno,Team Vitality,flameZ,76561197978835160,Counter Terrorist,5.0,5.0,9.0,9.0,10.0,5.0,1.0,12.0,20.0
+Final,Inferno,Team Vitality,flameZ,76561197978835160,Terrorist,6.0,4.0,7.0,2.0,0.0,2.0,4.0,10.0,66.67
+Final,Inferno,Team Vitality,flameZ,76561197978835160,Both,11.0,9.0,16.0,11.0,10.0,7.0,5.0,22.0,45.45
+Final,Inferno,Team Vitality,mezii,76561197973140692,Counter Terrorist,14.0,1.0,3.0,7.0,7.0,0.0,8.0,12.0,57.14
+Final,Inferno,Team Vitality,mezii,76561197973140692,Terrorist,9.0,1.0,5.0,3.0,2.0,1.0,4.0,10.0,44.44
+Final,Inferno,Team Vitality,mezii,76561197973140692,Both,23.0,2.0,8.0,10.0,9.0,1.0,12.0,22.0,52.17
+Final,Inferno,Team Vitality,ropz,76561197991272318,Counter Terrorist,14.0,3.0,8.0,5.0,8.0,5.0,5.0,12.0,35.71
+Final,Inferno,Team Vitality,ropz,76561197991272318,Terrorist,0.0,3.0,6.0,2.0,2.0,0.0,0.0,10.0,0.0
+Final,Inferno,Team Vitality,ropz,76561197991272318,Both,14.0,6.0,14.0,7.0,10.0,5.0,5.0,22.0,35.71
+Final,Nuke,FaZe Clan,Twistzz,76561198016255205,Counter Terrorist,8.0,0.0,4.0,1.0,2.0,1.0,3.0,7.0,37.5
+Final,Nuke,FaZe Clan,Twistzz,76561198016255205,Terrorist,11.0,2.0,7.0,12.0,7.0,3.0,9.0,12.0,81.82
+Final,Nuke,FaZe Clan,Twistzz,76561198016255205,Both,19.0,2.0,11.0,13.0,9.0,4.0,12.0,19.0,63.16
+Final,Nuke,FaZe Clan,broky,76561198201620490,Counter Terrorist,6.0,1.0,4.0,1.0,1.0,2.0,1.0,7.0,16.67
+Final,Nuke,FaZe Clan,broky,76561198201620490,Terrorist,6.0,4.0,10.0,7.0,7.0,0.0,3.0,12.0,50.0
+Final,Nuke,FaZe Clan,broky,76561198201620490,Both,12.0,5.0,14.0,8.0,8.0,2.0,4.0,19.0,33.33
+Final,Nuke,FaZe Clan,frozen,76561198068422762,Counter Terrorist,4.0,2.0,4.0,3.0,3.0,2.0,1.0,7.0,25.0
+Final,Nuke,FaZe Clan,frozen,76561198068422762,Terrorist,8.0,2.0,7.0,4.0,6.0,11.0,4.0,12.0,50.0
+Final,Nuke,FaZe Clan,frozen,76561198068422762,Both,12.0,4.0,11.0,7.0,9.0,13.0,5.0,19.0,41.67
+Final,Nuke,FaZe Clan,jcobbb,76561198178737429,Counter Terrorist,8.0,2.0,4.0,4.0,3.0,0.0,5.0,7.0,62.5
+Final,Nuke,FaZe Clan,jcobbb,76561198178737429,Terrorist,9.0,3.0,8.0,1.0,7.0,0.0,9.0,12.0,100.0
+Final,Nuke,FaZe Clan,jcobbb,76561198178737429,Both,17.0,5.0,12.0,5.0,10.0,0.0,14.0,19.0,82.35
+Final,Nuke,FaZe Clan,karrigan,76561197989430253,Counter Terrorist,13.0,1.0,4.0,2.0,5.0,2.0,6.0,7.0,46.15
+Final,Nuke,FaZe Clan,karrigan,76561197989430253,Terrorist,6.0,3.0,9.0,22.0,8.0,3.0,4.0,12.0,66.67
+Final,Nuke,FaZe Clan,karrigan,76561197989430253,Both,19.0,4.0,13.0,24.0,13.0,5.0,10.0,19.0,52.63
+Final,Nuke,Team Vitality,ZywOo,76561198113666193,Counter Terrorist,8.0,2.0,6.0,2.0,14.0,5.0,1.0,12.0,12.5
+Final,Nuke,Team Vitality,ZywOo,76561198113666193,Terrorist,4.0,1.0,8.0,0.0,0.0,0.0,1.0,7.0,25.0
+Final,Nuke,Team Vitality,ZywOo,76561198113666193,Both,12.0,3.0,14.0,2.0,14.0,5.0,2.0,19.0,16.67
+Final,Nuke,Team Vitality,apEX,76561197989744167,Counter Terrorist,7.0,3.0,7.0,3.0,6.0,8.0,2.0,12.0,28.57
+Final,Nuke,Team Vitality,apEX,76561197989744167,Terrorist,1.0,1.0,8.0,1.0,1.0,0.0,0.0,7.0,0.0
+Final,Nuke,Team Vitality,apEX,76561197989744167,Both,8.0,4.0,15.0,4.0,7.0,8.0,2.0,19.0,25.0
+Final,Nuke,Team Vitality,flameZ,76561197978835160,Counter Terrorist,10.0,1.0,11.0,11.0,13.0,5.0,8.0,12.0,80.0
+Final,Nuke,Team Vitality,flameZ,76561197978835160,Terrorist,3.0,2.0,8.0,1.0,0.0,0.0,2.0,7.0,66.67
+Final,Nuke,Team Vitality,flameZ,76561197978835160,Both,13.0,3.0,19.0,12.0,13.0,5.0,10.0,19.0,76.92
+Final,Nuke,Team Vitality,mezii,76561197973140692,Counter Terrorist,8.0,1.0,7.0,7.0,13.0,4.0,4.0,12.0,50.0
+Final,Nuke,Team Vitality,mezii,76561197973140692,Terrorist,5.0,0.0,7.0,4.0,0.0,0.0,4.0,7.0,80.0
+Final,Nuke,Team Vitality,mezii,76561197973140692,Both,13.0,1.0,14.0,11.0,13.0,4.0,8.0,19.0,61.54
+Final,Nuke,Team Vitality,ropz,76561197991272318,Counter Terrorist,8.0,3.0,9.0,8.0,10.0,4.0,5.0,12.0,62.5
+Final,Nuke,Team Vitality,ropz,76561197991272318,Terrorist,7.0,2.0,8.0,1.0,0.0,2.0,1.0,7.0,14.29
+Final,Nuke,Team Vitality,ropz,76561197991272318,Both,15.0,5.0,17.0,9.0,10.0,6.0,6.0,19.0,40.0
+Final,Overpass,FaZe Clan,Twistzz,76561198016255205,Counter Terrorist,5.0,0.0,11.0,5.0,20.0,6.0,4.0,12.0,80.0
+Final,Overpass,FaZe Clan,Twistzz,76561198016255205,Terrorist,3.0,0.0,2.0,1.0,0.0,1.0,2.0,3.0,66.67
+Final,Overpass,FaZe Clan,Twistzz,76561198016255205,Both,8.0,0.0,13.0,6.0,20.0,7.0,6.0,15.0,75.0
+Final,Overpass,FaZe Clan,broky,76561198201620490,Counter Terrorist,4.0,3.0,9.0,6.0,2.0,2.0,0.0,12.0,0.0
+Final,Overpass,FaZe Clan,broky,76561198201620490,Terrorist,2.0,3.0,2.0,1.0,0.0,0.0,2.0,3.0,100.0
+Final,Overpass,FaZe Clan,broky,76561198201620490,Both,6.0,6.0,11.0,7.0,2.0,2.0,2.0,15.0,33.33
+Final,Overpass,FaZe Clan,frozen,76561198068422762,Counter Terrorist,7.0,2.0,9.0,6.0,8.0,2.0,5.0,12.0,71.43
+Final,Overpass,FaZe Clan,frozen,76561198068422762,Terrorist,5.0,0.0,2.0,0.0,1.0,0.0,2.0,3.0,40.0
+Final,Overpass,FaZe Clan,frozen,76561198068422762,Both,12.0,2.0,11.0,6.0,9.0,2.0,7.0,15.0,58.33
+Final,Overpass,FaZe Clan,jcobbb,76561198178737429,Counter Terrorist,3.0,2.0,12.0,6.0,10.0,2.0,2.0,12.0,66.67
+Final,Overpass,FaZe Clan,jcobbb,76561198178737429,Terrorist,1.0,2.0,3.0,1.0,0.0,0.0,1.0,3.0,100.0
+Final,Overpass,FaZe Clan,jcobbb,76561198178737429,Both,4.0,4.0,15.0,7.0,10.0,2.0,3.0,15.0,75.0
+Final,Overpass,FaZe Clan,karrigan,76561197989430253,Counter Terrorist,6.0,0.0,10.0,7.0,5.0,4.0,2.0,12.0,33.33
+Final,Overpass,FaZe Clan,karrigan,76561197989430253,Terrorist,0.0,1.0,2.0,0.0,0.0,0.0,0.0,3.0,0.0
+Final,Overpass,FaZe Clan,karrigan,76561197989430253,Both,6.0,1.0,12.0,7.0,5.0,4.0,2.0,15.0,33.33
+Final,Overpass,Team Vitality,ZywOo,76561198113666193,Counter Terrorist,4.0,0.0,2.0,1.0,0.0,0.0,2.0,3.0,50.0
+Final,Overpass,Team Vitality,ZywOo,76561198113666193,Terrorist,10.0,5.0,4.0,6.0,3.0,2.0,7.0,12.0,70.0
+Final,Overpass,Team Vitality,ZywOo,76561198113666193,Both,14.0,5.0,6.0,7.0,3.0,2.0,9.0,15.0,64.29
+Final,Overpass,Team Vitality,apEX,76561197989744167,Counter Terrorist,2.0,1.0,2.0,0.0,0.0,0.0,1.0,3.0,50.0
+Final,Overpass,Team Vitality,apEX,76561197989744167,Terrorist,9.0,6.0,6.0,6.0,10.0,4.0,4.0,12.0,44.44
+Final,Overpass,Team Vitality,apEX,76561197989744167,Both,11.0,7.0,8.0,6.0,10.0,4.0,5.0,15.0,45.45
+Final,Overpass,Team Vitality,flameZ,76561197978835160,Counter Terrorist,3.0,2.0,2.0,0.0,1.0,1.0,1.0,3.0,33.33
+Final,Overpass,Team Vitality,flameZ,76561197978835160,Terrorist,6.0,2.0,7.0,4.0,1.0,2.0,5.0,12.0,83.33
+Final,Overpass,Team Vitality,flameZ,76561197978835160,Both,9.0,4.0,9.0,4.0,2.0,3.0,6.0,15.0,66.67
+Final,Overpass,Team Vitality,mezii,76561197973140692,Counter Terrorist,0.0,1.0,3.0,0.0,1.0,1.0,0.0,3.0,0.0
+Final,Overpass,Team Vitality,mezii,76561197973140692,Terrorist,6.0,4.0,3.0,8.0,12.0,1.0,5.0,12.0,83.33
+Final,Overpass,Team Vitality,mezii,76561197973140692,Both,6.0,5.0,6.0,8.0,13.0,2.0,5.0,15.0,83.33
+Final,Overpass,Team Vitality,ropz,76561197991272318,Counter Terrorist,2.0,1.0,2.0,2.0,1.0,0.0,0.0,3.0,0.0
+Final,Overpass,Team Vitality,ropz,76561197991272318,Terrorist,20.0,4.0,5.0,8.0,8.0,6.0,9.0,12.0,45.0
+Final,Overpass,Team Vitality,ropz,76561197991272318,Both,22.0,5.0,7.0,10.0,9.0,6.0,9.0,15.0,40.91
+Quarterfinals,Dust2,Team Falcons,NiKo,76561198041683378,Counter Terrorist,11.0,4.0,8.0,8.0,13.0,12.0,7.0,13.0,63.64
+Quarterfinals,Dust2,Team Falcons,NiKo,76561198041683378,Terrorist,11.0,1.0,12.0,4.0,2.0,2.0,5.0,15.0,45.45
+Quarterfinals,Dust2,Team Falcons,NiKo,76561198041683378,Both,22.0,5.0,20.0,12.0,15.0,14.0,12.0,28.0,54.55
+Quarterfinals,Dust2,Team Falcons,TeSeS,76561197996678278,Counter Terrorist,6.0,7.0,9.0,9.0,11.0,2.0,4.0,13.0,66.67
+Quarterfinals,Dust2,Team Falcons,TeSeS,76561197996678278,Terrorist,7.0,3.0,12.0,2.0,4.0,0.0,3.0,15.0,42.86
+Quarterfinals,Dust2,Team Falcons,TeSeS,76561197996678278,Both,13.0,10.0,21.0,11.0,15.0,2.0,7.0,28.0,53.85
+Quarterfinals,Dust2,Team Falcons,kyousuke,76561199032006224,Counter Terrorist,10.0,3.0,7.0,4.0,9.0,3.0,5.0,13.0,50.0
+Quarterfinals,Dust2,Team Falcons,kyousuke,76561199032006224,Terrorist,9.0,3.0,14.0,2.0,2.0,0.0,7.0,15.0,77.78
+Quarterfinals,Dust2,Team Falcons,kyousuke,76561199032006224,Both,19.0,6.0,21.0,6.0,11.0,3.0,12.0,28.0,63.16
+Quarterfinals,Dust2,Team Falcons,kyxsan,76561198057282432,Counter Terrorist,8.0,0.0,9.0,14.0,14.0,5.0,3.0,13.0,37.5
+Quarterfinals,Dust2,Team Falcons,kyxsan,76561198057282432,Terrorist,8.0,3.0,12.0,8.0,4.0,0.0,6.0,15.0,75.0
+Quarterfinals,Dust2,Team Falcons,kyxsan,76561198057282432,Both,16.0,3.0,21.0,22.0,18.0,5.0,9.0,28.0,56.25
+Quarterfinals,Dust2,Team Falcons,m0NESY,76561198074762801,Counter Terrorist,12.0,4.0,6.0,7.0,14.0,5.0,5.0,13.0,41.67
+Quarterfinals,Dust2,Team Falcons,m0NESY,76561198074762801,Terrorist,6.0,2.0,10.0,2.0,3.0,0.0,5.0,15.0,83.33
+Quarterfinals,Dust2,Team Falcons,m0NESY,76561198074762801,Both,18.0,6.0,16.0,9.0,17.0,5.0,10.0,28.0,55.56
+Quarterfinals,Dust2,Team Spirit,chopper,76561198045898864,Counter Terrorist,5.0,5.0,10.0,5.0,5.0,6.0,2.0,15.0,40.0
+Quarterfinals,Dust2,Team Spirit,chopper,76561198045898864,Terrorist,1.0,1.0,9.0,12.0,8.0,0.0,1.0,13.0,100.0
+Quarterfinals,Dust2,Team Spirit,chopper,76561198045898864,Both,6.0,6.0,19.0,17.0,13.0,6.0,3.0,28.0,50.0
+Quarterfinals,Dust2,Team Spirit,donk,76561198386265483,Counter Terrorist,13.0,2.0,7.0,5.0,4.0,2.0,5.0,15.0,38.46
+Quarterfinals,Dust2,Team Spirit,donk,76561198386265483,Terrorist,17.0,0.0,9.0,1.0,7.0,3.0,10.0,13.0,58.82
+Quarterfinals,Dust2,Team Spirit,donk,76561198386265483,Both,30.0,2.0,16.0,6.0,11.0,5.0,15.0,28.0,50.0
+Quarterfinals,Dust2,Team Spirit,sh1ro,76561198081484775,Counter Terrorist,15.0,5.0,6.0,6.0,2.0,3.0,0.0,15.0,0.0
+Quarterfinals,Dust2,Team Spirit,sh1ro,76561198081484775,Terrorist,8.0,4.0,9.0,6.0,4.0,0.0,2.0,13.0,25.0
+Quarterfinals,Dust2,Team Spirit,sh1ro,76561198081484775,Both,23.0,9.0,15.0,12.0,6.0,3.0,2.0,28.0,8.7
+Quarterfinals,Dust2,Team Spirit,tN1R,76561198872013168,Counter Terrorist,8.0,8.0,9.0,2.0,6.0,1.0,6.0,15.0,75.0
+Quarterfinals,Dust2,Team Spirit,tN1R,76561198872013168,Terrorist,7.0,5.0,9.0,4.0,4.0,4.0,5.0,13.0,71.43
+Quarterfinals,Dust2,Team Spirit,tN1R,76561198872013168,Both,15.0,13.0,18.0,6.0,10.0,5.0,11.0,28.0,73.33
+Quarterfinals,Dust2,Team Spirit,zweih,76561198210626739,Counter Terrorist,18.0,4.0,9.0,2.0,4.0,2.0,9.0,15.0,50.0
+Quarterfinals,Dust2,Team Spirit,zweih,76561198210626739,Terrorist,4.0,1.0,11.0,7.0,1.0,1.0,1.0,13.0,25.0
+Quarterfinals,Dust2,Team Spirit,zweih,76561198210626739,Both,22.0,5.0,20.0,9.0,5.0,3.0,10.0,28.0,45.45
+Quarterfinals,Dust2,Team Vitality,ZywOo,76561198113666193,Counter Terrorist,6.0,1.0,3.0,0.0,0.0,0.0,1.0,5.0,16.67
+Quarterfinals,Dust2,Team Vitality,ZywOo,76561198113666193,Terrorist,15.0,4.0,7.0,5.0,4.0,0.0,2.0,12.0,13.33
+Quarterfinals,Dust2,Team Vitality,ZywOo,76561198113666193,Both,21.0,5.0,10.0,5.0,4.0,0.0,3.0,17.0,14.29
+Quarterfinals,Dust2,Team Vitality,apEX,76561197989744167,Counter Terrorist,4.0,2.0,0.0,0.0,1.0,0.0,2.0,5.0,50.0
+Quarterfinals,Dust2,Team Vitality,apEX,76561197989744167,Terrorist,5.0,2.0,11.0,3.0,1.0,0.0,5.0,12.0,100.0
+Quarterfinals,Dust2,Team Vitality,apEX,76561197989744167,Both,9.0,4.0,11.0,3.0,2.0,0.0,7.0,17.0,77.78
+Quarterfinals,Dust2,Team Vitality,flameZ,76561197978835160,Counter Terrorist,5.0,2.0,2.0,0.0,0.0,0.0,4.0,5.0,80.0
+Quarterfinals,Dust2,Team Vitality,flameZ,76561197978835160,Terrorist,6.0,5.0,9.0,1.0,4.0,1.0,1.0,12.0,16.67
+Quarterfinals,Dust2,Team Vitality,flameZ,76561197978835160,Both,11.0,7.0,11.0,1.0,4.0,1.0,5.0,17.0,45.45
+Quarterfinals,Dust2,Team Vitality,mezii,76561197973140692,Counter Terrorist,5.0,1.0,2.0,0.0,0.0,0.0,5.0,5.0,100.0
+Quarterfinals,Dust2,Team Vitality,mezii,76561197973140692,Terrorist,7.0,4.0,8.0,2.0,2.0,0.0,6.0,12.0,85.71
+Quarterfinals,Dust2,Team Vitality,mezii,76561197973140692,Both,12.0,5.0,10.0,2.0,2.0,0.0,11.0,17.0,91.67
+Quarterfinals,Dust2,Team Vitality,ropz,76561197991272318,Counter Terrorist,5.0,0.0,1.0,0.0,0.0,0.0,4.0,5.0,80.0
+Quarterfinals,Dust2,Team Vitality,ropz,76561197991272318,Terrorist,13.0,3.0,7.0,2.0,1.0,1.0,9.0,12.0,69.23
+Quarterfinals,Dust2,Team Vitality,ropz,76561197991272318,Both,18.0,3.0,8.0,2.0,1.0,1.0,13.0,17.0,72.22
+Quarterfinals,Dust2,The MongolZ,910,76561199203563345,Counter Terrorist,12.0,2.0,9.0,4.0,2.0,3.0,6.0,12.0,50.0
+Quarterfinals,Dust2,The MongolZ,910,76561199203563345,Terrorist,2.0,0.0,5.0,0.0,0.0,0.0,2.0,5.0,100.0
+Quarterfinals,Dust2,The MongolZ,910,76561199203563345,Both,14.0,2.0,14.0,4.0,2.0,3.0,8.0,17.0,57.14
+Quarterfinals,Dust2,The MongolZ,Mzinho,76561198838822582,Counter Terrorist,14.0,1.0,9.0,3.0,6.0,1.0,8.0,12.0,57.14
+Quarterfinals,Dust2,The MongolZ,Mzinho,76561198838822582,Terrorist,1.0,1.0,5.0,0.0,0.0,0.0,0.0,5.0,0.0
+Quarterfinals,Dust2,The MongolZ,Mzinho,76561198838822582,Both,15.0,2.0,14.0,3.0,6.0,1.0,8.0,17.0,53.33
+Quarterfinals,Dust2,The MongolZ,Techno4K,76561198966340160,Counter Terrorist,6.0,3.0,8.0,6.0,6.0,1.0,5.0,12.0,83.33
+Quarterfinals,Dust2,The MongolZ,Techno4K,76561198966340160,Terrorist,1.0,0.0,5.0,0.0,0.0,0.0,0.0,5.0,0.0
+Quarterfinals,Dust2,The MongolZ,Techno4K,76561198966340160,Both,7.0,3.0,13.0,6.0,6.0,1.0,5.0,17.0,71.43
+Quarterfinals,Dust2,The MongolZ,bLitz,76561198959824088,Counter Terrorist,4.0,5.0,11.0,3.0,4.0,3.0,1.0,12.0,25.0
+Quarterfinals,Dust2,The MongolZ,bLitz,76561198959824088,Terrorist,3.0,1.0,5.0,0.0,1.0,0.0,1.0,5.0,33.33
+Quarterfinals,Dust2,The MongolZ,bLitz,76561198959824088,Both,7.0,6.0,16.0,3.0,5.0,3.0,2.0,17.0,28.57
+Quarterfinals,Dust2,The MongolZ,controlez,76561198362438171,Counter Terrorist,5.0,1.0,9.0,0.0,4.0,1.0,2.0,12.0,40.0
+Quarterfinals,Dust2,The MongolZ,controlez,76561198362438171,Terrorist,1.0,0.0,5.0,0.0,0.0,0.0,0.0,5.0,0.0
+Quarterfinals,Dust2,The MongolZ,controlez,76561198362438171,Both,6.0,1.0,14.0,0.0,4.0,1.0,2.0,17.0,33.33
+Quarterfinals,Inferno,FURIA Esports,FalleN,76561197960690195,Counter Terrorist,14.0,3.0,3.0,2.0,5.0,2.0,4.0,15.0,28.57
+Quarterfinals,Inferno,FURIA Esports,FalleN,76561197960690195,Terrorist,6.0,3.0,8.0,10.0,5.0,0.0,3.0,14.0,50.0
+Quarterfinals,Inferno,FURIA Esports,FalleN,76561197960690195,Both,20.0,6.0,11.0,12.0,10.0,2.0,7.0,29.0,35.0
+Quarterfinals,Inferno,FURIA Esports,KSCERATO,76561198058500492,Counter Terrorist,15.0,3.0,8.0,6.0,8.0,3.0,3.0,15.0,20.0
+Quarterfinals,Inferno,FURIA Esports,KSCERATO,76561198058500492,Terrorist,6.0,4.0,13.0,3.0,4.0,2.0,3.0,14.0,50.0
+Quarterfinals,Inferno,FURIA Esports,KSCERATO,76561198058500492,Both,21.0,7.0,21.0,9.0,12.0,5.0,6.0,29.0,28.57
+Quarterfinals,Inferno,FURIA Esports,YEKINDAR,76561198134401925,Counter Terrorist,8.0,7.0,8.0,1.0,8.0,3.0,4.0,15.0,50.0
+Quarterfinals,Inferno,FURIA Esports,YEKINDAR,76561198134401925,Terrorist,8.0,3.0,8.0,3.0,4.0,1.0,5.0,14.0,62.5
+Quarterfinals,Inferno,FURIA Esports,YEKINDAR,76561198134401925,Both,16.0,10.0,16.0,4.0,12.0,4.0,9.0,29.0,56.25
+Quarterfinals,Inferno,FURIA Esports,molodoy,76561198200982290,Counter Terrorist,9.0,3.0,9.0,2.0,5.0,0.0,1.0,15.0,11.11
+Quarterfinals,Inferno,FURIA Esports,molodoy,76561198200982290,Terrorist,9.0,3.0,11.0,3.0,0.0,4.0,3.0,14.0,33.33
+Quarterfinals,Inferno,FURIA Esports,molodoy,76561198200982290,Both,18.0,6.0,20.0,5.0,5.0,4.0,4.0,29.0,22.22
+Quarterfinals,Inferno,FURIA Esports,yuurih,76561198164970560,Counter Terrorist,12.0,2.0,9.0,3.0,6.0,0.0,5.0,15.0,41.67
+Quarterfinals,Inferno,FURIA Esports,yuurih,76561198164970560,Terrorist,7.0,4.0,10.0,4.0,5.0,2.0,2.0,14.0,28.57
+Quarterfinals,Inferno,FURIA Esports,yuurih,76561198164970560,Both,19.0,6.0,19.0,7.0,11.0,2.0,7.0,29.0,36.84
+Quarterfinals,Inferno,FaZe Clan,Twistzz,76561198016255205,Counter Terrorist,14.0,3.0,4.0,8.0,10.0,4.0,7.0,12.0,50.0
+Quarterfinals,Inferno,FaZe Clan,Twistzz,76561198016255205,Terrorist,2.0,0.0,1.0,2.0,1.0,0.0,1.0,3.0,50.0
+Quarterfinals,Inferno,FaZe Clan,Twistzz,76561198016255205,Both,16.0,3.0,5.0,10.0,11.0,4.0,8.0,15.0,50.0
+Quarterfinals,Inferno,FaZe Clan,broky,76561198201620490,Counter Terrorist,12.0,3.0,6.0,8.0,9.0,4.0,1.0,12.0,8.33
+Quarterfinals,Inferno,FaZe Clan,broky,76561198201620490,Terrorist,5.0,1.0,0.0,1.0,0.0,1.0,4.0,3.0,80.0
+Quarterfinals,Inferno,FaZe Clan,broky,76561198201620490,Both,17.0,4.0,6.0,9.0,9.0,5.0,5.0,15.0,29.41
+Quarterfinals,Inferno,FaZe Clan,frozen,76561198068422762,Counter Terrorist,15.0,5.0,5.0,6.0,13.0,9.0,8.0,12.0,53.33
+Quarterfinals,Inferno,FaZe Clan,frozen,76561198068422762,Terrorist,4.0,0.0,1.0,1.0,1.0,0.0,4.0,3.0,100.0
+Quarterfinals,Inferno,FaZe Clan,frozen,76561198068422762,Both,19.0,5.0,6.0,7.0,14.0,9.0,12.0,15.0,63.16
+Quarterfinals,Inferno,FaZe Clan,jcobbb,76561198178737429,Counter Terrorist,8.0,2.0,8.0,6.0,14.0,3.0,7.0,12.0,87.5
+Quarterfinals,Inferno,FaZe Clan,jcobbb,76561198178737429,Terrorist,3.0,0.0,0.0,0.0,2.0,0.0,3.0,3.0,100.0
+Quarterfinals,Inferno,FaZe Clan,jcobbb,76561198178737429,Both,11.0,2.0,8.0,6.0,16.0,3.0,10.0,15.0,90.91
+Quarterfinals,Inferno,FaZe Clan,karrigan,76561197989430253,Counter Terrorist,7.0,4.0,7.0,4.0,15.0,10.0,3.0,12.0,42.86
+Quarterfinals,Inferno,FaZe Clan,karrigan,76561197989430253,Terrorist,1.0,2.0,1.0,1.0,0.0,0.0,0.0,3.0,0.0
+Quarterfinals,Inferno,FaZe Clan,karrigan,76561197989430253,Both,8.0,6.0,8.0,5.0,15.0,10.0,3.0,15.0,37.5
+Quarterfinals,Inferno,MOUZ,Brollan,76561198138828475,Counter Terrorist,0.0,0.0,3.0,0.0,0.0,0.0,0.0,3.0,0.0
+Quarterfinals,Inferno,MOUZ,Brollan,76561198138828475,Terrorist,1.0,1.0,12.0,6.0,4.0,2.0,0.0,12.0,0.0
+Quarterfinals,Inferno,MOUZ,Brollan,76561198138828475,Both,1.0,1.0,15.0,6.0,4.0,2.0,0.0,15.0,0.0
+Quarterfinals,Inferno,MOUZ,Jimpphat,76561198855375325,Counter Terrorist,0.0,0.0,3.0,0.0,0.0,1.0,0.0,3.0,0.0
+Quarterfinals,Inferno,MOUZ,Jimpphat,76561198855375325,Terrorist,5.0,3.0,11.0,1.0,2.0,1.0,1.0,12.0,20.0
+Quarterfinals,Inferno,MOUZ,Jimpphat,76561198855375325,Both,5.0,3.0,14.0,1.0,2.0,2.0,1.0,15.0,20.0
+Quarterfinals,Inferno,MOUZ,Spinx,76561198063336407,Counter Terrorist,0.0,1.0,3.0,0.0,0.0,0.0,0.0,3.0,0.0
+Quarterfinals,Inferno,MOUZ,Spinx,76561198063336407,Terrorist,7.0,2.0,12.0,4.0,3.0,1.0,5.0,12.0,71.43
+Quarterfinals,Inferno,MOUZ,Spinx,76561198063336407,Both,7.0,3.0,15.0,4.0,3.0,1.0,5.0,15.0,71.43
+Quarterfinals,Inferno,MOUZ,torzsi,76561198355739212,Counter Terrorist,2.0,0.0,3.0,1.0,0.0,0.0,2.0,3.0,100.0
+Quarterfinals,Inferno,MOUZ,torzsi,76561198355739212,Terrorist,14.0,0.0,10.0,4.0,2.0,0.0,7.0,12.0,50.0
+Quarterfinals,Inferno,MOUZ,torzsi,76561198355739212,Both,16.0,0.0,13.0,5.0,2.0,0.0,9.0,15.0,56.25
+Quarterfinals,Inferno,MOUZ,xertioN,76561198193174134,Counter Terrorist,1.0,0.0,3.0,1.0,0.0,1.0,1.0,3.0,100.0
+Quarterfinals,Inferno,MOUZ,xertioN,76561198193174134,Terrorist,3.0,6.0,11.0,3.0,7.0,4.0,3.0,12.0,100.0
+Quarterfinals,Inferno,MOUZ,xertioN,76561198193174134,Both,4.0,6.0,14.0,4.0,7.0,5.0,4.0,15.0,100.0
+Quarterfinals,Inferno,Natus Vincere,Aleksib,76561198013243326,Counter Terrorist,10.0,4.0,9.0,6.0,18.0,6.0,4.0,14.0,40.0
+Quarterfinals,Inferno,Natus Vincere,Aleksib,76561198013243326,Terrorist,3.0,4.0,11.0,2.0,1.0,0.0,2.0,15.0,66.67
+Quarterfinals,Inferno,Natus Vincere,Aleksib,76561198013243326,Both,13.0,8.0,20.0,8.0,19.0,6.0,6.0,29.0,46.15
+Quarterfinals,Inferno,Natus Vincere,b1t,76561198246607476,Counter Terrorist,9.0,3.0,5.0,7.0,16.0,3.0,7.0,14.0,77.78
+Quarterfinals,Inferno,Natus Vincere,b1t,76561198246607476,Terrorist,8.0,2.0,9.0,2.0,0.0,0.0,7.0,15.0,87.5
+Quarterfinals,Inferno,Natus Vincere,b1t,76561198246607476,Both,17.0,5.0,14.0,9.0,16.0,3.0,14.0,29.0,82.35
+Quarterfinals,Inferno,Natus Vincere,iM,76561198050250233,Counter Terrorist,14.0,4.0,5.0,11.0,7.0,3.0,4.0,14.0,28.57
+Quarterfinals,Inferno,Natus Vincere,iM,76561198050250233,Terrorist,10.0,3.0,13.0,3.0,0.0,0.0,6.0,15.0,60.0
+Quarterfinals,Inferno,Natus Vincere,iM,76561198050250233,Both,24.0,7.0,18.0,14.0,7.0,3.0,10.0,29.0,41.67
+Quarterfinals,Inferno,Natus Vincere,makazze,76561199076189612,Counter Terrorist,8.0,5.0,10.0,6.0,15.0,10.0,2.0,14.0,25.0
+Quarterfinals,Inferno,Natus Vincere,makazze,76561199076189612,Terrorist,9.0,2.0,14.0,4.0,2.0,1.0,7.0,15.0,77.78
+Quarterfinals,Inferno,Natus Vincere,makazze,76561199076189612,Both,17.0,7.0,24.0,10.0,17.0,11.0,9.0,29.0,52.94
+Quarterfinals,Inferno,Natus Vincere,w0nderful,76561199063068840,Counter Terrorist,9.0,5.0,7.0,2.0,10.0,4.0,4.0,14.0,44.44
+Quarterfinals,Inferno,Natus Vincere,w0nderful,76561199063068840,Terrorist,7.0,4.0,11.0,2.0,1.0,1.0,5.0,15.0,71.43
+Quarterfinals,Inferno,Natus Vincere,w0nderful,76561199063068840,Both,16.0,9.0,18.0,4.0,11.0,5.0,9.0,29.0,56.25
+Quarterfinals,Mirage,FURIA Esports,FalleN,76561197960690195,Counter Terrorist,5.0,2.0,11.0,3.0,3.0,1.0,3.0,12.0,60.0
+Quarterfinals,Mirage,FURIA Esports,FalleN,76561197960690195,Terrorist,0.0,2.0,6.0,1.0,0.0,0.0,0.0,6.0,0.0
+Quarterfinals,Mirage,FURIA Esports,FalleN,76561197960690195,Both,5.0,4.0,17.0,4.0,3.0,1.0,3.0,18.0,60.0
+Quarterfinals,Mirage,FURIA Esports,KSCERATO,76561198058500492,Counter Terrorist,12.0,0.0,12.0,2.0,1.0,2.0,4.0,12.0,33.33
+Quarterfinals,Mirage,FURIA Esports,KSCERATO,76561198058500492,Terrorist,3.0,1.0,6.0,0.0,0.0,0.0,1.0,6.0,33.33
+Quarterfinals,Mirage,FURIA Esports,KSCERATO,76561198058500492,Both,15.0,1.0,18.0,2.0,1.0,2.0,5.0,18.0,33.33
+Quarterfinals,Mirage,FURIA Esports,YEKINDAR,76561198134401925,Counter Terrorist,9.0,4.0,11.0,3.0,6.0,0.0,5.0,12.0,55.56
+Quarterfinals,Mirage,FURIA Esports,YEKINDAR,76561198134401925,Terrorist,2.0,2.0,6.0,0.0,0.0,0.0,0.0,6.0,0.0
+Quarterfinals,Mirage,FURIA Esports,YEKINDAR,76561198134401925,Both,11.0,6.0,17.0,3.0,6.0,0.0,5.0,18.0,45.45
+Quarterfinals,Mirage,FURIA Esports,molodoy,76561198200982290,Counter Terrorist,4.0,4.0,12.0,0.0,4.0,0.0,0.0,12.0,0.0
+Quarterfinals,Mirage,FURIA Esports,molodoy,76561198200982290,Terrorist,7.0,0.0,5.0,0.0,0.0,0.0,5.0,6.0,71.43
+Quarterfinals,Mirage,FURIA Esports,molodoy,76561198200982290,Both,11.0,4.0,17.0,0.0,4.0,0.0,5.0,18.0,45.45
+Quarterfinals,Mirage,FURIA Esports,yuurih,76561198164970560,Counter Terrorist,8.0,1.0,11.0,6.0,3.0,3.0,6.0,12.0,75.0
+Quarterfinals,Mirage,FURIA Esports,yuurih,76561198164970560,Terrorist,2.0,1.0,5.0,0.0,0.0,0.0,2.0,6.0,100.0
+Quarterfinals,Mirage,FURIA Esports,yuurih,76561198164970560,Both,10.0,2.0,16.0,6.0,3.0,3.0,8.0,18.0,80.0
+Quarterfinals,Mirage,Natus Vincere,Aleksib,76561198013243326,Counter Terrorist,7.0,1.0,1.0,2.0,1.0,0.0,4.0,6.0,57.14
+Quarterfinals,Mirage,Natus Vincere,Aleksib,76561198013243326,Terrorist,6.0,6.0,6.0,6.0,4.0,2.0,1.0,12.0,16.67
+Quarterfinals,Mirage,Natus Vincere,Aleksib,76561198013243326,Both,13.0,7.0,7.0,8.0,5.0,2.0,5.0,18.0,38.46
+Quarterfinals,Mirage,Natus Vincere,b1t,76561198246607476,Counter Terrorist,5.0,2.0,4.0,2.0,0.0,0.0,4.0,6.0,80.0
+Quarterfinals,Mirage,Natus Vincere,b1t,76561198246607476,Terrorist,13.0,1.0,6.0,4.0,2.0,1.0,6.0,12.0,46.15
+Quarterfinals,Mirage,Natus Vincere,b1t,76561198246607476,Both,18.0,3.0,10.0,6.0,2.0,1.0,10.0,18.0,55.56
+Quarterfinals,Mirage,Natus Vincere,iM,76561198050250233,Counter Terrorist,5.0,1.0,2.0,0.0,2.0,0.0,4.0,6.0,80.0
+Quarterfinals,Mirage,Natus Vincere,iM,76561198050250233,Terrorist,15.0,5.0,9.0,2.0,2.0,1.0,6.0,12.0,40.0
+Quarterfinals,Mirage,Natus Vincere,iM,76561198050250233,Both,20.0,6.0,11.0,2.0,4.0,1.0,10.0,18.0,50.0
+Quarterfinals,Mirage,Natus Vincere,makazze,76561199076189612,Counter Terrorist,7.0,3.0,2.0,1.0,3.0,0.0,4.0,6.0,57.14
+Quarterfinals,Mirage,Natus Vincere,makazze,76561199076189612,Terrorist,7.0,2.0,10.0,5.0,0.0,1.0,3.0,12.0,42.86
+Quarterfinals,Mirage,Natus Vincere,makazze,76561199076189612,Both,14.0,5.0,12.0,6.0,3.0,1.0,7.0,18.0,50.0
+Quarterfinals,Mirage,Natus Vincere,w0nderful,76561199063068840,Counter Terrorist,4.0,2.0,5.0,0.0,0.0,0.0,2.0,6.0,50.0
+Quarterfinals,Mirage,Natus Vincere,w0nderful,76561199063068840,Terrorist,16.0,3.0,7.0,3.0,4.0,3.0,8.0,12.0,50.0
+Quarterfinals,Mirage,Natus Vincere,w0nderful,76561199063068840,Both,20.0,5.0,12.0,3.0,4.0,3.0,10.0,18.0,50.0
+Quarterfinals,Mirage,Team Vitality,ZywOo,76561198113666193,Counter Terrorist,11.0,3.0,8.0,5.0,5.0,0.0,2.0,12.0,18.18
+Quarterfinals,Mirage,Team Vitality,ZywOo,76561198113666193,Terrorist,15.0,1.0,1.0,0.0,0.0,0.0,4.0,6.0,26.67
+Quarterfinals,Mirage,Team Vitality,ZywOo,76561198113666193,Both,26.0,4.0,9.0,5.0,5.0,0.0,6.0,18.0,23.08
+Quarterfinals,Mirage,Team Vitality,apEX,76561197989744167,Counter Terrorist,6.0,4.0,8.0,3.0,5.0,2.0,2.0,12.0,33.33
+Quarterfinals,Mirage,Team Vitality,apEX,76561197989744167,Terrorist,0.0,1.0,5.0,0.0,0.0,0.0,0.0,6.0,0.0
+Quarterfinals,Mirage,Team Vitality,apEX,76561197989744167,Both,6.0,5.0,13.0,3.0,5.0,2.0,2.0,18.0,33.33
+Quarterfinals,Mirage,Team Vitality,flameZ,76561197978835160,Counter Terrorist,12.0,1.0,8.0,4.0,3.0,4.0,6.0,12.0,50.0
+Quarterfinals,Mirage,Team Vitality,flameZ,76561197978835160,Terrorist,4.0,2.0,5.0,2.0,0.0,0.0,4.0,6.0,100.0
+Quarterfinals,Mirage,Team Vitality,flameZ,76561197978835160,Both,16.0,3.0,13.0,6.0,3.0,4.0,10.0,18.0,62.5
+Quarterfinals,Mirage,Team Vitality,mezii,76561197973140692,Counter Terrorist,14.0,2.0,6.0,4.0,7.0,3.0,7.0,12.0,50.0
+Quarterfinals,Mirage,Team Vitality,mezii,76561197973140692,Terrorist,5.0,1.0,6.0,1.0,0.0,0.0,4.0,6.0,80.0
+Quarterfinals,Mirage,Team Vitality,mezii,76561197973140692,Both,19.0,3.0,12.0,5.0,7.0,3.0,11.0,18.0,57.89
+Quarterfinals,Mirage,Team Vitality,ropz,76561197991272318,Counter Terrorist,7.0,4.0,6.0,3.0,3.0,0.0,3.0,12.0,42.86
+Quarterfinals,Mirage,Team Vitality,ropz,76561197991272318,Terrorist,5.0,1.0,4.0,0.0,0.0,0.0,3.0,6.0,60.0
+Quarterfinals,Mirage,Team Vitality,ropz,76561197991272318,Both,12.0,5.0,10.0,3.0,3.0,0.0,6.0,18.0,50.0
+Quarterfinals,Mirage,The MongolZ,910,76561199203563345,Counter Terrorist,4.0,0.0,6.0,0.0,0.0,0.0,0.0,6.0,0.0
+Quarterfinals,Mirage,The MongolZ,910,76561199203563345,Terrorist,6.0,2.0,11.0,1.0,5.0,0.0,2.0,12.0,33.33
+Quarterfinals,Mirage,The MongolZ,910,76561199203563345,Both,10.0,2.0,17.0,1.0,5.0,0.0,2.0,18.0,20.0
+Quarterfinals,Mirage,The MongolZ,Mzinho,76561198838822582,Counter Terrorist,4.0,1.0,6.0,0.0,0.0,0.0,4.0,6.0,100.0
+Quarterfinals,Mirage,The MongolZ,Mzinho,76561198838822582,Terrorist,11.0,2.0,9.0,2.0,4.0,1.0,6.0,12.0,54.55
+Quarterfinals,Mirage,The MongolZ,Mzinho,76561198838822582,Both,15.0,3.0,15.0,2.0,4.0,1.0,10.0,18.0,66.67
+Quarterfinals,Mirage,The MongolZ,Techno4K,76561198966340160,Counter Terrorist,5.0,3.0,5.0,0.0,0.0,0.0,3.0,6.0,60.0
+Quarterfinals,Mirage,The MongolZ,Techno4K,76561198966340160,Terrorist,8.0,0.0,10.0,3.0,2.0,1.0,4.0,12.0,50.0
+Quarterfinals,Mirage,The MongolZ,Techno4K,76561198966340160,Both,13.0,3.0,15.0,3.0,2.0,1.0,7.0,18.0,53.85
+Quarterfinals,Mirage,The MongolZ,bLitz,76561198959824088,Counter Terrorist,4.0,3.0,6.0,0.0,0.0,0.0,1.0,6.0,25.0
+Quarterfinals,Mirage,The MongolZ,bLitz,76561198959824088,Terrorist,8.0,3.0,10.0,7.0,2.0,3.0,5.0,12.0,62.5
+Quarterfinals,Mirage,The MongolZ,bLitz,76561198959824088,Both,12.0,6.0,16.0,7.0,2.0,3.0,6.0,18.0,50.0
+Quarterfinals,Mirage,The MongolZ,controlez,76561198362438171,Counter Terrorist,4.0,1.0,6.0,0.0,0.0,0.0,3.0,6.0,75.0
+Quarterfinals,Mirage,The MongolZ,controlez,76561198362438171,Terrorist,3.0,2.0,10.0,3.0,1.0,2.0,2.0,12.0,66.67
+Quarterfinals,Mirage,The MongolZ,controlez,76561198362438171,Both,7.0,3.0,16.0,3.0,1.0,2.0,5.0,18.0,71.43
+Quarterfinals,Nuke,FaZe Clan,Twistzz,76561198016255205,Counter Terrorist,8.0,1.0,8.0,4.0,3.0,5.0,4.0,12.0,50.0
+Quarterfinals,Nuke,FaZe Clan,Twistzz,76561198016255205,Terrorist,8.0,0.0,7.0,7.0,8.0,0.0,5.0,12.0,62.5
+Quarterfinals,Nuke,FaZe Clan,Twistzz,76561198016255205,Both,16.0,1.0,15.0,11.0,11.0,5.0,9.0,24.0,56.25
+Quarterfinals,Nuke,FaZe Clan,broky,76561198201620490,Counter Terrorist,13.0,0.0,7.0,2.0,2.0,2.0,2.0,12.0,15.38
+Quarterfinals,Nuke,FaZe Clan,broky,76561198201620490,Terrorist,11.0,6.0,5.0,6.0,9.0,0.0,5.0,12.0,45.45
+Quarterfinals,Nuke,FaZe Clan,broky,76561198201620490,Both,24.0,6.0,12.0,8.0,11.0,2.0,7.0,24.0,29.17
+Quarterfinals,Nuke,FaZe Clan,frozen,76561198068422762,Counter Terrorist,10.0,2.0,10.0,3.0,2.0,0.0,5.0,12.0,50.0
+Quarterfinals,Nuke,FaZe Clan,frozen,76561198068422762,Terrorist,8.0,3.0,8.0,10.0,5.0,9.0,7.0,12.0,87.5
+Quarterfinals,Nuke,FaZe Clan,frozen,76561198068422762,Both,18.0,5.0,18.0,13.0,7.0,9.0,12.0,24.0,66.67
+Quarterfinals,Nuke,FaZe Clan,jcobbb,76561198178737429,Counter Terrorist,6.0,4.0,9.0,3.0,4.0,2.0,2.0,12.0,33.33
+Quarterfinals,Nuke,FaZe Clan,jcobbb,76561198178737429,Terrorist,10.0,3.0,9.0,2.0,6.0,2.0,6.0,12.0,60.0
+Quarterfinals,Nuke,FaZe Clan,jcobbb,76561198178737429,Both,16.0,7.0,18.0,5.0,10.0,4.0,8.0,24.0,50.0
+Quarterfinals,Nuke,FaZe Clan,karrigan,76561197989430253,Counter Terrorist,7.0,2.0,10.0,2.0,4.0,2.0,4.0,12.0,57.14
+Quarterfinals,Nuke,FaZe Clan,karrigan,76561197989430253,Terrorist,4.0,3.0,6.0,19.0,8.0,1.0,1.0,12.0,25.0
+Quarterfinals,Nuke,FaZe Clan,karrigan,76561197989430253,Both,11.0,5.0,16.0,21.0,12.0,3.0,5.0,24.0,45.45
+Quarterfinals,Nuke,MOUZ,Brollan,76561198138828475,Counter Terrorist,9.0,2.0,8.0,11.0,9.0,1.0,4.0,12.0,44.44
+Quarterfinals,Nuke,MOUZ,Brollan,76561198138828475,Terrorist,10.0,3.0,9.0,9.0,5.0,0.0,7.0,12.0,70.0
+Quarterfinals,Nuke,MOUZ,Brollan,76561198138828475,Both,19.0,5.0,17.0,20.0,14.0,1.0,11.0,24.0,57.89
+Quarterfinals,Nuke,MOUZ,Jimpphat,76561198855375325,Counter Terrorist,6.0,5.0,8.0,8.0,10.0,3.0,4.0,12.0,66.67
+Quarterfinals,Nuke,MOUZ,Jimpphat,76561198855375325,Terrorist,10.0,0.0,9.0,2.0,1.0,4.0,7.0,12.0,70.0
+Quarterfinals,Nuke,MOUZ,Jimpphat,76561198855375325,Both,16.0,5.0,17.0,10.0,11.0,7.0,11.0,24.0,68.75
+Quarterfinals,Nuke,MOUZ,Spinx,76561198063336407,Counter Terrorist,5.0,2.0,9.0,9.0,12.0,7.0,2.0,12.0,40.0
+Quarterfinals,Nuke,MOUZ,Spinx,76561198063336407,Terrorist,10.0,2.0,10.0,1.0,2.0,1.0,6.0,12.0,60.0
+Quarterfinals,Nuke,MOUZ,Spinx,76561198063336407,Both,15.0,4.0,19.0,10.0,14.0,8.0,8.0,24.0,53.33
+Quarterfinals,Nuke,MOUZ,torzsi,76561198355739212,Counter Terrorist,9.0,1.0,8.0,4.0,10.0,7.0,1.0,12.0,11.11
+Quarterfinals,Nuke,MOUZ,torzsi,76561198355739212,Terrorist,6.0,3.0,8.0,1.0,4.0,0.0,2.0,12.0,33.33
+Quarterfinals,Nuke,MOUZ,torzsi,76561198355739212,Both,15.0,4.0,16.0,5.0,14.0,7.0,3.0,24.0,20.0
+Quarterfinals,Nuke,MOUZ,xertioN,76561198193174134,Counter Terrorist,6.0,2.0,8.0,5.0,11.0,7.0,3.0,12.0,50.0
+Quarterfinals,Nuke,MOUZ,xertioN,76561198193174134,Terrorist,9.0,6.0,9.0,5.0,3.0,1.0,4.0,12.0,44.44
+Quarterfinals,Nuke,MOUZ,xertioN,76561198193174134,Both,15.0,8.0,17.0,10.0,14.0,8.0,7.0,24.0,46.67
+Quarterfinals,Nuke,Team Falcons,NiKo,76561198041683378,Counter Terrorist,1.0,0.0,5.0,1.0,0.0,1.0,0.0,5.0,0.0
+Quarterfinals,Nuke,Team Falcons,NiKo,76561198041683378,Terrorist,6.0,0.0,11.0,4.0,3.0,0.0,3.0,12.0,50.0
+Quarterfinals,Nuke,Team Falcons,NiKo,76561198041683378,Both,7.0,0.0,16.0,5.0,3.0,1.0,3.0,17.0,42.86
+Quarterfinals,Nuke,Team Falcons,TeSeS,76561197996678278,Counter Terrorist,2.0,0.0,5.0,1.0,2.0,0.0,2.0,5.0,100.0
+Quarterfinals,Nuke,Team Falcons,TeSeS,76561197996678278,Terrorist,1.0,0.0,10.0,5.0,4.0,8.0,1.0,12.0,100.0
+Quarterfinals,Nuke,Team Falcons,TeSeS,76561197996678278,Both,3.0,0.0,15.0,6.0,6.0,8.0,3.0,17.0,100.0
+Quarterfinals,Nuke,Team Falcons,kyousuke,76561199032006224,Counter Terrorist,3.0,0.0,5.0,0.0,1.0,0.0,2.0,5.0,66.67
+Quarterfinals,Nuke,Team Falcons,kyousuke,76561199032006224,Terrorist,11.0,5.0,11.0,2.0,1.0,1.0,8.0,12.0,72.73
+Quarterfinals,Nuke,Team Falcons,kyousuke,76561199032006224,Both,14.0,5.0,16.0,2.0,2.0,1.0,10.0,17.0,71.43
+Quarterfinals,Nuke,Team Falcons,kyxsan,76561198057282432,Counter Terrorist,0.0,1.0,5.0,1.0,0.0,0.0,0.0,5.0,0.0
+Quarterfinals,Nuke,Team Falcons,kyxsan,76561198057282432,Terrorist,3.0,3.0,10.0,19.0,6.0,1.0,3.0,12.0,100.0
+Quarterfinals,Nuke,Team Falcons,kyxsan,76561198057282432,Both,3.0,4.0,15.0,20.0,6.0,1.0,3.0,17.0,100.0
+Quarterfinals,Nuke,Team Falcons,m0NESY,76561198074762801,Counter Terrorist,0.0,0.0,5.0,0.0,1.0,0.0,0.0,5.0,0.0
+Quarterfinals,Nuke,Team Falcons,m0NESY,76561198074762801,Terrorist,11.0,1.0,8.0,3.0,2.0,3.0,8.0,12.0,72.73
+Quarterfinals,Nuke,Team Falcons,m0NESY,76561198074762801,Both,11.0,1.0,13.0,3.0,3.0,3.0,8.0,17.0,72.73
+Quarterfinals,Nuke,Team Spirit,chopper,76561198045898864,Counter Terrorist,6.0,3.0,8.0,8.0,13.0,7.0,4.0,12.0,66.67
+Quarterfinals,Nuke,Team Spirit,chopper,76561198045898864,Terrorist,5.0,0.0,1.0,4.0,1.0,0.0,4.0,5.0,80.0
+Quarterfinals,Nuke,Team Spirit,chopper,76561198045898864,Both,11.0,3.0,9.0,12.0,14.0,7.0,8.0,17.0,72.73
+Quarterfinals,Nuke,Team Spirit,donk,76561198386265483,Counter Terrorist,10.0,0.0,5.0,6.0,13.0,4.0,4.0,12.0,40.0
+Quarterfinals,Nuke,Team Spirit,donk,76561198386265483,Terrorist,6.0,0.0,1.0,2.0,0.0,0.0,6.0,5.0,100.0
+Quarterfinals,Nuke,Team Spirit,donk,76561198386265483,Both,16.0,0.0,6.0,8.0,13.0,4.0,10.0,17.0,62.5
+Quarterfinals,Nuke,Team Spirit,sh1ro,76561198081484775,Counter Terrorist,9.0,3.0,4.0,6.0,10.0,6.0,5.0,12.0,55.56
+Quarterfinals,Nuke,Team Spirit,sh1ro,76561198081484775,Terrorist,2.0,2.0,1.0,4.0,1.0,1.0,1.0,5.0,50.0
+Quarterfinals,Nuke,Team Spirit,sh1ro,76561198081484775,Both,11.0,5.0,5.0,10.0,11.0,7.0,6.0,17.0,54.55
+Quarterfinals,Nuke,Team Spirit,tN1R,76561198872013168,Counter Terrorist,7.0,4.0,7.0,9.0,14.0,7.0,5.0,12.0,71.43
+Quarterfinals,Nuke,Team Spirit,tN1R,76561198872013168,Terrorist,9.0,0.0,2.0,0.0,2.0,2.0,4.0,5.0,44.44
+Quarterfinals,Nuke,Team Spirit,tN1R,76561198872013168,Both,16.0,4.0,9.0,9.0,16.0,9.0,9.0,17.0,56.25
+Quarterfinals,Nuke,Team Spirit,zweih,76561198210626739,Counter Terrorist,18.0,2.0,8.0,7.0,14.0,3.0,12.0,12.0,66.67
+Quarterfinals,Nuke,Team Spirit,zweih,76561198210626739,Terrorist,3.0,0.0,1.0,1.0,3.0,0.0,2.0,5.0,66.67
+Quarterfinals,Nuke,Team Spirit,zweih,76561198210626739,Both,21.0,2.0,9.0,8.0,17.0,3.0,14.0,17.0,66.67
+Quarterfinals,Train,FURIA Esports,FalleN,76561197960690195,Counter Terrorist,6.0,1.0,10.0,5.0,10.0,5.0,3.0,12.0,50.0
+Quarterfinals,Train,FURIA Esports,FalleN,76561197960690195,Terrorist,2.0,0.0,3.0,0.0,1.0,0.0,1.0,4.0,50.0
+Quarterfinals,Train,FURIA Esports,FalleN,76561197960690195,Both,8.0,1.0,13.0,5.0,11.0,5.0,4.0,16.0,50.0
+Quarterfinals,Train,FURIA Esports,KSCERATO,76561198058500492,Counter Terrorist,10.0,4.0,9.0,12.0,8.0,8.0,4.0,12.0,40.0
+Quarterfinals,Train,FURIA Esports,KSCERATO,76561198058500492,Terrorist,2.0,1.0,3.0,2.0,1.0,2.0,2.0,4.0,100.0
+Quarterfinals,Train,FURIA Esports,KSCERATO,76561198058500492,Both,12.0,5.0,12.0,14.0,9.0,10.0,6.0,16.0,50.0
+Quarterfinals,Train,FURIA Esports,YEKINDAR,76561198134401925,Counter Terrorist,6.0,5.0,10.0,8.0,12.0,3.0,1.0,12.0,16.67
+Quarterfinals,Train,FURIA Esports,YEKINDAR,76561198134401925,Terrorist,1.0,1.0,4.0,2.0,1.0,0.0,1.0,4.0,100.0
+Quarterfinals,Train,FURIA Esports,YEKINDAR,76561198134401925,Both,7.0,6.0,14.0,10.0,13.0,3.0,2.0,16.0,28.57
+Quarterfinals,Train,FURIA Esports,molodoy,76561198200982290,Counter Terrorist,4.0,1.0,9.0,3.0,2.0,2.0,0.0,12.0,0.0
+Quarterfinals,Train,FURIA Esports,molodoy,76561198200982290,Terrorist,3.0,1.0,4.0,1.0,1.0,0.0,3.0,4.0,100.0
+Quarterfinals,Train,FURIA Esports,molodoy,76561198200982290,Both,7.0,2.0,13.0,4.0,3.0,2.0,3.0,16.0,42.86
+Quarterfinals,Train,FURIA Esports,yuurih,76561198164970560,Counter Terrorist,6.0,2.0,8.0,9.0,10.0,7.0,3.0,12.0,50.0
+Quarterfinals,Train,FURIA Esports,yuurih,76561198164970560,Terrorist,0.0,0.0,3.0,0.0,0.0,1.0,0.0,4.0,0.0
+Quarterfinals,Train,FURIA Esports,yuurih,76561198164970560,Both,6.0,2.0,11.0,9.0,10.0,8.0,3.0,16.0,50.0
+Quarterfinals,Train,Natus Vincere,Aleksib,76561198013243326,Counter Terrorist,2.0,0.0,1.0,2.0,2.0,1.0,1.0,4.0,50.0
+Quarterfinals,Train,Natus Vincere,Aleksib,76561198013243326,Terrorist,6.0,3.0,7.0,10.0,10.0,9.0,5.0,12.0,83.33
+Quarterfinals,Train,Natus Vincere,Aleksib,76561198013243326,Both,8.0,3.0,8.0,12.0,12.0,10.0,6.0,16.0,75.0
+Quarterfinals,Train,Natus Vincere,b1t,76561198246607476,Counter Terrorist,3.0,1.0,1.0,0.0,1.0,0.0,2.0,4.0,66.67
+Quarterfinals,Train,Natus Vincere,b1t,76561198246607476,Terrorist,10.0,5.0,5.0,8.0,9.0,7.0,7.0,12.0,70.0
+Quarterfinals,Train,Natus Vincere,b1t,76561198246607476,Both,13.0,6.0,6.0,8.0,10.0,7.0,9.0,16.0,69.23
+Quarterfinals,Train,Natus Vincere,iM,76561198050250233,Counter Terrorist,3.0,1.0,2.0,0.0,1.0,1.0,2.0,4.0,66.67
+Quarterfinals,Train,Natus Vincere,iM,76561198050250233,Terrorist,6.0,3.0,9.0,10.0,10.0,6.0,3.0,12.0,50.0
+Quarterfinals,Train,Natus Vincere,iM,76561198050250233,Both,9.0,4.0,11.0,10.0,11.0,7.0,5.0,16.0,55.56
+Quarterfinals,Train,Natus Vincere,makazze,76561199076189612,Counter Terrorist,9.0,1.0,1.0,0.0,1.0,1.0,4.0,4.0,44.44
+Quarterfinals,Train,Natus Vincere,makazze,76561199076189612,Terrorist,11.0,2.0,7.0,7.0,12.0,8.0,7.0,12.0,63.64
+Quarterfinals,Train,Natus Vincere,makazze,76561199076189612,Both,20.0,3.0,8.0,7.0,13.0,9.0,11.0,16.0,55.0
+Quarterfinals,Train,Natus Vincere,w0nderful,76561199063068840,Counter Terrorist,0.0,0.0,3.0,1.0,0.0,1.0,0.0,4.0,0.0
+Quarterfinals,Train,Natus Vincere,w0nderful,76561199063068840,Terrorist,13.0,1.0,4.0,14.0,5.0,0.0,5.0,12.0,38.46
+Quarterfinals,Train,Natus Vincere,w0nderful,76561199063068840,Both,13.0,1.0,7.0,15.0,5.0,1.0,5.0,16.0,38.46
+Semifinals,Ancient,FaZe Clan,Twistzz,76561198016255205,Counter Terrorist,6.0,1.0,9.0,3.0,7.0,2.0,4.0,12.0,66.67
+Semifinals,Ancient,FaZe Clan,Twistzz,76561198016255205,Terrorist,3.0,2.0,6.0,0.0,0.0,0.0,2.0,6.0,66.67
+Semifinals,Ancient,FaZe Clan,Twistzz,76561198016255205,Both,9.0,3.0,15.0,3.0,7.0,2.0,6.0,18.0,66.67
+Semifinals,Ancient,FaZe Clan,broky,76561198201620490,Counter Terrorist,6.0,1.0,9.0,7.0,2.0,1.0,3.0,12.0,50.0
+Semifinals,Ancient,FaZe Clan,broky,76561198201620490,Terrorist,4.0,4.0,4.0,1.0,1.0,1.0,2.0,6.0,50.0
+Semifinals,Ancient,FaZe Clan,broky,76561198201620490,Both,10.0,5.0,13.0,8.0,3.0,2.0,5.0,18.0,50.0
+Semifinals,Ancient,FaZe Clan,frozen,76561198068422762,Counter Terrorist,3.0,1.0,10.0,0.0,4.0,0.0,1.0,12.0,33.33
+Semifinals,Ancient,FaZe Clan,frozen,76561198068422762,Terrorist,2.0,0.0,3.0,1.0,1.0,0.0,2.0,6.0,100.0
+Semifinals,Ancient,FaZe Clan,frozen,76561198068422762,Both,5.0,1.0,13.0,1.0,5.0,0.0,3.0,18.0,60.0
+Semifinals,Ancient,FaZe Clan,jcobbb,76561198178737429,Counter Terrorist,3.0,3.0,7.0,3.0,10.0,4.0,1.0,12.0,33.33
+Semifinals,Ancient,FaZe Clan,jcobbb,76561198178737429,Terrorist,7.0,1.0,4.0,1.0,0.0,0.0,6.0,6.0,85.71
+Semifinals,Ancient,FaZe Clan,jcobbb,76561198178737429,Both,10.0,4.0,11.0,4.0,10.0,4.0,7.0,18.0,70.0
+Semifinals,Ancient,FaZe Clan,karrigan,76561197989430253,Counter Terrorist,5.0,4.0,10.0,4.0,5.0,2.0,3.0,12.0,60.0
+Semifinals,Ancient,FaZe Clan,karrigan,76561197989430253,Terrorist,3.0,1.0,4.0,2.0,0.0,1.0,2.0,6.0,66.67
+Semifinals,Ancient,FaZe Clan,karrigan,76561197989430253,Both,8.0,5.0,14.0,6.0,5.0,3.0,5.0,18.0,62.5
+Semifinals,Ancient,Natus Vincere,Aleksib,76561198013243326,Counter Terrorist,2.0,3.0,5.0,0.0,0.0,0.0,1.0,6.0,50.0
+Semifinals,Ancient,Natus Vincere,Aleksib,76561198013243326,Terrorist,7.0,3.0,8.0,3.0,4.0,2.0,4.0,12.0,57.14
+Semifinals,Ancient,Natus Vincere,Aleksib,76561198013243326,Both,9.0,6.0,13.0,3.0,4.0,2.0,5.0,18.0,55.56
+Semifinals,Ancient,Natus Vincere,b1t,76561198246607476,Counter Terrorist,3.0,2.0,3.0,1.0,2.0,0.0,2.0,6.0,66.67
+Semifinals,Ancient,Natus Vincere,b1t,76561198246607476,Terrorist,6.0,2.0,5.0,6.0,3.0,2.0,3.0,12.0,50.0
+Semifinals,Ancient,Natus Vincere,b1t,76561198246607476,Both,9.0,4.0,8.0,7.0,5.0,2.0,5.0,18.0,55.56
+Semifinals,Ancient,Natus Vincere,iM,76561198050250233,Counter Terrorist,6.0,1.0,5.0,0.0,0.0,1.0,2.0,6.0,33.33
+Semifinals,Ancient,Natus Vincere,iM,76561198050250233,Terrorist,10.0,3.0,4.0,5.0,4.0,4.0,4.0,12.0,40.0
+Semifinals,Ancient,Natus Vincere,iM,76561198050250233,Both,16.0,4.0,9.0,5.0,4.0,5.0,6.0,18.0,37.5
+Semifinals,Ancient,Natus Vincere,makazze,76561199076189612,Counter Terrorist,5.0,2.0,4.0,0.0,0.0,1.0,4.0,6.0,80.0
+Semifinals,Ancient,Natus Vincere,makazze,76561199076189612,Terrorist,16.0,5.0,4.0,0.0,4.0,4.0,10.0,12.0,62.5
+Semifinals,Ancient,Natus Vincere,makazze,76561199076189612,Both,21.0,7.0,8.0,0.0,4.0,5.0,14.0,18.0,66.67
+Semifinals,Ancient,Natus Vincere,w0nderful,76561199063068840,Counter Terrorist,5.0,1.0,2.0,1.0,0.0,0.0,0.0,6.0,0.0
+Semifinals,Ancient,Natus Vincere,w0nderful,76561199063068840,Terrorist,5.0,5.0,3.0,6.0,5.0,0.0,1.0,12.0,20.0
+Semifinals,Ancient,Natus Vincere,w0nderful,76561199063068840,Both,10.0,6.0,5.0,7.0,5.0,0.0,1.0,18.0,10.0
+Semifinals,Dust2,Team Spirit,chopper,76561198045898864,Counter Terrorist,3.0,1.0,5.0,0.0,1.0,0.0,1.0,9.0,33.33
+Semifinals,Dust2,Team Spirit,chopper,76561198045898864,Terrorist,4.0,0.0,10.0,4.0,2.0,0.0,4.0,12.0,100.0
+Semifinals,Dust2,Team Spirit,chopper,76561198045898864,Both,7.0,1.0,15.0,4.0,3.0,0.0,5.0,21.0,71.43
+Semifinals,Dust2,Team Spirit,donk,76561198386265483,Counter Terrorist,6.0,2.0,7.0,0.0,0.0,2.0,2.0,9.0,33.33
+Semifinals,Dust2,Team Spirit,donk,76561198386265483,Terrorist,7.0,1.0,8.0,0.0,3.0,0.0,3.0,12.0,42.86
+Semifinals,Dust2,Team Spirit,donk,76561198386265483,Both,13.0,3.0,15.0,0.0,3.0,2.0,5.0,21.0,38.46
+Semifinals,Dust2,Team Spirit,sh1ro,76561198081484775,Counter Terrorist,4.0,0.0,8.0,0.0,0.0,1.0,3.0,9.0,75.0
+Semifinals,Dust2,Team Spirit,sh1ro,76561198081484775,Terrorist,6.0,3.0,7.0,3.0,2.0,0.0,1.0,12.0,16.67
+Semifinals,Dust2,Team Spirit,sh1ro,76561198081484775,Both,10.0,3.0,15.0,3.0,2.0,1.0,4.0,21.0,40.0
+Semifinals,Dust2,Team Spirit,tN1R,76561198872013168,Counter Terrorist,4.0,7.0,5.0,2.0,0.0,0.0,3.0,9.0,75.0
+Semifinals,Dust2,Team Spirit,tN1R,76561198872013168,Terrorist,7.0,3.0,8.0,1.0,1.0,0.0,4.0,12.0,57.14
+Semifinals,Dust2,Team Spirit,tN1R,76561198872013168,Both,11.0,10.0,13.0,3.0,1.0,0.0,7.0,21.0,63.64
+Semifinals,Dust2,Team Spirit,zweih,76561198210626739,Counter Terrorist,3.0,1.0,7.0,0.0,0.0,0.0,1.0,9.0,33.33
+Semifinals,Dust2,Team Spirit,zweih,76561198210626739,Terrorist,9.0,2.0,8.0,3.0,0.0,1.0,7.0,12.0,77.78
+Semifinals,Dust2,Team Spirit,zweih,76561198210626739,Both,12.0,3.0,15.0,3.0,0.0,1.0,8.0,21.0,66.67
+Semifinals,Dust2,Team Vitality,ZywOo,76561198113666193,Counter Terrorist,10.0,3.0,7.0,4.0,3.0,2.0,4.0,12.0,40.0
+Semifinals,Dust2,Team Vitality,ZywOo,76561198113666193,Terrorist,8.0,5.0,2.0,1.0,0.0,0.0,3.0,9.0,37.5
+Semifinals,Dust2,Team Vitality,ZywOo,76561198113666193,Both,18.0,8.0,9.0,5.0,3.0,2.0,7.0,21.0,38.89
+Semifinals,Dust2,Team Vitality,apEX,76561197989744167,Counter Terrorist,8.0,6.0,5.0,2.0,4.0,3.0,4.0,12.0,50.0
+Semifinals,Dust2,Team Vitality,apEX,76561197989744167,Terrorist,4.0,1.0,5.0,0.0,0.0,0.0,4.0,9.0,100.0
+Semifinals,Dust2,Team Vitality,apEX,76561197989744167,Both,12.0,7.0,10.0,2.0,4.0,3.0,8.0,21.0,66.67
+Semifinals,Dust2,Team Vitality,flameZ,76561197978835160,Counter Terrorist,9.0,1.0,5.0,3.0,9.0,3.0,6.0,12.0,66.67
+Semifinals,Dust2,Team Vitality,flameZ,76561197978835160,Terrorist,9.0,2.0,4.0,0.0,0.0,0.0,3.0,9.0,33.33
+Semifinals,Dust2,Team Vitality,flameZ,76561197978835160,Both,18.0,3.0,9.0,3.0,9.0,3.0,9.0,21.0,50.0
+Semifinals,Dust2,Team Vitality,mezii,76561197973140692,Counter Terrorist,5.0,3.0,10.0,1.0,6.0,0.0,3.0,12.0,60.0
+Semifinals,Dust2,Team Vitality,mezii,76561197973140692,Terrorist,5.0,3.0,4.0,0.0,0.0,0.0,2.0,9.0,40.0
+Semifinals,Dust2,Team Vitality,mezii,76561197973140692,Both,10.0,6.0,14.0,1.0,6.0,0.0,5.0,21.0,50.0
+Semifinals,Dust2,Team Vitality,ropz,76561197991272318,Counter Terrorist,9.0,1.0,6.0,2.0,5.0,3.0,4.0,12.0,44.44
+Semifinals,Dust2,Team Vitality,ropz,76561197991272318,Terrorist,6.0,2.0,5.0,0.0,0.0,2.0,2.0,9.0,33.33
+Semifinals,Dust2,Team Vitality,ropz,76561197991272318,Both,15.0,3.0,11.0,2.0,5.0,5.0,6.0,21.0,40.0
+Semifinals,Inferno,FaZe Clan,Twistzz,76561198016255205,Counter Terrorist,10.0,3.0,5.0,9.0,14.0,3.0,5.0,12.0,50.0
+Semifinals,Inferno,FaZe Clan,Twistzz,76561198016255205,Terrorist,10.0,2.0,5.0,2.0,2.0,2.0,9.0,9.0,90.0
+Semifinals,Inferno,FaZe Clan,Twistzz,76561198016255205,Both,20.0,5.0,10.0,11.0,16.0,5.0,14.0,21.0,70.0
+Semifinals,Inferno,FaZe Clan,broky,76561198201620490,Counter Terrorist,11.0,5.0,6.0,4.0,16.0,2.0,1.0,12.0,9.09
+Semifinals,Inferno,FaZe Clan,broky,76561198201620490,Terrorist,9.0,2.0,7.0,4.0,1.0,0.0,2.0,9.0,22.22
+Semifinals,Inferno,FaZe Clan,broky,76561198201620490,Both,20.0,7.0,13.0,8.0,17.0,2.0,3.0,21.0,15.0
+Semifinals,Inferno,FaZe Clan,frozen,76561198068422762,Counter Terrorist,9.0,6.0,6.0,5.0,15.0,4.0,5.0,12.0,55.56
+Semifinals,Inferno,FaZe Clan,frozen,76561198068422762,Terrorist,4.0,3.0,8.0,2.0,1.0,1.0,3.0,9.0,75.0
+Semifinals,Inferno,FaZe Clan,frozen,76561198068422762,Both,13.0,9.0,14.0,7.0,16.0,5.0,8.0,21.0,61.54
+Semifinals,Inferno,FaZe Clan,jcobbb,76561198178737429,Counter Terrorist,14.0,2.0,3.0,5.0,14.0,3.0,11.0,12.0,78.57
+Semifinals,Inferno,FaZe Clan,jcobbb,76561198178737429,Terrorist,3.0,2.0,7.0,0.0,0.0,0.0,2.0,9.0,66.67
+Semifinals,Inferno,FaZe Clan,jcobbb,76561198178737429,Both,17.0,4.0,10.0,5.0,14.0,3.0,13.0,21.0,76.47
+Semifinals,Inferno,FaZe Clan,karrigan,76561197989430253,Counter Terrorist,9.0,3.0,4.0,3.0,16.0,6.0,5.0,12.0,55.56
+Semifinals,Inferno,FaZe Clan,karrigan,76561197989430253,Terrorist,3.0,1.0,8.0,1.0,3.0,0.0,1.0,9.0,33.33
+Semifinals,Inferno,FaZe Clan,karrigan,76561197989430253,Both,12.0,4.0,12.0,4.0,19.0,6.0,6.0,21.0,50.0
+Semifinals,Inferno,Natus Vincere,Aleksib,76561198013243326,Counter Terrorist,8.0,2.0,5.0,0.0,4.0,1.0,4.0,9.0,50.0
+Semifinals,Inferno,Natus Vincere,Aleksib,76561198013243326,Terrorist,2.0,5.0,10.0,6.0,4.0,1.0,1.0,12.0,50.0
+Semifinals,Inferno,Natus Vincere,Aleksib,76561198013243326,Both,10.0,7.0,15.0,6.0,8.0,2.0,5.0,21.0,50.0
+Semifinals,Inferno,Natus Vincere,b1t,76561198246607476,Counter Terrorist,8.0,2.0,6.0,0.0,3.0,1.0,3.0,9.0,37.5
+Semifinals,Inferno,Natus Vincere,b1t,76561198246607476,Terrorist,7.0,2.0,10.0,4.0,5.0,1.0,6.0,12.0,85.71
+Semifinals,Inferno,Natus Vincere,b1t,76561198246607476,Both,15.0,4.0,16.0,4.0,8.0,2.0,9.0,21.0,60.0
+Semifinals,Inferno,Natus Vincere,iM,76561198050250233,Counter Terrorist,4.0,4.0,6.0,2.0,1.0,0.0,1.0,9.0,25.0
+Semifinals,Inferno,Natus Vincere,iM,76561198050250233,Terrorist,4.0,2.0,11.0,2.0,3.0,0.0,2.0,12.0,50.0
+Semifinals,Inferno,Natus Vincere,iM,76561198050250233,Both,8.0,6.0,17.0,4.0,4.0,0.0,3.0,21.0,37.5
+Semifinals,Inferno,Natus Vincere,makazze,76561199076189612,Counter Terrorist,10.0,3.0,5.0,3.0,8.0,2.0,4.0,9.0,40.0
+Semifinals,Inferno,Natus Vincere,makazze,76561199076189612,Terrorist,4.0,3.0,11.0,6.0,9.0,3.0,4.0,12.0,100.0
+Semifinals,Inferno,Natus Vincere,makazze,76561199076189612,Both,14.0,6.0,16.0,9.0,17.0,5.0,8.0,21.0,57.14
+Semifinals,Inferno,Natus Vincere,w0nderful,76561199063068840,Counter Terrorist,5.0,2.0,7.0,2.0,2.0,2.0,5.0,9.0,100.0
+Semifinals,Inferno,Natus Vincere,w0nderful,76561199063068840,Terrorist,7.0,2.0,11.0,5.0,1.0,0.0,3.0,12.0,42.86
+Semifinals,Inferno,Natus Vincere,w0nderful,76561199063068840,Both,12.0,4.0,18.0,7.0,3.0,2.0,8.0,21.0,66.67
+Semifinals,Mirage,Team Spirit,chopper,76561198045898864,Counter Terrorist,13.0,8.0,10.0,6.0,10.0,5.0,6.0,18.0,46.15
+Semifinals,Mirage,Team Spirit,chopper,76561198045898864,Terrorist,5.0,4.0,16.0,0.0,0.0,0.0,4.0,18.0,80.0
+Semifinals,Mirage,Team Spirit,chopper,76561198045898864,Both,18.0,12.0,26.0,6.0,10.0,5.0,10.0,36.0,55.56
+Semifinals,Mirage,Team Spirit,donk,76561198386265483,Counter Terrorist,22.0,8.0,12.0,5.0,8.0,3.0,11.0,18.0,50.0
+Semifinals,Mirage,Team Spirit,donk,76561198386265483,Terrorist,13.0,1.0,14.0,0.0,0.0,0.0,10.0,18.0,76.92
+Semifinals,Mirage,Team Spirit,donk,76561198386265483,Both,35.0,9.0,26.0,5.0,8.0,3.0,21.0,36.0,60.0
+Semifinals,Mirage,Team Spirit,sh1ro,76561198081484775,Counter Terrorist,12.0,3.0,10.0,1.0,6.0,3.0,3.0,18.0,25.0
+Semifinals,Mirage,Team Spirit,sh1ro,76561198081484775,Terrorist,12.0,3.0,12.0,3.0,0.0,0.0,2.0,18.0,16.67
+Semifinals,Mirage,Team Spirit,sh1ro,76561198081484775,Both,24.0,6.0,22.0,4.0,6.0,3.0,5.0,36.0,20.83
+Semifinals,Mirage,Team Spirit,tN1R,76561198872013168,Counter Terrorist,14.0,3.0,13.0,6.0,6.0,4.0,4.0,18.0,28.57
+Semifinals,Mirage,Team Spirit,tN1R,76561198872013168,Terrorist,17.0,2.0,12.0,0.0,0.0,0.0,11.0,18.0,64.71
+Semifinals,Mirage,Team Spirit,tN1R,76561198872013168,Both,31.0,5.0,25.0,6.0,6.0,4.0,15.0,36.0,48.39
+Semifinals,Mirage,Team Spirit,zweih,76561198210626739,Counter Terrorist,11.0,3.0,14.0,5.0,9.0,2.0,6.0,18.0,54.55
+Semifinals,Mirage,Team Spirit,zweih,76561198210626739,Terrorist,5.0,3.0,16.0,0.0,0.0,0.0,4.0,18.0,80.0
+Semifinals,Mirage,Team Spirit,zweih,76561198210626739,Both,16.0,6.0,30.0,5.0,9.0,2.0,10.0,36.0,62.5
+Semifinals,Mirage,Team Vitality,ZywOo,76561198113666193,Counter Terrorist,14.0,2.0,10.0,0.0,1.0,0.0,3.0,18.0,21.43
+Semifinals,Mirage,Team Vitality,ZywOo,76561198113666193,Terrorist,12.0,1.0,14.0,0.0,1.0,0.0,2.0,18.0,16.67
+Semifinals,Mirage,Team Vitality,ZywOo,76561198113666193,Both,26.0,3.0,24.0,0.0,2.0,0.0,5.0,36.0,19.23
+Semifinals,Mirage,Team Vitality,apEX,76561197989744167,Counter Terrorist,10.0,4.0,11.0,0.0,0.0,0.0,3.0,18.0,30.0
+Semifinals,Mirage,Team Vitality,apEX,76561197989744167,Terrorist,6.0,6.0,15.0,4.0,1.0,0.0,1.0,18.0,16.67
+Semifinals,Mirage,Team Vitality,apEX,76561197989744167,Both,16.0,10.0,26.0,4.0,1.0,0.0,4.0,36.0,25.0
+Semifinals,Mirage,Team Vitality,flameZ,76561197978835160,Counter Terrorist,13.0,4.0,13.0,0.0,1.0,0.0,7.0,18.0,53.85
+Semifinals,Mirage,Team Vitality,flameZ,76561197978835160,Terrorist,8.0,7.0,17.0,6.0,2.0,1.0,3.0,18.0,37.5
+Semifinals,Mirage,Team Vitality,flameZ,76561197978835160,Both,21.0,11.0,30.0,6.0,3.0,1.0,10.0,36.0,47.62
+Semifinals,Mirage,Team Vitality,mezii,76561197973140692,Counter Terrorist,18.0,4.0,9.0,0.0,1.0,0.0,10.0,18.0,55.56
+Semifinals,Mirage,Team Vitality,mezii,76561197973140692,Terrorist,15.0,2.0,14.0,4.0,3.0,0.0,9.0,18.0,60.0
+Semifinals,Mirage,Team Vitality,mezii,76561197973140692,Both,33.0,6.0,23.0,4.0,4.0,0.0,19.0,36.0,57.58
+Semifinals,Mirage,Team Vitality,ropz,76561197991272318,Counter Terrorist,15.0,3.0,9.0,0.0,1.0,0.0,5.0,18.0,33.33
+Semifinals,Mirage,Team Vitality,ropz,76561197991272318,Terrorist,17.0,3.0,12.0,2.0,1.0,0.0,9.0,18.0,52.94
+Semifinals,Mirage,Team Vitality,ropz,76561197991272318,Both,32.0,6.0,21.0,2.0,2.0,0.0,14.0,36.0,43.75
+Semifinals,Nuke,FaZe Clan,Twistzz,76561198016255205,Counter Terrorist,8.0,1.0,10.0,2.0,8.0,1.0,2.0,12.0,25.0
+Semifinals,Nuke,FaZe Clan,Twistzz,76561198016255205,Terrorist,11.0,1.0,9.0,6.0,5.0,0.0,5.0,12.0,45.45
+Semifinals,Nuke,FaZe Clan,Twistzz,76561198016255205,Both,19.0,2.0,19.0,8.0,13.0,1.0,7.0,24.0,36.84
+Semifinals,Nuke,FaZe Clan,broky,76561198201620490,Counter Terrorist,10.0,2.0,6.0,2.0,5.0,4.0,3.0,12.0,30.0
+Semifinals,Nuke,FaZe Clan,broky,76561198201620490,Terrorist,4.0,3.0,11.0,3.0,6.0,0.0,2.0,12.0,50.0
+Semifinals,Nuke,FaZe Clan,broky,76561198201620490,Both,14.0,5.0,17.0,5.0,11.0,4.0,5.0,24.0,35.71
+Semifinals,Nuke,FaZe Clan,frozen,76561198068422762,Counter Terrorist,13.0,3.0,4.0,3.0,2.0,1.0,8.0,12.0,61.54
+Semifinals,Nuke,FaZe Clan,frozen,76561198068422762,Terrorist,5.0,0.0,10.0,4.0,4.0,8.0,4.0,12.0,80.0
+Semifinals,Nuke,FaZe Clan,frozen,76561198068422762,Both,18.0,3.0,14.0,7.0,6.0,9.0,12.0,24.0,66.67
+Semifinals,Nuke,FaZe Clan,jcobbb,76561198178737429,Counter Terrorist,5.0,5.0,9.0,2.0,9.0,1.0,4.0,12.0,80.0
+Semifinals,Nuke,FaZe Clan,jcobbb,76561198178737429,Terrorist,4.0,1.0,11.0,2.0,3.0,0.0,3.0,12.0,75.0
+Semifinals,Nuke,FaZe Clan,jcobbb,76561198178737429,Both,9.0,6.0,20.0,4.0,12.0,1.0,7.0,24.0,77.78
+Semifinals,Nuke,FaZe Clan,karrigan,76561197989430253,Counter Terrorist,13.0,4.0,4.0,2.0,5.0,3.0,5.0,12.0,38.46
+Semifinals,Nuke,FaZe Clan,karrigan,76561197989430253,Terrorist,6.0,2.0,11.0,22.0,6.0,2.0,3.0,12.0,50.0
+Semifinals,Nuke,FaZe Clan,karrigan,76561197989430253,Both,19.0,6.0,15.0,24.0,11.0,5.0,8.0,24.0,42.11
+Semifinals,Nuke,Natus Vincere,Aleksib,76561198013243326,Counter Terrorist,11.0,4.0,5.0,11.0,17.0,4.0,4.0,12.0,36.36
+Semifinals,Nuke,Natus Vincere,Aleksib,76561198013243326,Terrorist,5.0,2.0,9.0,8.0,2.0,0.0,3.0,12.0,60.0
+Semifinals,Nuke,Natus Vincere,Aleksib,76561198013243326,Both,16.0,6.0,14.0,19.0,19.0,4.0,7.0,24.0,43.75
+Semifinals,Nuke,Natus Vincere,b1t,76561198246607476,Counter Terrorist,9.0,4.0,5.0,7.0,8.0,3.0,2.0,12.0,22.22
+Semifinals,Nuke,Natus Vincere,b1t,76561198246607476,Terrorist,7.0,2.0,11.0,0.0,3.0,1.0,4.0,12.0,57.14
+Semifinals,Nuke,Natus Vincere,b1t,76561198246607476,Both,16.0,6.0,16.0,7.0,11.0,4.0,6.0,24.0,37.5
+Semifinals,Nuke,Natus Vincere,iM,76561198050250233,Counter Terrorist,13.0,1.0,9.0,9.0,15.0,7.0,7.0,12.0,53.85
+Semifinals,Nuke,Natus Vincere,iM,76561198050250233,Terrorist,7.0,4.0,10.0,1.0,2.0,4.0,2.0,12.0,28.57
+Semifinals,Nuke,Natus Vincere,iM,76561198050250233,Both,20.0,5.0,19.0,10.0,17.0,11.0,9.0,24.0,45.0
+Semifinals,Nuke,Natus Vincere,makazze,76561199076189612,Counter Terrorist,6.0,2.0,7.0,4.0,14.0,9.0,6.0,12.0,100.0
+Semifinals,Nuke,Natus Vincere,makazze,76561199076189612,Terrorist,4.0,3.0,10.0,4.0,0.0,2.0,2.0,12.0,50.0
+Semifinals,Nuke,Natus Vincere,makazze,76561199076189612,Both,10.0,5.0,17.0,8.0,14.0,11.0,8.0,24.0,80.0
+Semifinals,Nuke,Natus Vincere,w0nderful,76561199063068840,Counter Terrorist,13.0,2.0,4.0,6.0,18.0,2.0,5.0,12.0,38.46
+Semifinals,Nuke,Natus Vincere,w0nderful,76561199063068840,Terrorist,9.0,1.0,9.0,1.0,4.0,0.0,3.0,12.0,33.33
+Semifinals,Nuke,Natus Vincere,w0nderful,76561199063068840,Both,22.0,3.0,13.0,7.0,22.0,2.0,8.0,24.0,36.36

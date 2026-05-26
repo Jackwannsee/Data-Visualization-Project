@@ -36,7 +36,7 @@ st.set_page_config(
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-    .stApp, .stMarkdown, p, span, li { font-family: 'Inter', sans-serif !important; }
+    .stApp, .stMarkdown, p, li { font-family: 'Inter', sans-serif !important; }
 
     .page-header {
         padding: 1rem 0 0.5rem 0;
@@ -125,6 +125,12 @@ with st.sidebar:
         unsafe_allow_html=True,
     )
     st.markdown("---")
+    st.markdown("##### 📊 Pages")
+    st.page_link("app.py", label="Home", icon="🏠")
+    st.page_link("pages/1_💰_Economy_Analysis.py", label="Economy Analysis", icon="💰")
+    st.page_link("pages/2_🕷️_Player_Performance.py", label="Player Performance", icon="🕷️")
+    st.page_link("pages/3_🎯_Headshot_Analysis.py", label="Headshot Analysis", icon="🎯")
+    st.markdown("---")
 
     # ── Player Selection ──
     all_players = cached_players()
@@ -193,8 +199,7 @@ with st.sidebar:
         maps = cached_maps()
         selected_map = st.selectbox("Map", maps)
 
-    st.markdown("---")
-    st.page_link("app.py", label="← Back to Home", icon="🏠")
+
 
 
 # ── Page Content ─────────────────────────────────────────────────────────────

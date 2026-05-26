@@ -6,6 +6,7 @@ Interactive economy line chart with cascading parameter selectors.
 
 import os
 import sys
+import json
 import pandas as pd
 import streamlit as st
 
@@ -24,12 +25,9 @@ import importlib
 if "economy_viz" in sys.modules:
     importlib.reload(sys.modules["economy_viz"])
 
-from economy_viz import (
-    combined_economy_line_plot,
-    get_available_stages,
-    get_available_maps,
-    get_available_teams,
-)
+from economy_viz import combined_economy_line_plot
+
+TOURNAMENT_DATA_PATH = os.path.join(SRC_DIR, "budapest_major.json")
 
 # ── Page Config ──────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -42,7 +40,7 @@ st.set_page_config(
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-    .stApp, .stMarkdown, p, span, li { font-family: 'Inter', sans-serif !important; }
+    .stApp, .stMarkdown, p, li { font-family: 'Inter', sans-serif !important; }
 
     .page-header {
         padding: 1rem 0 0.5rem 0;
@@ -114,6 +112,20 @@ st.markdown("""
     }
 
     .sidebar-brand { font-size: 1.1rem; font-weight: 700; color: #FAB200; }
+    
+    /* ── Stage Header ── */
+    .stage-header {
+        color: #FAB200;
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.2rem;
+        border-bottom: 2px solid #2a2d35;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+    }
+    
     footer { visibility: hidden; }
 </style>
 """, unsafe_allow_html=True)
@@ -121,26 +133,14 @@ st.markdown("""
 # ── Data Loading Helpers ─────────────────────────────────────────────────────
 MATCH_DETAILS_PATH = os.path.join(ANALYSIS_DIR, "budapest_major_match_details.csv")
 
-
 @st.cache_data
-def cached_stages():
-    return get_available_stages()
-
-
-@st.cache_data
-def cached_maps(stage):
-    return get_available_maps(stage=stage)
-
-
-@st.cache_data
-def cached_teams(stage, map_name):
-    return get_available_teams(stage=stage, map_name=map_name)
-
+def load_tournament_data():
+    with open(TOURNAMENT_DATA_PATH, "r") as f:
+        return json.load(f)
 
 @st.cache_data
 def load_match_details():
     return pd.read_csv(MATCH_DETAILS_PATH)
-
 
 def get_match_info(stage, map_name, team):
     """Look up match info from match_details.csv."""
@@ -156,37 +156,19 @@ def get_match_info(stage, map_name, team):
         return match.iloc[0].to_dict()
     return None
 
+tournament = load_tournament_data()
 
 # ── Sidebar Controls ─────────────────────────────────────────────────────────
 with st.sidebar:
     st.markdown('<div class="sidebar-brand">💰 Economy Analysis</div>', unsafe_allow_html=True)
     st.markdown("---")
-
-    stages = cached_stages()
-    selected_stage = st.selectbox(
-        "Tournament Stage",
-        stages,
-        index=stages.index("Final") if "Final" in stages else 0,
-        help="Select the tournament stage to analyze",
-    )
-
-    maps = cached_maps(selected_stage)
-    selected_map = st.selectbox(
-        "Map",
-        maps,
-        help="Select the map played in this stage",
-    )
-
-    teams = cached_teams(selected_stage, selected_map)
-    selected_team = st.selectbox(
-        "Team (Focus)",
-        teams,
-        help="The primary team whose economy is highlighted",
-    )
-
+    st.markdown("##### 📊 Pages")
+    st.page_link("app.py", label="Home", icon="🏠")
+    st.page_link("pages/1_💰_Economy_Analysis.py", label="Economy Analysis", icon="💰")
+    st.page_link("pages/2_🕷️_Player_Performance.py", label="Player Performance", icon="🕷️")
+    st.page_link("pages/3_🎯_Headshot_Analysis.py", label="Headshot Analysis", icon="🎯")
     st.markdown("---")
-    st.page_link("app.py", label="← Back to Home", icon="🏠")
-
+    st.markdown("Select a game from the tournament bracket in the main view to analyze its economy.")
 
 # ── Page Content ─────────────────────────────────────────────────────────────
 st.markdown(
@@ -194,8 +176,7 @@ st.markdown(
     <div class="page-header">
         <h1>💰 Economy Analysis</h1>
         <p>
-            Interactive line chart comparing <strong>total team economies</strong>
-            across all rounds of a CS2 map.
+            Select a match from the bracket below to view its round-by-round economy analysis.
             The primary team's economy is shown in blue, and the opponent team's in orange.
             Each round marker shows the team's side
             (<span style="color:#0091D4;font-weight:600;">CT</span> or
@@ -207,27 +188,60 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# ── Match Info Banner ────────────────────────────────────────────────────────
-match_info = get_match_info(selected_stage, selected_map, selected_team)
-if match_info:
-    opponent = match_info.get("opponent", "Unknown")
-    final_score = match_info.get("final_score", "?-?")
-    map_won = str(match_info.get("map_won", "")).lower() == "true"
-    team_cls = "winner" if map_won else "loser"
-    opp_cls = "loser" if map_won else "winner"
+# ── Tournament Bracket Selection ──────────────────────────────────────────────
+st.markdown("### Tournament Bracket")
+
+STAGE_ORDER = ["Quarterfinals", "Semifinals", "Final"]
+
+# Default match selection
+if "selected_eco_match" not in st.session_state:
+    st.session_state.selected_eco_match = tournament["stages"]["Final"][0]
+    st.session_state.selected_eco_stage = "Final"
+
+for stage_name in STAGE_ORDER:
+    matches = tournament["stages"].get(stage_name, [])
+    if not matches:
+        continue
 
     st.markdown(
-        f"""
-        <div class="match-info-bar">
-            <span class="team {team_cls}">{selected_team}</span>
-            <span class="score">{final_score}</span>
-            <span class="team {opp_cls}">{opponent}</span>
-            <span class="map-badge">📍 {selected_map}</span>
-            <span class="map-badge">🏟️ {selected_stage}</span>
-        </div>
-        """,
+        f'<div class="stage-header">🎯 {stage_name}</div>',
         unsafe_allow_html=True,
     )
+
+    if len(matches) >= 2:
+        cols = st.columns(2, gap="medium")
+        for i, match in enumerate(matches):
+            with cols[i % 2]:
+                t1, t2 = match["teams_played"]
+                score = match["overall_score"]
+                btn_label = f"{t1} {score} {t2}"
+                # Use primary style for selected
+                is_selected = (match == st.session_state.selected_eco_match)
+                if st.button(btn_label, key=f"eco_btn_{stage_name}_{i}", use_container_width=True, type="primary" if is_selected else "secondary"):
+                    st.session_state.selected_eco_match = match
+                    st.session_state.selected_eco_stage = stage_name
+                    st.rerun()
+    else:
+        _, center, _ = st.columns([1, 2, 1])
+        with center:
+            match = matches[0]
+            t1, t2 = match["teams_played"]
+            score = match["overall_score"]
+            btn_label = f"{t1} {score} {t2}"
+            is_selected = (match == st.session_state.selected_eco_match)
+            if st.button(btn_label, key=f"eco_btn_{stage_name}_0", use_container_width=True, type="primary" if is_selected else "secondary"):
+                st.session_state.selected_eco_match = match
+                st.session_state.selected_eco_stage = stage_name
+                st.rerun()
+
+st.markdown("---")
+
+# ── Analysis for Selected Match ──────────────────────────────────────────────
+sel_match = st.session_state.selected_eco_match
+sel_stage = st.session_state.selected_eco_stage
+t1, t2 = sel_match["teams_played"]
+
+st.markdown(f"<h3 style='text-align: center;'>Analysis: {t1} vs {t2}</h3>", unsafe_allow_html=True)
 
 # ── Legend ────────────────────────────────────────────────────────────────────
 st.markdown(
@@ -243,23 +257,55 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# ── Chart ────────────────────────────────────────────────────────────────────
-try:
-    fig = combined_economy_line_plot(
-        selected_stage, selected_map, selected_team, show=False
-    )
-    if fig is not None:
-        # Apply dark-themed layout overrides for the dashboard
-        fig.update_layout(
-            paper_bgcolor="rgba(0,0,0,0)",
-            plot_bgcolor="rgba(0,0,0,0)",
-            font_color="#ccc",
-            title_font_color="#FAB200",
-            xaxis=dict(gridcolor="#2a2d35", zerolinecolor="#2a2d35"),
-            yaxis=dict(gridcolor="#2a2d35", zerolinecolor="#2a2d35"),
-        )
-        st.plotly_chart(fig, use_container_width=True, key="economy_chart")
-    else:
-        st.warning("No data available for the selected combination.")
-except Exception as e:
-    st.error(f"Error generating visualization: {e}")
+maps_played = sel_match.get("maps_played", [])
+if maps_played:
+    tabs = st.tabs([f"{m['map_name']} ({m['score']})" for m in maps_played])
+    
+    for i, m in enumerate(maps_played):
+        map_name = m["map_name"]
+        with tabs[i]:
+            # Show Match Info Banner for this specific map
+            match_info = get_match_info(sel_stage, map_name, t1)
+            if match_info:
+                opponent = match_info.get("opponent", "Unknown")
+                final_score = match_info.get("final_score", "?-?")
+                map_won = str(match_info.get("map_won", "")).lower() == "true"
+                team_cls = "winner" if map_won else "loser"
+                opp_cls = "loser" if map_won else "winner"
+
+                st.markdown(
+                    f"""
+                    <div class="match-info-bar">
+                        <span class="team {team_cls}">{t1}</span>
+                        <span class="score">{final_score}</span>
+                        <span class="team {opp_cls}">{opponent}</span>
+                        <span class="map-badge">📍 {map_name}</span>
+                        <span class="map-badge">🏟️ {sel_stage}</span>
+                    </div>
+                    """,
+                    unsafe_allow_html=True,
+                )
+            
+            # Chart
+            try:
+                fig = combined_economy_line_plot(
+                    sel_stage, map_name, t1, show=False
+                )
+                if fig is not None:
+                    # Apply dark-themed layout overrides for the dashboard
+                    fig.update_layout(
+                        paper_bgcolor="rgba(0,0,0,0)",
+                        plot_bgcolor="rgba(0,0,0,0)",
+                        font_color="#ccc",
+                        title_font_color="#FAB200",
+                        xaxis=dict(gridcolor="#2a2d35", zerolinecolor="#2a2d35"),
+                        yaxis=dict(gridcolor="#2a2d35", zerolinecolor="#2a2d35"),
+                        margin=dict(t=30, b=10, l=10, r=10)
+                    )
+                    st.plotly_chart(fig, use_container_width=True, key=f"eco_chart_{sel_stage}_{i}")
+                else:
+                    st.warning(f"No economy data available for {map_name}.")
+            except Exception as e:
+                st.error(f"Error generating visualization: {e}")
+else:
+    st.info("No maps played in this match.")

@@ -22,22 +22,15 @@ vibe --resume deb42c56
 
 ## TODO
 - [x] Rounds won dataset
-- [ ] Green and Red win / lose colors to be changed (Economy Chart)
-- [ ] Add overtime line to economy viz chart.
-
-## Visualization Ideas
-- On the dashboard have a brackets result, where you can click on a match and review the stats from that match. 
-- Heatmap for player movements (use own heatmap calculation software?)
-- Spider charts for:
+- [x] Green and Red win / lose colors to be changed (Economy Chart)
+- [x] Add overtime line to economy viz chart.
+- [ ] on the dashboard change year from 2025 to 2026
+- [x] On the dashboard have a brackets result, where you can click on a match and review the stats from that match. 
+- [ ] Heatmap for player movements (use own heatmap calculation software?)
+- [ ] Spider charts for:
     - Which maps the different teams played 
     - Statistics such as util thrown, this can be highlighted during CT and T (see if molotovs are thrown more during T as they are stronger)
     - KAST statistics for individual players, to determine the strongest players with most impact
-    - 
-- Economy Charts, line chart for each game where the individual economies are highlighted. (how to overlay with who won that game)
-
-
-## Future Ideas:
+- [x] Economy Charts, line chart for each game where the individual economies are highlighted. (how to overlay with who won that game)
 - [x] on the streamlit homepage, have an overview of the budapest major alongside the tree map of the final 
-
-## Improvements
-- `parse_outcomes.py` can be made more efficient by changing it from individual player wins to team aggregate wins 
+- [ ] Player performance spider chart should default to `both`

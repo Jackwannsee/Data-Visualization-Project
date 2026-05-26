@@ -7,13 +7,27 @@ import plotly.graph_objects as go
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.join(SCRIPT_DIR, "../../analysis_results/budapest_major_stats.csv")
 
-# Import config colors - handle relative import
+# Import config colors - handle absolute path import to prevent collisions with other 'config' modules
 try:
-    from config import T_COLOR, CT_COLOR, BOTH_COLOR, WIN_COLOR, LOSS_COLOR, LINE_ALPHA
-except ModuleNotFoundError:
-    # Add visualization directory to path and retry
-    sys.path.append(SCRIPT_DIR)
-    from config import T_COLOR, CT_COLOR, BOTH_COLOR, WIN_COLOR, LOSS_COLOR, LINE_ALPHA
+    import importlib.util
+    config_path = os.path.join(SCRIPT_DIR, "config.py")
+    spec = importlib.util.spec_from_file_location("viz_config", config_path)
+    viz_config = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(viz_config)
+    T_COLOR = viz_config.T_COLOR
+    CT_COLOR = viz_config.CT_COLOR
+    BOTH_COLOR = viz_config.BOTH_COLOR
+    WIN_COLOR = viz_config.WIN_COLOR
+    LOSS_COLOR = viz_config.LOSS_COLOR
+    LINE_ALPHA = viz_config.LINE_ALPHA
+except Exception:
+    # Fallback to standard imports if path-based import fails
+    try:
+        from config import T_COLOR, CT_COLOR, BOTH_COLOR, WIN_COLOR, LOSS_COLOR, LINE_ALPHA
+    except (ModuleNotFoundError, ImportError):
+        # Add visualization directory to path and retry
+        sys.path.append(SCRIPT_DIR)
+        from config import T_COLOR, CT_COLOR, BOTH_COLOR, WIN_COLOR, LOSS_COLOR, LINE_ALPHA
 
 # Player colors for multi-player comparison
 PLAYER_COLORS = [
