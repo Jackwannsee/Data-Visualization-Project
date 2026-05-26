@@ -86,52 +86,58 @@ def find_dem_file(stage_key: str, map_num: int, map_name: str, teams: list[str])
 
 
 def get_round_winners(demo: Demo) -> pd.DataFrame:
-    """Extract round winner information from a demo.
+    """Extract round winner side from a demo.
     
-    Returns DataFrame with columns: round_num, winner_team
+    Returns DataFrame with columns: round_num, winner_side ("CT" or "T")
     """
     rounds = demo.rounds.to_pandas()
     
     if rounds.empty:
-        return pd.DataFrame(columns=["round_num", "winner_team"])
+        return pd.DataFrame(columns=["round_num", "winner_side"])
     
-    # awpy uses camelCase column names: roundNum, winnerSide, winnerName
-    # Check available columns and use the right ones
     available_cols = rounds.columns.tolist()
+    available_cols_lower = [c.lower() for c in available_cols]
     
-    # Map possible column name variants
-    round_num_col = "roundNum" if "roundNum" in available_cols else "round_num"
-    winner_side_col = "winnerSide" if "winnerSide" in available_cols else ("winner_side" if "winner_side" in available_cols else None)
-    winner_name_col = "winnerName" if "winnerName" in available_cols else ("winner_name" if "winner_name" in available_cols else None)
+    # Find round_num column
+    round_num_col = None
+    for candidate in ["round_num", "roundNum", "roundnum"]:
+        if candidate in available_cols:
+            round_num_col = candidate
+            break
+        if candidate.lower() in available_cols_lower:
+            round_num_col = available_cols[available_cols_lower.index(candidate.lower())]
+            break
     
-    cols_to_select = [round_num_col]
-    if winner_side_col:
-        cols_to_select.append(winner_side_col)
-    if winner_name_col:
-        cols_to_select.append(winner_name_col)
+    # Find winner column — prefer "winner" which contains "ct"/"t" side strings
+    winner_col = None
+    for candidate in ["winner", "winnerSide", "winnerside", "winner_side"]:
+        if candidate in available_cols:
+            winner_col = candidate
+            break
+        if candidate.lower() in available_cols_lower:
+            winner_col = available_cols[available_cols_lower.index(candidate.lower())]
+            break
     
-    result = rounds[cols_to_select].copy()
+    if round_num_col is None or winner_col is None:
+        print(f"  WARNING: Could not find round columns. Available: {available_cols}")
+        return pd.DataFrame(columns=["round_num", "winner_side"])
     
-    # Rename to consistent names
-    result = result.rename(columns={
-        round_num_col: "round_num",
-        winner_side_col: "winner_side" if winner_side_col else None,
-        winner_name_col: "winner_name" if winner_name_col else None
-    })
+    result = rounds[[round_num_col, winner_col]].copy()
+    result = result.rename(columns={round_num_col: "round_num", winner_col: "winner_side"})
     
-    # Filter to keep only round_num and winner columns
-    winner_cols = [c for c in ["winner_side", "winner_name"] if c in result.columns]
-    result = result[["round_num"] + winner_cols]
+    # Normalize winner_side to uppercase "CT" or "T"
+    def normalize_side(s):
+        if pd.isna(s):
+            return "Unknown"
+        s = str(s).upper().strip()
+        if s in ["CT", "COUNTER", "COUNTERTERRORIST", "COUNTER TERRORIST", "COUNTER-TERRORIST"]:
+            return "CT"
+        elif s in ["T", "TERRORIST"]:
+            return "T"
+        return s
     
-    # Use winner_name if available, otherwise use winner_side
-    if "winner_name" in result.columns:
-        result["winner_team"] = result["winner_name"].fillna(result.get("winner_side", "Unknown"))
-    elif "winner_side" in result.columns:
-        result["winner_team"] = result["winner_side"]
-    else:
-        result["winner_team"] = "Unknown"
-    
-    result = result[["round_num", "winner_team"]]
+    result["winner_side"] = result["winner_side"].apply(normalize_side)
+    result["round_num"] = result["round_num"].astype(int)
     
     return result
 
@@ -192,11 +198,11 @@ def main() -> None:
 
                 print(f"  Parsing: {dem_path.name}")
 
-                # Parse the demo with team_clan_name
+                # Parse the demo with team_clan_name and side
                 demo = Demo(path=dem_path)
-                demo.parse(player_props=["team_clan_name"])
+                demo.parse(player_props=["team_clan_name", "side"])
 
-                # Get round winners
+                # Get round winners (now returns winner_side: "CT" or "T")
                 winners_df = get_round_winners(demo)
                 
                 # Get player to team mapping
@@ -209,6 +215,77 @@ def main() -> None:
                 # Get all ticks data once for name lookup
                 ticks_data = demo.ticks.select(["steamid", "name"]).to_pandas()
                 ticks_data["steamid"] = ticks_data["steamid"].astype(str)
+                
+                # Determine starting sides from round 1 ticks
+                round1_ticks = demo.ticks.select(
+                    ["steamid", "team_clan_name", "side"]
+                ).to_pandas()
+                round1_ticks = round1_ticks[
+                    round1_ticks.get("round_num", pd.Series([1] * len(round1_ticks))) == 1
+                ] if "round_num" not in round1_ticks.columns else round1_ticks
+                
+                # Try to get round_num for filtering
+                try:
+                    r1_ticks = demo.ticks.select(
+                        ["steamid", "team_clan_name", "side", "round_num"]
+                    ).to_pandas()
+                    r1_ticks = r1_ticks[r1_ticks["round_num"] == 1]
+                except Exception:
+                    r1_ticks = demo.ticks.select(
+                        ["steamid", "team_clan_name", "side"]
+                    ).to_pandas()
+                
+                # Build team to starting side mapping
+                def match_team_name(clan):
+                    if pd.isna(clan):
+                        return "Unknown"
+                    clan_lower = str(clan).lower().strip()
+                    for t in teams:
+                        if clan_lower == t.lower().strip():
+                            return t
+                    for t in teams:
+                        if clan_lower in t.lower() or t.lower() in clan_lower:
+                            return t
+                    return str(clan)
+                
+                def normalize_side(s):
+                    if pd.isna(s):
+                        return None
+                    s = str(s).upper().strip()
+                    if s in ["CT", "COUNTER", "COUNTERTERRORIST", "COUNTER TERRORIST"]:
+                        return "CT"
+                    elif s in ["T", "TERRORIST"]:
+                        return "T"
+                    return None
+                
+                team_starting_sides = {}
+                if not r1_ticks.empty:
+                    r1_ticks["_team"] = r1_ticks["team_clan_name"].apply(match_team_name)
+                    r1_ticks["_side"] = r1_ticks["side"].apply(normalize_side)
+                    for t in teams:
+                        t_ticks = r1_ticks[r1_ticks["_team"] == t]
+                        if not t_ticks.empty:
+                            side_counts = t_ticks["_side"].value_counts()
+                            if len(side_counts) > 0:
+                                team_starting_sides[t] = side_counts.idxmax()
+                
+                # Default fallback
+                for t in teams:
+                    if t not in team_starting_sides:
+                        team_starting_sides[t] = "CT" if teams.index(t) == 0 else "T"
+                
+                # Ensure both teams have different sides
+                all_sides = list(team_starting_sides.values())
+                if len(set(all_sides)) < len(all_sides):
+                    for i, t in enumerate(teams):
+                        team_starting_sides[t] = "CT" if i == 0 else "T"
+                
+                # Build per-half side-to-team mappings
+                first_half_side_to_team = {side: t for t, side in team_starting_sides.items()}
+                second_half_side_to_team = {
+                    ("T" if side == "CT" else "CT"): t
+                    for t, side in team_starting_sides.items()
+                }
                 
                 # For each player, build their round outcomes
                 for steamid, team in player_team_map.items():
@@ -237,9 +314,15 @@ def main() -> None:
                         if r <= total_rounds:
                             round_winner = winners_df[winners_df["round_num"] == r]
                             if not round_winner.empty:
-                                winner_team = round_winner["winner_team"].iloc[0]
+                                winner_side = round_winner["winner_side"].iloc[0]
+                                # Use the correct mapping depending on half
+                                if r <= 12:
+                                    mapping = first_half_side_to_team
+                                else:
+                                    mapping = second_half_side_to_team
+                                winning_team = mapping.get(winner_side, "")
                                 # Player wins if their team won the round
-                                row[f"r_{r}_outcome"] = (winner_team == team)
+                                row[f"r_{r}_outcome"] = (winning_team == team)
                             else:
                                 row[f"r_{r}_outcome"] = float("nan")
                         else:

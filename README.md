@@ -1,4 +1,6 @@
 # CS:GO Demo Analyzer
+A comprehensive data visualization project for analyzing professional CS:GO demo files. This project provides tools for parsing, processing, visualizing, and creating interactive dashboards from .dem files.
+
 
 - Clarity of the research question / motivation and / or relevance (6)
 - Data mining (0-5) - will be 0 when downloading a structured dataset from a resource like Kaggle
@@ -13,16 +15,15 @@
 
 
 
-A comprehensive data visualization project for analyzing professional CS:GO demo files. This project provides tools for parsing, processing, visualizing, and creating interactive dashboards from .dem files.
 
 
 vibe --resume deb42c56
 
 
 ## TODO
-- Rounds won dataset
-- is it possible to 
-
+- [x] Rounds won dataset
+- [ ] Green and Red win / lose colors to be changed (Economy Chart)
+- [ ] Add overtime line to economy viz chart.
 
 ## Visualization Ideas
 - On the dashboard have a brackets result, where you can click on a match and review the stats from that match. 
@@ -36,7 +37,7 @@ vibe --resume deb42c56
 
 
 ## Future Ideas:
-- on the streamlit homepage, have an overview of the budapest major alongside the tree map of the final 
+- [x] on the streamlit homepage, have an overview of the budapest major alongside the tree map of the final 
 
 ## Improvements
 - `parse_outcomes.py` can be made more efficient by changing it from individual player wins to team aggregate wins 

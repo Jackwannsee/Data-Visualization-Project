@@ -9,11 +9,19 @@ OUTCOMES_PATH = "../../analysis_results/budapest_major_team_outcomes.csv"
 
 
 def parse_round_range(range_str):
-    """Parse '1-12' or '13-24' into list of round numbers."""
-    if pd.isna(range_str):
+    """Parse '1-12, 28-30' or '13-24, 25-27' into list of round numbers."""
+    if pd.isna(range_str) or not range_str or str(range_str).strip() == "":
         return []
-    start, end = map(int, range_str.split('-'))
-    return list(range(start, end + 1))
+    rounds = []
+    parts = str(range_str).split(',')
+    for part in parts:
+        part = part.strip()
+        if '-' in part:
+            start, end = map(int, part.split('-'))
+            rounds.extend(range(start, end + 1))
+        elif part:
+            rounds.append(int(part))
+    return rounds
 
 
 def get_side_for_round(ct_rounds_str, t_rounds_str, round_num):
@@ -127,6 +135,9 @@ def combined_economy_line_plot(stage, map_name, team):
     if team_outcomes is not None:
         for i in range(len(rounds) - 1):
             r1, r2 = rounds[i], rounds[i + 1]
+            # Skip halftime and overtime start segments
+            if (r1 == 12 and r2 == 13) or (r1 == 24 and r2 == 25) or (r1 == 30 and r2 == 31):
+                continue
             c1, c2 = team_cash[i], team_cash[i + 1]
             outcome_col = f'r_{r1}_outcome'
             won_round = team_outcomes[outcome_col]
@@ -141,6 +152,9 @@ def combined_economy_line_plot(stage, map_name, team):
     if opponent_outcomes is not None:
         for i in range(len(rounds) - 1):
             r1, r2 = rounds[i], rounds[i + 1]
+            # Skip halftime and overtime start segments
+            if (r1 == 12 and r2 == 13) or (r1 == 24 and r2 == 25) or (r1 == 30 and r2 == 31):
+                continue
             c1, c2 = opponent_cash[i], opponent_cash[i + 1]
             outcome_col = f'r_{r1}_outcome'
             won_round = opponent_outcomes[outcome_col]
@@ -158,6 +172,10 @@ def combined_economy_line_plot(stage, map_name, team):
         add_logo_markers(ax, rounds, opponent_cash, opponent_outcomes)
 
     ax.axvline(x=12.5, linestyle=':', color='gray', linewidth=2, alpha=0.7)
+    if max(rounds) >= 25:
+        ax.axvline(x=24.5, linestyle=':', color='gray', linewidth=2, alpha=0.7)
+    if max(rounds) >= 31:
+        ax.axvline(x=30.5, linestyle=':', color='gray', linewidth=2, alpha=0.7)
 
     ax.set_xlabel('Round')
     ax.set_ylabel('Total Team Economy ($)')

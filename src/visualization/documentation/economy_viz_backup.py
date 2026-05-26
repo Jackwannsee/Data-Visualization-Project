@@ -2,8 +2,7 @@ import numpy as np
 import os
 import pandas as pd
 import plotly.graph_objects as go
-from config import T_COLOR, CT_COLOR, BOTH_COLOR, WIN_COLOR, LOSS_COLOR, LINE_ALPHA, LINE_COLOR_1, LINE_COLOR_2
-
+from config import T_COLOR, CT_COLOR, BOTH_COLOR, WIN_COLOR, LOSS_COLOR, LINE_ALPHA
 
 # Get script directory and resolve paths relative to it
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -101,46 +100,35 @@ def combined_economy_line_plot(stage, map_name, team, show=True):
 
     fig = go.Figure()
 
-    # Divide rounds into separate segments to avoid connecting across halftime or overtime starts
-    segments = []
-    # Segment 1: Rounds 1-12 (Regulation First Half)
-    s1 = [idx for idx, r in enumerate(rounds) if r <= 12]
-    if s1: segments.append(s1)
-    
-    # Segment 2: Rounds 13-24 (Regulation Second Half)
-    s2 = [idx for idx, r in enumerate(rounds) if 13 <= r <= 24]
-    if s2: segments.append(s2)
-    
-    # Segment 3: Rounds 25-30 (Overtime 1)
-    s3 = [idx for idx, r in enumerate(rounds) if 25 <= r <= 30]
-    if s3: segments.append(s3)
-    
-    # Segment 4: Rounds 31-36 (Overtime 2)
-    s4 = [idx for idx, r in enumerate(rounds) if 31 <= r <= 36]
-    if s4: segments.append(s4)
-
-    # Add team line segments
-    for seg in segments:
+    # Add team line with segmented win/loss colors (skip round 12-13 for halftime)
+    for i in range(len(rounds) - 1):
+        # Skip halftime and overtime start segments
+        if (rounds[i] == 12 and rounds[i + 1] == 13) or (rounds[i] == 24 and rounds[i + 1] == 25) or (rounds[i] == 30 and rounds[i + 1] == 31):
+            continue
+        won_round = team_outcomes[f'r_{rounds[i]}_outcome'] if team_outcomes is not None else True
+        segment_color = hex_to_rgba(WIN_COLOR if won_round else LOSS_COLOR, LINE_ALPHA)
         fig.add_trace(go.Scatter(
-            x=[rounds[idx] for idx in seg],
-            y=[team_cash[idx] for idx in seg],
+            x=[rounds[i], rounds[i + 1]],
+            y=[team_cash[i], team_cash[i + 1]],
             mode='lines',
-            line=dict(color=hex_to_rgba(LINE_COLOR_1, LINE_ALPHA), width=2),
-            hoverinfo='skip',
-            showlegend=False
+            line=dict(color=segment_color, width=2),
+            hoverinfo='skip'
         ))
 
-    # Add opponent line segments
-    for seg in segments:
+    # Add opponent line with segmented win/loss colors (skip round 12-13)
+    for i in range(len(rounds) - 1):
+        # Skip halftime and overtime start segments
+        if (rounds[i] == 12 and rounds[i + 1] == 13) or (rounds[i] == 24 and rounds[i + 1] == 25) or (rounds[i] == 30 and rounds[i + 1] == 31):
+            continue
+        won_round = opponent_outcomes[f'r_{rounds[i]}_outcome'] if opponent_outcomes is not None else True
+        segment_color = hex_to_rgba(WIN_COLOR if won_round else LOSS_COLOR, LINE_ALPHA)
         fig.add_trace(go.Scatter(
-            x=[rounds[idx] for idx in seg],
-            y=[opponent_cash[idx] for idx in seg],
+            x=[rounds[i], rounds[i + 1]],
+            y=[opponent_cash[i], opponent_cash[i + 1]],
             mode='lines',
-            line=dict(color=hex_to_rgba(LINE_COLOR_2, LINE_ALPHA), width=2),
-            hoverinfo='skip',
-            showlegend=False
+            line=dict(color=segment_color, width=2),
+            hoverinfo='skip'
         ))
-
 
     # Add team markers with CT/T text and hover info
     team_marker_colors = []
@@ -149,10 +137,7 @@ def combined_economy_line_plot(stage, map_name, team, show=True):
     for i, r in enumerate(rounds):
         side = get_side_for_round(team_outcomes['CT_rounds'], team_outcomes['T_rounds'], r) if team_outcomes is not None else None
         won = team_outcomes[f'r_{r}_outcome'] if team_outcomes is not None else True
-        if not won:
-            color = BOTH_COLOR
-        else:
-            color = CT_COLOR if side == 'CT' else T_COLOR if side == 'T' else BOTH_COLOR
+        color = CT_COLOR if side == 'CT' else T_COLOR if side == 'T' else BOTH_COLOR
         team_marker_colors.append(color)
         team_marker_text.append(side if side else '')
         team_marker_hover.append(f'{team}<br>Round: {r}<br>Economy: ${team_cash[i]:,.0f}<br>Side: {side}<br>Result: {"Won" if won else "Lost"}')
@@ -178,10 +163,7 @@ def combined_economy_line_plot(stage, map_name, team, show=True):
     for i, r in enumerate(rounds):
         side = get_side_for_round(opponent_outcomes['CT_rounds'], opponent_outcomes['T_rounds'], r) if opponent_outcomes is not None else None
         won = opponent_outcomes[f'r_{r}_outcome'] if opponent_outcomes is not None else True
-        if not won:
-            color = BOTH_COLOR
-        else:
-            color = CT_COLOR if side == 'CT' else T_COLOR if side == 'T' else BOTH_COLOR
+        color = CT_COLOR if side == 'CT' else T_COLOR if side == 'T' else BOTH_COLOR
         opp_marker_colors.append(color)
         opp_marker_text.append(side if side else '')
         opp_marker_hover.append(f'{opponent}<br>Round: {r}<br>Economy: ${opponent_cash[i]:,.0f}<br>Side: {side}<br>Result: {"Won" if won else "Lost"}')

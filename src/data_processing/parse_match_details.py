@@ -89,22 +89,35 @@ def parse_match_details(demo: Demo, teams: list[str]) -> pd.DataFrame:
     Columns: team, side, rounds_played, rounds_won
     
     For each team on each map:
-    - CT row: stats when team was on CT side (or NaN if team was T)
-    - T row: stats when team was on T side (or NaN if team was CT)
-    - Both row: combined stats for the team on this map
-    """
-    # Get team to side mapping from demo
-    ticks_with_team = demo.ticks.select(["steamid", "team_clan_name", "side"]).to_pandas()
+    - CT row: rounds won while on CT side
+    - T row: rounds won while on T side
+    - Both row: total rounds won across both halves
     
-    # Build team_clan_name to side mapping
-    team_clan_to_side = {}
+    Accounts for the halftime side swap at round 13.
+    """
+    # Get team to starting side mapping from round 1 ticks only
+    ticks_with_team = demo.ticks.select(
+        ["steamid", "team_clan_name", "side", "round_num"]
+    ).to_pandas()
+    
+    # Build starting side mapping from round 1 only
+    json_team_to_starting_side = {}
     if not ticks_with_team.empty:
-        team_side = (
-            ticks_with_team.groupby("team_clan_name")["side"]
-            .agg(lambda x: x.mode().iloc[0] if not x.mode().empty else "")
-            .reset_index()
-        )
-        team_clan_to_side = {row["team_clan_name"]: row["side"] for _, row in team_side.iterrows()}
+        round1_ticks = ticks_with_team[ticks_with_team["round_num"] == 1]
+        if not round1_ticks.empty:
+            team_side = (
+                round1_ticks.groupby("team_clan_name")["side"]
+                .agg(lambda x: x.mode().iloc[0] if not x.mode().empty else "")
+                .reset_index()
+            )
+            team_clan_to_side = {
+                row["team_clan_name"]: row["side"]
+                for _, row in team_side.iterrows()
+            }
+        else:
+            team_clan_to_side = {}
+    else:
+        team_clan_to_side = {}
     
     # Match JSON team names to clan names from demo
     def match_team(demo_team: str) -> str:
@@ -120,73 +133,68 @@ def parse_match_details(demo: Demo, teams: list[str]) -> pd.DataFrame:
                 return team
         return demo_team
     
-    # Build JSON team name to side mapping
-    json_team_to_side = {}
+    # Build JSON team name to starting side mapping
     for demo_team, side in team_clan_to_side.items():
         json_team = match_team(demo_team)
-        json_team_to_side[json_team] = side
+        json_team_to_starting_side[json_team] = side
     
     # Get rounds data
     rounds_pd = demo.rounds.to_pandas()
     total_rounds = len(rounds_pd)
     
-    # Count rounds won per side
-    rounds_won_by_side = rounds_pd["winner"].value_counts().to_dict()
-    ct_won = rounds_won_by_side.get("ct", 0)
-    t_won = rounds_won_by_side.get("t", 0)
+    # Split rounds into halves and count wins per side in each half
+    first_half = rounds_pd[rounds_pd["round_num"] <= 12]
+    second_half = rounds_pd[rounds_pd["round_num"] > 12]
+    
+    first_half_ct_won = (first_half["winner"] == "ct").sum() if not first_half.empty else 0
+    first_half_t_won = (first_half["winner"] == "t").sum() if not first_half.empty else 0
+    second_half_ct_won = (second_half["winner"] == "ct").sum() if not second_half.empty else 0
+    second_half_t_won = (second_half["winner"] == "t").sum() if not second_half.empty else 0
     
     # Build result rows
     rows = []
     for team in teams:
-        # Determine which side this team was on in the demo
-        team_side = json_team_to_side.get(team)
+        starting_side = json_team_to_starting_side.get(team, "")
         
-        # CT row: only has data if team was CT
-        if team_side == "ct":
-            ct_rounds_played = total_rounds
-            ct_rounds_won = ct_won
+        # Calculate rounds won per side accounting for halftime swap:
+        # First half (r1-12): team plays their starting side
+        # Second half (r13+): team plays the opposite side
+        if starting_side == "ct":
+            # CT in first half, T in second half
+            ct_rounds_won = int(first_half_ct_won)   # rounds won as CT (first half)
+            t_rounds_won = int(second_half_t_won)    # rounds won as T (second half)
+        elif starting_side == "t":
+            # T in first half, CT in second half
+            t_rounds_won = int(first_half_t_won)     # rounds won as T (first half)
+            ct_rounds_won = int(second_half_ct_won)  # rounds won as CT (second half)
         else:
-            ct_rounds_played = float("nan")
-            ct_rounds_won = float("nan")
+            ct_rounds_won = 0
+            t_rounds_won = 0
         
-        # T row: only has data if team was T
-        if team_side == "t":
-            t_rounds_played = total_rounds
-            t_rounds_won = t_won
-        else:
-            t_rounds_played = float("nan")
-            t_rounds_won = float("nan")
+        both_rounds_won = ct_rounds_won + t_rounds_won
         
-        # Both row: team's total on this map (whichever side they were on)
-        if team_side == "ct":
-            both_rounds_played = total_rounds
-            both_rounds_won = ct_won
-        elif team_side == "t":
-            both_rounds_played = total_rounds
-            both_rounds_won = t_won
-        else:
-            both_rounds_played = float("nan")
-            both_rounds_won = float("nan")
+        ct_rounds_played = min(12, total_rounds)
+        t_rounds_played = max(0, total_rounds - 12)
         
         rows.append({
             "team": team,
             "side": "Counter Terrorist",
-            "rounds_played": ct_rounds_played,
-            "rounds_won": ct_rounds_won,
+            "rounds_played": float(ct_rounds_played) if ct_rounds_played > 0 else float("nan"),
+            "rounds_won": float(ct_rounds_won) if ct_rounds_played > 0 else float("nan"),
         })
         
         rows.append({
             "team": team,
             "side": "Terrorist",
-            "rounds_played": t_rounds_played,
-            "rounds_won": t_rounds_won,
+            "rounds_played": float(t_rounds_played) if t_rounds_played > 0 else float("nan"),
+            "rounds_won": float(t_rounds_won) if t_rounds_played > 0 else float("nan"),
         })
         
         rows.append({
             "team": team,
             "side": "Both",
-            "rounds_played": both_rounds_played,
-            "rounds_won": both_rounds_won,
+            "rounds_played": float(total_rounds),
+            "rounds_won": float(both_rounds_won),
         })
     
     return pd.DataFrame(rows)

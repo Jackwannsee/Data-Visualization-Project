@@ -109,7 +109,7 @@ def load_match_details() -> dict:
             if side == "Counter Terrorist":
                 lookup[key]["starting_side"] = "CT"
                 lookup[key]["total_rounds"] = int(rounds_played)
-            elif side == "Terrorist":
+            elif side == "Terrorist" and lookup[key]["starting_side"] is None:
                 lookup[key]["starting_side"] = "T"
                 lookup[key]["total_rounds"] = int(rounds_played)
         
@@ -183,11 +183,19 @@ def get_round_winners(demo: Demo) -> pd.DataFrame:
 def get_team_sides(demo: Demo, teams: list[str]) -> dict[str, str]:
     """Get the starting side (CT or T) for each team from demo ticks.
     
+    Only looks at round 1 ticks to reliably determine starting sides,
+    since sides swap at halftime (round 13).
+    
     Returns dict: {team_name: "CT"|"T"}
     """
-    ticks = demo.ticks.select(["steamid", "team_clan_name", "side"]).to_pandas()
+    ticks = demo.ticks.select(["steamid", "team_clan_name", "side", "round_num"]).to_pandas()
     if ticks.empty:
         # Fallback: return default CT for first team
+        return {teams[0]: "CT", teams[1]: "T"} if len(teams) >= 2 else {}
+    
+    # Filter to round 1 only for reliable starting-side detection
+    ticks = ticks[ticks["round_num"] == 1]
+    if ticks.empty:
         return {teams[0]: "CT", teams[1]: "T"} if len(teams) >= 2 else {}
     
     # Convert steamid to string
@@ -209,7 +217,7 @@ def get_team_sides(demo: Demo, teams: list[str]) -> dict[str, str]:
     
     ticks["team"] = ticks["team_clan_name"].apply(match_team)
     
-    # Get the side for each team (from first tick)
+    # Get the side for each team
     team_sides = {}
     
     # Normalize side values
@@ -228,7 +236,7 @@ def get_team_sides(demo: Demo, teams: list[str]) -> dict[str, str]:
     for team in teams:
         team_ticks = ticks[ticks["team"] == team]
         if not team_ticks.empty:
-            # Get the most common normalized side for this team
+            # Get the most common normalized side for this team in round 1
             side_counts = team_ticks["side_norm"].value_counts()
             if len(side_counts) > 0:
                 side = side_counts.idxmax()
@@ -240,6 +248,60 @@ def get_team_sides(demo: Demo, teams: list[str]) -> dict[str, str]:
             team_sides[team] = "CT"
     
     return team_sides
+
+
+def get_side_for_round(starting_side: str, r: int) -> str:
+    """Determine the side (CT or T) for a team in a given round.
+    
+    Halftime switch at round 12.
+    First overtime starts at round 25, side switch every 3 rounds.
+    Teams swap starting overtime sides each overtime (OT1 starts on same side as 2nd half).
+    """
+    if r <= 12:
+        return starting_side
+    elif r <= 24:
+        return "T" if starting_side == "CT" else "CT"
+    else:  # Overtime (r >= 25)
+        side_before_ot = "T" if starting_side == "CT" else "CT"
+        ot_round = r - 25
+        ot_num = ot_round // 6
+        ot_half_round = ot_round % 6
+        
+        # If even OT number (OT1, OT3, ...), first half is side_before_ot, second half is opposite
+        # If odd OT number (OT2, OT4, ...), first half is opposite, second half is side_before_ot
+        is_opposite = (ot_half_round >= 3) ^ (ot_num % 2 == 1)
+        
+        if is_opposite:
+            return "CT" if side_before_ot == "T" else "T"
+        else:
+            return side_before_ot
+
+
+def format_ranges(rounds: list[int]) -> str:
+    """Format a list of sorted integers into a comma-separated list of ranges (e.g. '1-12,28-30')."""
+    if not rounds:
+        return ""
+    ranges = []
+    start = rounds[0]
+    prev = rounds[0]
+    
+    for r in rounds[1:]:
+        if r == prev + 1:
+            prev = r
+        else:
+            if start == prev:
+                ranges.append(str(start))
+            else:
+                ranges.append(f"{start}-{prev}")
+            start = r
+            prev = r
+            
+    if start == prev:
+        ranges.append(str(start))
+    else:
+        ranges.append(f"{start}-{prev}")
+        
+    return ",".join(ranges)
 
 
 # ---------------------------------------------------------------------------
@@ -331,11 +393,6 @@ def main() -> None:
                     for i, team in enumerate(teams):
                         team_sides[team] = "CT" if i == 0 else "T"
                 
-                # Build side-to-team mapping for this match
-                side_to_team = {}
-                for t, side in team_sides.items():
-                    side_to_team[side] = t
-                
                 # For each team, build their round outcomes
                 for team in teams:
                     opponent = [t for t in teams if t != team][0] if len(teams) == 2 else "Unknown"
@@ -350,28 +407,17 @@ def main() -> None:
                     }
                     
                     # Add CT_rounds and T_rounds
-                    if starting_side == "CT":
-                        ct_start = 1
-                        ct_end = 12
-                        t_start = 13
-                        t_end = total_rounds
-                    else:  # starting_side == "T"
-                        ct_start = 13
-                        ct_end = total_rounds
-                        t_start = 1
-                        t_end = 12
+                    ct_rounds_list = []
+                    t_rounds_list = []
+                    for r in range(1, total_rounds + 1):
+                        side = get_side_for_round(starting_side, r)
+                        if side == "CT":
+                            ct_rounds_list.append(r)
+                        elif side == "T":
+                            t_rounds_list.append(r)
                     
-                    # Ensure ranges are valid
-                    if ct_start <= ct_end:
-                        row["CT_rounds"] = f"{ct_start}-{ct_end}" if ct_start != ct_end else str(ct_start)
-                    else:
-                        row["CT_rounds"] = ""
-                    
-                    if t_start <= t_end:
-                        row["T_rounds"] = f"{t_start}-{t_end}" if t_start != t_end else str(t_start)
-                    else:
-                        row["T_rounds"] = ""
-                    
+                    row["CT_rounds"] = format_ranges(ct_rounds_list)
+                    row["T_rounds"] = format_ranges(t_rounds_list)
 
                     # Add round outcome columns
                     for r in range(1, MAX_ROUNDS + 1):
@@ -379,10 +425,8 @@ def main() -> None:
                             round_winner = winners_df[winners_df["round_num"] == r]
                             if not round_winner.empty:
                                 winner_side = round_winner["winner_side"].iloc[0]
-                                # Map winner_side to team name and check if it's our team
-                                winning_team = side_to_team.get(winner_side, "")
-
-                                row[f"r_{r}_outcome"] = (winning_team == team)
+                                team_side = get_side_for_round(starting_side, r)
+                                row[f"r_{r}_outcome"] = (winner_side == team_side)
                             else:
                                 row[f"r_{r}_outcome"] = float("nan")
                         else:
