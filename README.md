@@ -13,6 +13,8 @@ A comprehensive data visualization project for analyzing professional CS:GO demo
 
 
 
+Tick downsampling: Keep every 16th tick (128 ticks/s → 8 samples/s) to reduce 1.5M rows/demo to ~95K while preserving positioning patterns
+
 ## TODO
 - [x] Rounds won dataset
 - [x] Green and Red win / lose colors to be changed (Economy Chart)
@@ -27,7 +29,7 @@ A comprehensive data visualization project for analyzing professional CS:GO demo
 - [x] Economy Charts, line chart for each game where the individual economies are highlighted. (how to overlay with who won that game)
 - [x] on the streamlit homepage, have an overview of the budapest major alongside the tree map of the final 
 - [ ] Player performance spider chart should default to `both`
-- [ ] Diverging bar plot player stats on ct and t 
+- [ ] Diverging bar plot player stats on ct and t maybe do rounds won per map? have the map name in the middle and then the diverging aspect.
 - [ ] Check the descriptions and whether they are relevant and correct
 - [ ] Create MD file for data_processing
 - [ ] Create MD file for visualization
