@@ -13,13 +13,6 @@ A comprehensive data visualization project for analyzing professional CS:GO demo
 
 
 
-
-
-
-
-vibe --resume deb42c56
-
-
 ## TODO
 - [x] Rounds won dataset
 - [x] Green and Red win / lose colors to be changed (Economy Chart)
@@ -34,3 +27,4 @@ vibe --resume deb42c56
 - [x] Economy Charts, line chart for each game where the individual economies are highlighted. (how to overlay with who won that game)
 - [x] on the streamlit homepage, have an overview of the budapest major alongside the tree map of the final 
 - [ ] Player performance spider chart should default to `both`
+- [ ] Diverging 

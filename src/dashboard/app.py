@@ -71,6 +71,15 @@ st.markdown("""
     }
 
     /* ── Navigation Cards ── */
+    .nav-card-link {
+        text-decoration: none !important;
+        color: inherit !important;
+        display: block;
+        height: 100%;
+    }
+    .nav-card-link:hover {
+        text-decoration: none !important;
+    }
     .nav-card {
         background: linear-gradient(145deg, #1a1d23 0%, #22262e 100%);
         border: 1px solid #333;
@@ -78,7 +87,7 @@ st.markdown("""
         padding: 2rem 1.5rem;
         text-align: center;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        min-height: 200px;
+        height: 220px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -89,7 +98,6 @@ st.markdown("""
         box-shadow: 0 12px 40px rgba(250, 178, 0, 0.12);
         border-color: #FAB200;
     }
-    .nav-card .icon { font-size: 3rem; margin-bottom: 0.8rem; }
     .nav-card h3 {
         color: #FAB200;
         font-size: 1.35rem;
@@ -244,73 +252,6 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# ── Navigation Cards ─────────────────────────────────────────────────────────
-st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
-
-col1, col2, col3 = st.columns(3, gap="medium")
-
-with col1:
-    st.markdown(
-        """
-        <div class="nav-card">
-            <div class="icon">💰</div>
-            <h3>Economy Analysis</h3>
-            <p>
-                Explore round-by-round team economy comparisons with
-                win/loss indicators and CT/T side markers. See how money
-                management shapes the outcome of each map.
-            </p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-    st.page_link(
-        "pages/1_💰_Economy_Analysis.py",
-        label="Open Economy Analysis  →",
-        icon="💰",
-    )
-
-with col2:
-    st.markdown(
-        """
-        <div class="nav-card">
-            <div class="icon">🕷️</div>
-            <h3>Player Performance</h3>
-            <p>
-                Compare player statistics with interactive radar charts.
-                Analyze kills, assists, utility usage, and more across
-                different maps and tournament stages.
-            </p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-    st.page_link(
-        "pages/2_🕷️_Player_Performance.py",
-        label="Open Player Performance  →",
-        icon="🕷️",
-    )
-
-with col3:
-    st.markdown(
-        """
-        <div class="nav-card">
-            <div class="icon">🎯</div>
-            <h3>Headshot Analysis</h3>
-            <p>
-                Analyze player headshot percentages against kills or Kills Per Round (KPR).
-                See statistical trendlines, tournament averages, and size-scaled round counts.
-            </p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-    st.page_link(
-        "pages/3_🎯_Headshot_Analysis.py",
-        label="Open Headshot Analysis  →",
-        icon="🎯",
-    )
-
 # ── Tournament Bracket ───────────────────────────────────────────────────────
 st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
 
@@ -379,6 +320,73 @@ for stage_name in STAGE_ORDER:
         _, center, _ = st.columns([1, 2, 1])
         with center:
             st.markdown(render_match_card(matches[0]), unsafe_allow_html=True)
+
+# ── Navigation Cards ─────────────────────────────────────────────────────────
+st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
+
+st.markdown(
+    """
+    <div style="text-align:center; margin-bottom:2rem;">
+        <h2 style="color:#FAB200; font-weight:700;">Visualize Tournament</h2>
+        <p style="color:#666; font-size:0.95rem;">
+            Explore interactive analysis pages for deep tournament insights
+        </p>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+col1, col2, col3 = st.columns(3, gap="medium")
+
+with col1:
+    st.markdown(
+        """
+        <a href="/Economy_Analysis" target="_self" class="nav-card-link">
+            <div class="nav-card">
+                <h3>Economy Analysis</h3>
+                <p>
+                    Explore round-by-round team economy comparisons with
+                    win/loss indicators and CT/T side markers. See how money
+                    management shapes the outcome of each map.
+                </p>
+            </div>
+        </a>
+        """,
+        unsafe_allow_html=True,
+    )
+
+with col2:
+    st.markdown(
+        """
+        <a href="/Player_Performance" target="_self" class="nav-card-link">
+            <div class="nav-card">
+                <h3>Player Performance</h3>
+                <p>
+                    Compare player statistics with interactive radar charts.
+                    Analyze kills, assists, utility usage, and more across
+                    different maps and tournament stages.
+                </p>
+            </div>
+        </a>
+        """,
+        unsafe_allow_html=True,
+    )
+
+with col3:
+    st.markdown(
+        """
+        <a href="/Headshot_Analysis" target="_self" class="nav-card-link">
+            <div class="nav-card">
+                <h3>Headshot Analysis</h3>
+                <p>
+                    Analyze player headshot percentages against kills or Kills Per Round (KPR).
+                    See statistical trendlines, tournament averages, and size-scaled round counts.
+                </p>
+            </div>
+        </a>
+        """,
+        unsafe_allow_html=True,
+    )
 
 # ── Footer ───────────────────────────────────────────────────────────────────
 st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
