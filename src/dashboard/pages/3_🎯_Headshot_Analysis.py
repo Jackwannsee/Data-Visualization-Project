@@ -17,6 +17,10 @@ VIZ_DIR = os.path.join(SRC_DIR, "visualization")
 if VIZ_DIR not in sys.path:
     sys.path.insert(0, VIZ_DIR)
 
+import importlib
+if "headshot_scatter" in sys.modules:
+    importlib.reload(sys.modules["headshot_scatter"])
+
 from headshot_scatter import (
     create_headshot_scatter,
     get_available_stages,

@@ -27,4 +27,7 @@ A comprehensive data visualization project for analyzing professional CS:GO demo
 - [x] Economy Charts, line chart for each game where the individual economies are highlighted. (how to overlay with who won that game)
 - [x] on the streamlit homepage, have an overview of the budapest major alongside the tree map of the final 
 - [ ] Player performance spider chart should default to `both`
-- [ ] Diverging 
+- [ ] Diverging bar plot player stats on ct and t 
+- [ ] Check the descriptions and whether they are relevant and correct
+- [ ] Create MD file for data_processing
+- [ ] Create MD file for visualization

@@ -119,35 +119,40 @@ def filter_data(df, player_names, side=None, stage=None, map_name=None, scope="a
 
 def calculate_metrics(df, metrics):
     """
-    Calculate derived metrics (like K/D Ratio) and return a dict of metric values and game count.
+    Calculate derived metrics (like K/D Ratio) and return a dict of metric values and total rounds played.
     
     Args:
         df: Dataframe with player data
         metrics: List of metric names to compute (may include calculated ones)
     
     Returns:
-        tuple: (dict mapping metric names to their mean values, int number of games)
+        tuple: (dict mapping metric names to their round-weighted values, float total rounds)
     """
     result = {}
-    # Count unique matches (each row is a unique combination of stage, map, side for a player)
-    # We use 'Rounds Played' to count games - sum and divide by typical rounds per game
-    # Or simply count rows as each represents a side/match combination
-    n_games = len(df)
+    total_rounds = float(df['Rounds Played'].sum())
+    
+    # Calculate global sums for ratio metrics
+    total_kills = df['Kills'].sum()
+    total_deaths = df['Deaths'].sum()
+    total_headshots = df['Headshots'].sum() if 'Headshots' in df.columns else 0.0
     
     for metric in metrics:
         if metric == "K/D Ratio":
-            # Calculate K/D Ratio
-            kd_ratios = df.apply(
-                lambda row: row['Kills'] / row['Deaths'] if row['Deaths'] > 0 else 0, axis=1
-            )
-            result[metric] = kd_ratios.mean()
+            result[metric] = total_kills / total_deaths if total_deaths > 0 else 0.0
+        elif metric == "Headshot %":
+            result[metric] = (total_headshots / total_kills) * 100.0 if total_kills > 0 else 0.0
         elif metric == "Deaths":
             # For deaths, we want to invert (lower is better)
             # Return negative so it can be inverted during normalization
-            result[metric] = -df[metric].mean()
+            # We calculate deaths per round
+            result[metric] = -(total_deaths / total_rounds) if total_rounds > 0 else 0.0
+        elif metric == "Rounds Played":
+            result[metric] = total_rounds
         else:
-            result[metric] = df[metric].mean()
-    return result, n_games
+            # Absolute metric per round
+            result[metric] = df[metric].sum() / total_rounds if total_rounds > 0 else 0.0
+            
+    return result, total_rounds
 
 
 def hex_to_rgba(hex_color, alpha=0.25):
@@ -225,14 +230,17 @@ def create_spider_chart(
     for metric in metrics:
         if metric == "K/D Ratio":
             kd_ratios = df_all.apply(
-                lambda row: row['Kills'] / row['Deaths'] if row['Deaths'] > 0 else 0, axis=1
+                lambda row: row['Kills'] / row['Deaths'] if row['Deaths'] > 0 else 0.0, axis=1
             )
             norm_values[metric] = kd_ratios.max()
+        elif metric == "Headshot %":
+            norm_values[metric] = df_all['Headshot %'].max() if 'Headshot %' in df_all.columns else 100.0
         elif metric == "Deaths":
-            # For deaths, we use the max and will invert during normalization
-            norm_values[metric] = df_all[metric].max()
+            # Normalize against max per-round death rate
+            norm_values[metric] = (df_all['Deaths'] / df_all['Rounds Played']).max()
         else:
-            norm_values[metric] = df_all[metric].max()
+            # Normalize against max per-round rate
+            norm_values[metric] = (df_all[metric] / df_all['Rounds Played']).max()
     
     # Create figure
     fig = go.Figure()
@@ -254,8 +262,8 @@ def create_spider_chart(
             if len(player_df) == 0:
                 continue
             
-            # Calculate metric values and game count
-            metric_values, n_games = calculate_metrics(player_df, metrics)
+            # Calculate metric values and rounds count
+            metric_values, total_rounds = calculate_metrics(player_df, metrics)
             
             # Normalize values to 0-100 scale
             normalized_values = []
@@ -265,10 +273,12 @@ def create_spider_chart(
                     normalized_values.append(0)
                 else:
                     if metric == "Deaths":
-                        # Invert deaths (lower is better, so we negated it earlier)
-                        normalized_values.append(((-metric_values[metric] / max_val) + 1) * 50)
+                        # Invert deaths (lower is better, so 0 is 100%, max_val is 0%)
+                        # metric_values[metric] is negative, so -metric_values[metric] is positive
+                        actual_val = -metric_values[metric]
+                        normalized_values.append((1.0 - (actual_val / max_val)) * 100.0)
                     else:
-                        normalized_values.append((metric_values[metric] / max_val) * 100)
+                        normalized_values.append((metric_values[metric] / max_val) * 100.0)
             
             # Determine color
             if len(player_names) == 1:
@@ -295,17 +305,47 @@ def create_spider_chart(
             else:
                 display_name = current_side.replace(' Counter Terrorist', ' CT').replace('Terrorist', 'T')
             
-            # Add display name with game count
-            display_name_with_count = f"{display_name} ({n_games} games)"
+            # Add display name with round count
+            display_name_with_count = f"{display_name} ({total_rounds:.0f} rounds)"
             
             # Build custom hover text that shows the actual average value for each metric
-            # Format: "Metric: avg (n games) = x"
             custom_hover_texts = []
             for metric, norm_val in zip(metrics, normalized_values):
                 raw_value = metric_values[metric]
                 if metric == "Deaths":
                     raw_value = -raw_value  # Invert back for display
-                custom_hover_texts.append(f"{metric}: avg ({n_games} games) = {raw_value:.1f}")
+                
+                if metric == "K/D Ratio":
+                    total_kills = player_df['Kills'].sum()
+                    total_deaths = player_df['Deaths'].sum()
+                    custom_hover_texts.append(
+                        f"K/D Ratio: {raw_value:.2f}<br>"
+                        f"Total Kills: {total_kills:.0f}<br>"
+                        f"Total Deaths: {total_deaths:.0f}"
+                    )
+                elif metric == "Headshot %":
+                    total_headshots = player_df['Headshots'].sum() if 'Headshots' in player_df.columns else 0.0
+                    total_kills = player_df['Kills'].sum()
+                    custom_hover_texts.append(
+                        f"Headshot %: {raw_value:.1f}%<br>"
+                        f"Total Headshots: {total_headshots:.0f}<br>"
+                        f"Total Kills: {total_kills:.0f}"
+                    )
+                elif metric == "Deaths":
+                    deaths_per_round = -raw_value
+                    total_deaths = player_df['Deaths'].sum()
+                    custom_hover_texts.append(
+                        f"Deaths/round: {deaths_per_round:.2f}<br>"
+                        f"Total Deaths: {total_deaths:.0f}<br>"
+                        f"Rounds: {total_rounds:.0f}"
+                    )
+                else:
+                    total_val = player_df[metric].sum()
+                    custom_hover_texts.append(
+                        f"{metric}/round: {raw_value:.2f}<br>"
+                        f"Total {metric}: {total_val:.0f}<br>"
+                        f"Rounds: {total_rounds:.0f}"
+                    )
             
             # Create the radar trace with custom hover text per point
             # For multiple traces, use fill='none' to prevent fill areas from blocking hover
