@@ -33,5 +33,5 @@ Tick downsampling: Keep every 16th tick (128 ticks/s → 8 samples/s) to reduce 
 - [ ] Check the descriptions and whether they are relevant and correct
 - [ ] Create MD file for data_processing
 - [ ] Create MD file for visualization
-- [ ] Heatmap on CT side includes the spawn area... Watch out with simply removing the spawn area as this affects overpass
-- [ ] Streamlit missing heatmap page link on individual other pages.
+- [x] Heatmap on CT side includes the spawn area... Watch out with simply removing the spawn area as this affects overpass
+- [x] Streamlit missing heatmap page link on individual other pages.
