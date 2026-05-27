@@ -1,6 +1,7 @@
 # Data Processing and Analysis
 pandas
 numpy
+polars
 awpy
 
 # Visualization
@@ -14,6 +15,7 @@ streamlit-option-menu
 
 # Utility
 python-dotenv
+pillow
 
 # Jupyter (for notebooks)
 notebook
