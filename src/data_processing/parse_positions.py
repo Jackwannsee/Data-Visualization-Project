@@ -104,10 +104,20 @@ def parse_positions_from_demo(
     # Downsample
     ticks = ticks.iloc[::DOWNSAMPLE_FACTOR].reset_index(drop=True)
 
-    # Filter: alive, known side, not in spawn
+    # Filter: alive, known side
     ticks = ticks[ticks['health'] > 0]
     ticks = ticks[ticks['side'].notna()]
-    ticks = ticks[~ticks['place'].str.contains('Spawn', case=False, na=False)]
+
+    # Exclude buy period (freeze time) using round freeze_end timestamps
+    # freeze_end is the tick when players can move freely after buy
+    if demo.rounds is not None:
+        rounds = demo.rounds.to_pandas()
+        # Build a mapping: round_num -> freeze_end tick
+        freeze_map = dict(zip(rounds['round_num'], rounds['freeze_end']))
+        # Keep only ticks after freeze_end for their round
+        ticks['freeze_end'] = ticks['round_num'].map(freeze_map)
+        ticks = ticks[ticks['tick'] > ticks['freeze_end']]
+        ticks = ticks.drop(columns=['freeze_end'])
 
     # Determine map key (e.g. "Nuke" -> "de_nuke")
     map_key = f"de_{map_display_name.lower()}"

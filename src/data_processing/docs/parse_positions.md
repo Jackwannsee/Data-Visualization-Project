@@ -7,17 +7,23 @@ Extracts player position data from CS2 demo files and produces a binned position
 ## Pipeline
 
 ```
-.dem files → awpy Demo.parse() → tick data → filter/downsample → bin coordinates → aggregate → CSV
+.dem files -> awpy Demo.parse() -> tick data -> filter/downsample -> bin coordinates -> aggregate -> CSV
 ```
 
 ## Processing Steps (per demo)
 
 1. **Parse** demo via `awpy.Demo.parse()` — returns Polars DataFrame of tick data
-2. **Downsample** 16:1 (128 ticks/s → 8 samples/s)
-3. **Filter** — alive (`health > 0`), known side (`side` not null), not in spawn
+2. **Downsample** 16:1 (128 ticks/s -> 8 samples/s)
+3. **Filter** — alive (`health > 0`), known side (`side` not null), exclude buy period (see below)
 4. **Assign level** — uses `MAP_DATA[map_key]['lower_level_max_units']` as Z threshold (Nuke: -495, Train: -50)
 5. **Bin coordinates** — floor-divide X/Y by granularity (default 25 game units)
 6. **Aggregate** — `groupby(['side', 'level', 'x_bin', 'y_bin']).size()`
+
+## Buy Period Exclusion
+
+Buy period (freeze time) ticks are excluded using `demo.rounds.freeze_end` timestamps rather than filtering by `place` name. This avoids the inconsistency where CT spawn is labeled as map locations (e.g., `BombsiteA` on Overpass) while T spawn is labeled `TSpawn`.
+
+For each round, only ticks with `tick > freeze_end` are kept. This uniformly excludes buy period data across all maps regardless of how awpy labels spawn areas.
 
 ## Demo Discovery
 
@@ -25,7 +31,7 @@ The `find_dem_file()` helper locates `.dem` files by matching stage directory, m
 
 ## Tournament Iteration
 
-`main()` reads `budapest_major.json` and iterates `stages → matches → maps_played`. For each map, it resolves the demo file, extracts positions, and attaches metadata (`stages`, `map`, `teams`). All per-demo DataFrames are concatenated into one CSV.
+`main()` reads `budapest_major.json` and iterates `stages -> matches -> maps_played`. For each map, it resolves the demo file, extracts positions, and attaches metadata (`stages`, `map`, `teams`). All per-demo DataFrames are concatenated into one CSV.
 
 ## Output
 

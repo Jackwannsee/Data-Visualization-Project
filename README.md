@@ -21,7 +21,7 @@ Tick downsampling: Keep every 16th tick (128 ticks/s → 8 samples/s) to reduce 
 - [x] Add overtime line to economy viz chart.
 - [ ] on the dashboard change year from 2025 to 2026
 - [x] On the dashboard have a brackets result, where you can click on a match and review the stats from that match. 
-- [ ] Heatmap for player movements (use own heatmap calculation software?)
+- [x] Heatmap for player movements (use own heatmap calculation software?)
 - [ ] Spider charts for:
     - Which maps the different teams played 
     - Statistics such as util thrown, this can be highlighted during CT and T (see if molotovs are thrown more during T as they are stronger)
@@ -33,3 +33,5 @@ Tick downsampling: Keep every 16th tick (128 ticks/s → 8 samples/s) to reduce 
 - [ ] Check the descriptions and whether they are relevant and correct
 - [ ] Create MD file for data_processing
 - [ ] Create MD file for visualization
+- [ ] Heatmap on CT side includes the spawn area... Watch out with simply removing the spawn area as this affects overpass
+- [ ] Streamlit missing heatmap page link on individual other pages.
