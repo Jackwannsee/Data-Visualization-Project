@@ -221,6 +221,7 @@ with st.sidebar:
     st.page_link("pages/1_💰_Economy_Analysis.py", label="Economy Analysis", icon="💰")
     st.page_link("pages/2_🕷️_Player_Performance.py", label="Player Performance", icon="🕷️")
     st.page_link("pages/3_🎯_Headshot_Analysis.py", label="Headshot Analysis", icon="🎯")
+    st.page_link("pages/4_🗺️_Position_Heatmap.py", label="Position Heatmap", icon="🗺️")
     st.markdown("---")
     st.markdown("**StarLadder Budapest Major 2025**")
     st.markdown(
@@ -336,7 +337,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-col1, col2, col3 = st.columns(3, gap="medium")
+col1, col2, col3, col4 = st.columns(4, gap="medium")
 
 with col1:
     st.markdown(
@@ -381,6 +382,23 @@ with col3:
                 <p>
                     Analyze player headshot percentages against kills or Kills Per Round (KPR).
                     See statistical trendlines, tournament averages, and size-scaled round counts.
+                </p>
+            </div>
+        </a>
+        """,
+        unsafe_allow_html=True,
+    )
+
+with col4:
+    st.markdown(
+        """
+        <a href="/Position_Heatmap" target="_self" class="nav-card-link">
+            <div class="nav-card">
+                <h3>Position Heatmap</h3>
+                <p>
+                    Visualize player positioning patterns overlaid on map radar images.
+                    Compare CT vs T positioning, explore Nuke's upper and lower levels,
+                    and adjust detail granularity.
                 </p>
             </div>
         </a>
