@@ -38,4 +38,4 @@ Tick downsampling: Keep every 16th tick (128 ticks/s → 8 samples/s) to reduce 
 - [ ] Add description of z to dashboard heatmap
 - [x] colors heatmap
 - [x] fix game outcome score, winning score always on the left
-- [ ] Double Nav on mac
+- [x] Double Nav on mac
