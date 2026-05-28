@@ -36,3 +36,6 @@ Tick downsampling: Keep every 16th tick (128 ticks/s → 8 samples/s) to reduce 
 - [x] Heatmap on CT side includes the spawn area... Watch out with simply removing the spawn area as this affects overpass
 - [x] Streamlit missing heatmap page link on individual other pages.
 - [ ] Add description of z to dashboard heatmap
+- [ ] colors heatmap
+- [ ] fix game outcome score, winning score always on the left
+- [ ] Double Nav on mac

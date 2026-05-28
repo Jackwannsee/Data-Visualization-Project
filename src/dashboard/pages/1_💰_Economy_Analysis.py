@@ -194,6 +194,18 @@ st.markdown("### Tournament Bracket")
 
 STAGE_ORDER = ["Quarterfinals", "Semifinals", "Final"]
 
+
+def reorder_score(score: str, winner: str, team1: str, team2: str) -> str:
+    """Reorder score so the winner's score always appears first."""
+    parts = score.split("-")
+    if len(parts) != 2:
+        return score
+    if team1 == winner:
+        return f"{parts[0]}-{parts[1]}"
+    else:
+        return f"{parts[1]}-{parts[0]}"
+
+
 # Default match selection
 if "selected_eco_match" not in st.session_state:
     st.session_state.selected_eco_match = tournament["stages"]["Final"][0]
@@ -214,7 +226,8 @@ for stage_name in STAGE_ORDER:
         for i, match in enumerate(matches):
             with cols[i % 2]:
                 t1, t2 = match["teams_played"]
-                score = match["overall_score"]
+                winner = match["overall_winner"]
+                score = reorder_score(match["overall_score"], winner, t1, t2)
                 btn_label = f"{t1} {score} {t2}"
                 # Use primary style for selected
                 is_selected = (match == st.session_state.selected_eco_match)
@@ -227,7 +240,8 @@ for stage_name in STAGE_ORDER:
         with center:
             match = matches[0]
             t1, t2 = match["teams_played"]
-            score = match["overall_score"]
+            winner = match["overall_winner"]
+            score = reorder_score(match["overall_score"], winner, t1, t2)
             btn_label = f"{t1} {score} {t2}"
             is_selected = (match == st.session_state.selected_eco_match)
             if st.button(btn_label, key=f"eco_btn_{stage_name}_0", use_container_width=True, type="primary" if is_selected else "secondary"):
@@ -260,7 +274,7 @@ st.markdown(
 
 maps_played = sel_match.get("maps_played", [])
 if maps_played:
-    tabs = st.tabs([f"{m['map_name']} ({m['score']})" for m in maps_played])
+    tabs = st.tabs([f"{m['map_name']} ({reorder_score(m['score'], m['winner'], t1, t2)})" for m in maps_played])
     
     for i, m in enumerate(maps_played):
         map_name = m["map_name"]

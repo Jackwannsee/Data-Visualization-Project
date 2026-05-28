@@ -269,19 +269,30 @@ st.markdown(
 )
 
 
+def reorder_score(score: str, winner: str, team1: str, team2: str) -> str:
+    """Reorder score so the winner's score always appears first."""
+    parts = score.split("-")
+    if len(parts) != 2:
+        return score
+    if team1 == winner:
+        return f"{parts[0]}-{parts[1]}"
+    else:
+        return f"{parts[1]}-{parts[0]}"
+
+
 def render_match_card(match: dict) -> str:
     """Return HTML for a single match card."""
     teams = match["teams_played"]
     winner = match["overall_winner"]
-    score = match["overall_score"]
+    score = reorder_score(match["overall_score"], winner, teams[0], teams[1])
     maps_played = match["maps_played"]
 
     # Build map tags
     maps_html = ""
     for m in maps_played:
         css = "won" if m["winner"] == winner else "lost"
-        # Show the winning team's perspective score tag
-        maps_html += f'<span class="map-tag {css}">{m["map_name"]} {m["score"]}</span>'
+        map_score = reorder_score(m["score"], m["winner"], teams[0], teams[1])
+        maps_html += f'<span class="map-tag {css}">{m["map_name"]} {map_score}</span>'
 
     t1_cls = "team-winner" if teams[0] == winner else "team-loser"
     t2_cls = "team-winner" if teams[1] == winner else "team-loser"

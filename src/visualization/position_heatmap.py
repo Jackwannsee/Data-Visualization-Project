@@ -153,6 +153,7 @@ def create_position_heatmap(
     match: str = None,
     opacity: float = 0.65,
     show: bool = True,
+    colorscale_name: str = None,
 ) -> go.Figure:
     """Create a position heatmap overlaid on a map radar image.
 
@@ -165,6 +166,9 @@ def create_position_heatmap(
         match: "Team A vs Team B" filter or None
         opacity: Heatmap opacity (0-1)
         show: Whether to display the figure
+        colorscale_name: Override side-based palette. One of "CT", "T", "Both",
+                         or a Plotly colorscale name (e.g. "Viridis", "Hot").
+                         Defaults to side-based selection when None.
 
     Returns:
         Plotly Figure object
@@ -228,7 +232,19 @@ def create_position_heatmap(
             grid[gy, gx] += row['count']
 
     # Select colorscale
-    if side == 'CT':
+    if colorscale_name is not None:
+        # User provided explicit palette name
+        custom_palettes = {
+            "Blues": CT_COLORSCALE,
+            "Oranges/Golds": T_COLORSCALE,
+            "Hot/Plasma": BOTH_COLORSCALE,
+        }
+        if colorscale_name in custom_palettes:
+            colorscale = custom_palettes[colorscale_name]
+        else:
+            # Treat as a Plotly colorscale name (e.g. "Viridis", "Plasma")
+            colorscale = colorscale_name
+    elif side == 'CT':
         colorscale = CT_COLORSCALE
     elif side == 'T':
         colorscale = T_COLORSCALE

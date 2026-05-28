@@ -155,6 +155,14 @@ with st.sidebar:
         index=0,
     )
 
+    # ── Color Palette Selector ──
+    selected_palette = st.selectbox(
+        "Color Palette",
+        options=["Blues", "Oranges/Golds", "Hot/Plasma"],
+        index=2,
+        help="Heatmap color palette: Blues (CT), Oranges/Golds (T), or Hot/Plasma (Both sides).",
+    )
+
 # ── Page Content ─────────────────────────────────────────────────────────────
 st.markdown(
     """
@@ -192,6 +200,7 @@ try:
         stage=selected_stage if selected_stage != "All" else None,
         match=selected_match if selected_match != "All" else None,
         show=False,
+        colorscale_name=selected_palette,
     )
     fig.update_layout(
         paper_bgcolor="rgba(0,0,0,0)",
