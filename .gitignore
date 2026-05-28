@@ -26,11 +26,11 @@ temp_*.dem
 *.ipynb
 
 # Output files
-*.png
-*.jpg
-*.jpeg
-*.svg
-*.pdf
+# *.png
+# *.jpg
+# *.jpegc
+# *.svg
+# *.pdf
 
 # System files
 .DS_Store
@@ -48,3 +48,4 @@ Thumbs.db
 
 scratch/
 Misc/
+src/visualization/assets/Team Logos/
