@@ -40,11 +40,8 @@ Thumbs.db
 .pytest_cache/
 
 # Streamlit
-.streamlit/
 .streamlit/secrets.toml
 .streamlit/credentials.toml
-.streamlit/config.toml
-~/.streamlit/
 
 scratch/
 Misc/
