@@ -10,6 +10,13 @@ import json
 import pandas as pd
 import streamlit as st
 
+try:
+    from data_loader import load_csv
+except ImportError:
+    import sys
+    sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../visualization"))
+    from data_loader import load_csv
+
 # ── Path Setup ───────────────────────────────────────────────────────────────
 PAGES_DIR = os.path.dirname(os.path.abspath(__file__))
 DASHBOARD_DIR = os.path.dirname(PAGES_DIR)
@@ -140,7 +147,7 @@ def load_tournament_data():
 
 @st.cache_data
 def load_match_details():
-    return pd.read_csv(MATCH_DETAILS_PATH)
+    return load_csv(MATCH_DETAILS_PATH)
 
 def get_match_info(stage, map_name, team):
     """Look up match info from match_details.csv."""

@@ -4,6 +4,12 @@ import plotly.graph_objects as go
 import importlib.util
 import sys
 
+try:
+    from data_loader import load_csv
+except ImportError:
+    sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+    from data_loader import load_csv
+
 # Get script directory and resolve paths relative to it
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.join(SCRIPT_DIR, "../../analysis_results/budapest_major_stats.csv")
@@ -28,7 +34,7 @@ METRICS = ["Kills", "Assists", "Deaths", "Headshots", "Smokes Thrown", "Molotovs
 
 def get_data(stage=None, map_name=None, team=None):
     """Load and filter stats data."""
-    df = pd.read_csv(DATA_PATH)
+    df = load_csv(DATA_PATH)
     
     # Filter out 'Both' to only get CT and T
     df = df[df['side'] != 'Both']
@@ -155,17 +161,17 @@ def _create_stacked_bar(df, entity_col, metric, normalize, title):
 
 # Helper functions for UI dropdowns
 def get_available_stages():
-    df = pd.read_csv(DATA_PATH)
+    df = load_csv(DATA_PATH)
     return sorted(df['stages'].dropna().unique().tolist())
 
 def get_available_maps(stage=None):
-    df = pd.read_csv(DATA_PATH)
+    df = load_csv(DATA_PATH)
     if stage:
         df = df[df['stages'] == stage]
     return sorted(df['map'].dropna().unique().tolist())
 
 def get_available_teams(stage=None, map_name=None):
-    df = pd.read_csv(DATA_PATH)
+    df = load_csv(DATA_PATH)
     if stage:
         df = df[df['stages'] == stage]
     if map_name:

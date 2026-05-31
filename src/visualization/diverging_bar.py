@@ -4,6 +4,12 @@ import pandas as pd
 import plotly.graph_objects as go
 import importlib.util
 
+try:
+    from data_loader import load_csv
+except ImportError:
+    sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+    from data_loader import load_csv
+
 # Get script directory and resolve paths relative to it
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATS_PATH = os.path.join(SCRIPT_DIR, "../../analysis_results/budapest_major_stats.csv")
@@ -32,7 +38,7 @@ METRICS = [
 
 def get_unique_games():
     """Return a sorted list of unique games with labels."""
-    df = pd.read_csv(OUTCOMES_PATH)
+    df = load_csv(OUTCOMES_PATH)
     games = []
     seen = set()
     for _, row in df.iterrows():
@@ -51,20 +57,20 @@ def get_unique_games():
     return games
 
 def get_available_maps():
-    df = pd.read_csv(STATS_PATH)
+    df = load_csv(STATS_PATH)
     return sorted(df['map'].unique().tolist())
 
 def get_available_players():
-    df = pd.read_csv(STATS_PATH)
+    df = load_csv(STATS_PATH)
     return sorted(df['player_name'].unique().tolist())
 
 def get_available_stages():
-    df = pd.read_csv(STATS_PATH)
+    df = load_csv(STATS_PATH)
     return sorted(df['stages'].unique().tolist())
 
 def get_global_max_norms():
     """Calculate the global maximum per-round values for normalization (like spider chart)."""
-    df_all = pd.read_csv(STATS_PATH)
+    df_all = load_csv(STATS_PATH)
     norm_values = {}
     for metric in METRICS:
         if metric == "K/D Ratio":
@@ -204,7 +210,7 @@ def create_diverging_plot(ct_data, t_data, title):
 
 def get_game_charts(stage, map_name, team1, team2):
     """Returns two charts for the specific game (Team 1 and Team 2)."""
-    df = pd.read_csv(STATS_PATH)
+    df = load_csv(STATS_PATH)
     
     # Filter to specific match
     df_match = df[(df['stages'] == stage) & (df['map'] == map_name)]
@@ -223,7 +229,7 @@ def get_game_charts(stage, map_name, team1, team2):
 
 def get_map_chart(map_name):
     """Returns one chart aggregating all games for a specific map."""
-    df = pd.read_csv(STATS_PATH)
+    df = load_csv(STATS_PATH)
     df_map = df[df['map'] == map_name]
     
     ct_data, t_data = calculate_aggregated_metrics(df_map)
@@ -232,7 +238,7 @@ def get_map_chart(map_name):
 
 def get_player_chart(player_name, scope="Tournament", stage=None, game_label=None):
     """Returns one chart for a player based on a specific scope context."""
-    df = pd.read_csv(STATS_PATH)
+    df = load_csv(STATS_PATH)
     df_player = df[df['player_name'] == player_name]
     
     if scope == "Stage" and stage:

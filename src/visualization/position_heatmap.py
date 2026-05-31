@@ -12,6 +12,12 @@ import pandas as pd
 import plotly.graph_objects as go
 from PIL import Image
 
+try:
+    from data_loader import load_csv
+except ImportError:
+    sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+    from data_loader import load_csv
+
 # Resolve script paths relative to it
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 POSITIONS_PATH = os.path.join(SCRIPT_DIR, "../../analysis_results/budapest_major_positions.csv")
@@ -118,19 +124,19 @@ BOTH_COLORSCALE = [
 # ---------------------------------------------------------------------------
 def get_available_maps() -> list:
     """Return list of map display names from the positions CSV."""
-    df = pd.read_csv(POSITIONS_PATH)
+    df = load_csv(POSITIONS_PATH)
     return sorted(df['map'].unique().tolist())
 
 
 def get_available_stages() -> list:
     """Return sorted list of tournament stages from the positions CSV."""
-    df = pd.read_csv(POSITIONS_PATH)
+    df = load_csv(POSITIONS_PATH)
     return sorted(df['stages'].unique().tolist())
 
 
 def get_available_matches(map_name: str = None) -> list:
     """Return list of 'Team A vs Team B' strings, optionally filtered by map."""
-    df = pd.read_csv(POSITIONS_PATH)
+    df = load_csv(POSITIONS_PATH)
     if map_name:
         df = df[df['map'] == map_name]
     return sorted(df['teams'].unique().tolist())
@@ -174,7 +180,7 @@ def create_position_heatmap(
         Plotly Figure object
     """
     # Load data
-    df = pd.read_csv(POSITIONS_PATH)
+    df = load_csv(POSITIONS_PATH)
 
     # Filter by map
     df = df[df['map'] == map_name]

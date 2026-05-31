@@ -3,6 +3,12 @@ import sys
 import pandas as pd
 import plotly.graph_objects as go
 
+try:
+    from data_loader import load_csv
+except ImportError:
+    sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+    from data_loader import load_csv
+
 # Get script directory and resolve paths relative to it
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.join(SCRIPT_DIR, "../../analysis_results/budapest_major_stats.csv")
@@ -40,7 +46,7 @@ PLAYER_COLORS = [
 
 def get_available_columns():
     """Return list of available metric columns from the dataset."""
-    df = pd.read_csv(DATA_PATH)
+    df = load_csv(DATA_PATH)
     # Exclude non-metric columns
     exclude = ['stages', 'map', 'team', 'player_name', 'player_steamid', 'side']
     return [col for col in df.columns if col not in exclude]
@@ -48,19 +54,19 @@ def get_available_columns():
 
 def get_available_players():
     """Return list of available player names."""
-    df = pd.read_csv(DATA_PATH)
+    df = load_csv(DATA_PATH)
     return sorted(df['player_name'].unique().tolist())
 
 
 def get_available_stages():
     """Return list of available stages."""
-    df = pd.read_csv(DATA_PATH)
+    df = load_csv(DATA_PATH)
     return sorted(df['stages'].unique().tolist())
 
 
 def get_available_maps():
     """Return list of available maps."""
-    df = pd.read_csv(DATA_PATH)
+    df = load_csv(DATA_PATH)
     return sorted(df['map'].unique().tolist())
 
 
@@ -72,7 +78,7 @@ def get_scope_options():
         dict: Keys are scope types ('stages', 'maps', 'stage_map'), 
               values are lists of available options
     """
-    df = pd.read_csv(DATA_PATH)
+    df = load_csv(DATA_PATH)
     return {
         'stages': sorted(df['stages'].unique().tolist()),
         'maps': sorted(df['map'].unique().tolist()),
@@ -191,7 +197,7 @@ def create_spider_chart(
         None: When show=True (plot is displayed directly)
     """
     # Load data
-    df_all = pd.read_csv(DATA_PATH)
+    df_all = load_csv(DATA_PATH)
     
     # Default values
     if player_names is None:

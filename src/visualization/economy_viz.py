@@ -1,7 +1,15 @@
 import numpy as np
 import os
+import sys
 import pandas as pd
 import plotly.graph_objects as go
+
+try:
+    from data_loader import load_csv
+except ImportError:
+    sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+    from data_loader import load_csv
+
 # Get script directory and resolve paths relative to it
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -84,8 +92,8 @@ def combined_economy_line_plot(stage, map_name, team, show=True):
         map_name (str): Map name (e.g., "Dust2")
         team (str): Team name to focus on
     """
-    economy_df = pd.read_csv(DATA_PATH)
-    outcomes_df = pd.read_csv(OUTCOMES_PATH)
+    economy_df = load_csv(DATA_PATH)
+    outcomes_df = load_csv(OUTCOMES_PATH)
 
     team_data = economy_df[(economy_df['stage'] == stage) & 
                            (economy_df['map'] == map_name) & 
@@ -257,13 +265,13 @@ if __name__ == "__main__":
 
 def get_available_stages():
     """Return sorted list of available stages from the economy data."""
-    df = pd.read_csv(DATA_PATH)
+    df = load_csv(DATA_PATH)
     return sorted(df['stage'].unique().tolist())
 
 
 def get_available_maps(stage=None):
     """Return sorted list of available maps, optionally filtered by stage."""
-    df = pd.read_csv(DATA_PATH)
+    df = load_csv(DATA_PATH)
     if stage is not None:
         df = df[df['stage'] == stage]
     return sorted(df['map'].unique().tolist())
@@ -271,7 +279,7 @@ def get_available_maps(stage=None):
 
 def get_available_teams(stage=None, map_name=None):
     """Return sorted list of available teams, optionally filtered by stage and/or map."""
-    df = pd.read_csv(DATA_PATH)
+    df = load_csv(DATA_PATH)
     if stage is not None:
         df = df[df['stage'] == stage]
     if map_name is not None:

@@ -9,6 +9,13 @@ import sys
 import pandas as pd
 import streamlit as st
 
+try:
+    from data_loader import load_csv
+except ImportError:
+    import sys
+    sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../visualization"))
+    from data_loader import load_csv
+
 # ── Path Setup ───────────────────────────────────────────────────────────────
 PAGES_DIR = os.path.dirname(os.path.abspath(__file__))
 DASHBOARD_DIR = os.path.dirname(PAGES_DIR)
@@ -177,7 +184,7 @@ def get_player_info(player_name, selected_stage=None, selected_map=None, selecte
     if not os.path.exists(csv_path):
         csv_path = os.path.join(DASHBOARD_DIR, "../analysis_results/budapest_major_stats.csv")
         
-    df_all = pd.read_csv(csv_path)
+    df_all = load_csv(csv_path)
     
     # Get SteamID (constant across all rows for this player)
     player_rows = df_all[df_all['player_name'] == player_name]
@@ -297,7 +304,7 @@ with st.sidebar:
         if not os.path.exists(csv_path):
             csv_path = os.path.join(DASHBOARD_DIR, "../analysis_results/budapest_major_stats.csv")
         
-        df_all = pd.read_csv(csv_path)
+        df_all = load_csv(csv_path)
         df_both = df_all[df_all['side'] == 'Both']
         
         # Get stages and maps played by each selected player

@@ -10,6 +10,13 @@ import json
 import pandas as pd
 import streamlit as st
 
+try:
+    from data_loader import load_csv
+except ImportError:
+    import sys
+    sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../visualization"))
+    from data_loader import load_csv
+
 # ── Path Setup ───────────────────────────────────────────────────────────────
 PAGES_DIR = os.path.dirname(os.path.abspath(__file__))
 DASHBOARD_DIR = os.path.dirname(PAGES_DIR)
@@ -195,7 +202,7 @@ def get_map_match_info(map_name):
 def get_player_info(player_name, context, stage=None, game_label=None):
     """Retrieve player info formatted for the info card."""
     csv_path = os.path.join(SRC_DIR, "../analysis_results/budapest_major_stats.csv")
-    df_all = pd.read_csv(csv_path)
+    df_all = load_csv(csv_path)
     
     player_rows = df_all[df_all['player_name'] == player_name]
     if len(player_rows) == 0:
@@ -278,7 +285,7 @@ with st.sidebar:
         selected_player = st.selectbox("Select Player", options=players_list, index=default_player_idx)
         
         csv_path = os.path.join(SRC_DIR, "../analysis_results/budapest_major_stats.csv")
-        df_all = pd.read_csv(csv_path)
+        df_all = load_csv(csv_path)
         p_stats = df_all[df_all['player_name'] == selected_player]
         
         valid_stages = sorted(p_stats['stages'].unique().tolist())

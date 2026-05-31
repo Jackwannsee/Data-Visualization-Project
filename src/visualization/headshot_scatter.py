@@ -4,6 +4,12 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
 
+try:
+    from data_loader import load_csv
+except ImportError:
+    sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+    from data_loader import load_csv
+
 # Resolve script paths relative to it
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATS_PATH = os.path.join(SCRIPT_DIR, "../../analysis_results/budapest_major_stats.csv")
@@ -30,13 +36,13 @@ except Exception:
 
 def get_available_stages():
     """Return list of available stages."""
-    df = pd.read_csv(STATS_PATH)
+    df = load_csv(STATS_PATH)
     return sorted(df['stages'].unique().tolist())
 
 
 def get_available_maps():
     """Return list of available maps."""
-    df = pd.read_csv(STATS_PATH)
+    df = load_csv(STATS_PATH)
     return sorted(df['map'].unique().tolist())
 
 
@@ -61,8 +67,8 @@ def create_headshot_scatter(side='Both', stage=None, map_name=None, x_metric='KP
         go.Figure: The Plotly figure object
     """
     # Load dataset files
-    df_stats = pd.read_csv(STATS_PATH)
-    df_details = pd.read_csv(DETAILS_PATH)
+    df_stats = load_csv(STATS_PATH)
+    df_details = load_csv(DETAILS_PATH)
 
     # Filter stats and details by side
     if side is not None and side != 'All':
