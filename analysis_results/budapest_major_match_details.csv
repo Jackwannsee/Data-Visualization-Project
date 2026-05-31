@@ -1,0 +1,109 @@
+stages,map,team,opponent,side,rounds_played,rounds_won,game_won,map_won,map_number,final_score,total_maps_played
+Final,Dust2,FaZe Clan,Team Vitality,Counter Terrorist,16.0,7.0,False,False,2,13-3,4
+Final,Dust2,FaZe Clan,Team Vitality,Terrorist,,,False,False,2,13-3,4
+Final,Dust2,FaZe Clan,Team Vitality,Both,16.0,7.0,False,False,2,13-3,4
+Final,Dust2,Team Vitality,FaZe Clan,Counter Terrorist,,,True,True,2,13-3,4
+Final,Dust2,Team Vitality,FaZe Clan,Terrorist,16.0,9.0,True,True,2,13-3,4
+Final,Dust2,Team Vitality,FaZe Clan,Both,16.0,9.0,True,True,2,13-3,4
+Final,Inferno,FaZe Clan,Team Vitality,Counter Terrorist,22.0,13.0,False,False,3,13-9,4
+Final,Inferno,FaZe Clan,Team Vitality,Terrorist,,,False,False,3,13-9,4
+Final,Inferno,FaZe Clan,Team Vitality,Both,22.0,13.0,False,False,3,13-9,4
+Final,Inferno,Team Vitality,FaZe Clan,Counter Terrorist,,,True,True,3,13-9,4
+Final,Inferno,Team Vitality,FaZe Clan,Terrorist,22.0,9.0,True,True,3,13-9,4
+Final,Inferno,Team Vitality,FaZe Clan,Both,22.0,9.0,True,True,3,13-9,4
+Final,Nuke,FaZe Clan,Team Vitality,Counter Terrorist,,,False,True,1,13-6,4
+Final,Nuke,FaZe Clan,Team Vitality,Terrorist,19.0,10.0,False,True,1,13-6,4
+Final,Nuke,FaZe Clan,Team Vitality,Both,19.0,10.0,False,True,1,13-6,4
+Final,Nuke,Team Vitality,FaZe Clan,Counter Terrorist,19.0,9.0,True,False,1,13-6,4
+Final,Nuke,Team Vitality,FaZe Clan,Terrorist,,,True,False,1,13-6,4
+Final,Nuke,Team Vitality,FaZe Clan,Both,19.0,9.0,True,False,1,13-6,4
+Final,Overpass,FaZe Clan,Team Vitality,Counter Terrorist,15.0,3.0,False,False,4,13-2,4
+Final,Overpass,FaZe Clan,Team Vitality,Terrorist,,,False,False,4,13-2,4
+Final,Overpass,FaZe Clan,Team Vitality,Both,15.0,3.0,False,False,4,13-2,4
+Final,Overpass,Team Vitality,FaZe Clan,Counter Terrorist,,,True,True,4,13-2,4
+Final,Overpass,Team Vitality,FaZe Clan,Terrorist,15.0,12.0,True,True,4,13-2,4
+Final,Overpass,Team Vitality,FaZe Clan,Both,15.0,12.0,True,True,4,13-2,4
+Quarterfinals,Dust2,Team Falcons,Team Spirit,Counter Terrorist,,,False,False,2,16-12,2
+Quarterfinals,Dust2,Team Falcons,Team Spirit,Terrorist,28.0,11.0,False,False,2,16-12,2
+Quarterfinals,Dust2,Team Falcons,Team Spirit,Both,28.0,11.0,False,False,2,16-12,2
+Quarterfinals,Dust2,Team Spirit,Team Falcons,Counter Terrorist,28.0,17.0,True,True,2,16-12,2
+Quarterfinals,Dust2,Team Spirit,Team Falcons,Terrorist,,,True,True,2,16-12,2
+Quarterfinals,Dust2,Team Spirit,Team Falcons,Both,28.0,17.0,True,True,2,16-12,2
+Quarterfinals,Dust2,Team Vitality,The MongolZ,Counter Terrorist,,,True,True,2,13-4,2
+Quarterfinals,Dust2,Team Vitality,The MongolZ,Terrorist,17.0,8.0,True,True,2,13-4,2
+Quarterfinals,Dust2,Team Vitality,The MongolZ,Both,17.0,8.0,True,True,2,13-4,2
+Quarterfinals,Dust2,The MongolZ,Team Vitality,Counter Terrorist,17.0,9.0,False,False,2,13-4,2
+Quarterfinals,Dust2,The MongolZ,Team Vitality,Terrorist,,,False,False,2,13-4,2
+Quarterfinals,Dust2,The MongolZ,Team Vitality,Both,17.0,9.0,False,False,2,13-4,2
+Quarterfinals,Inferno,FURIA Esports,Natus Vincere,Counter Terrorist,29.0,20.0,False,True,2,16-13,3
+Quarterfinals,Inferno,FURIA Esports,Natus Vincere,Terrorist,,,False,True,2,16-13,3
+Quarterfinals,Inferno,FURIA Esports,Natus Vincere,Both,29.0,20.0,False,True,2,16-13,3
+Quarterfinals,Inferno,FaZe Clan,MOUZ,Counter Terrorist,15.0,10.0,True,True,2,13-2,2
+Quarterfinals,Inferno,FaZe Clan,MOUZ,Terrorist,,,True,True,2,13-2,2
+Quarterfinals,Inferno,FaZe Clan,MOUZ,Both,15.0,10.0,True,True,2,13-2,2
+Quarterfinals,Inferno,MOUZ,FaZe Clan,Counter Terrorist,,,False,False,2,13-2,2
+Quarterfinals,Inferno,MOUZ,FaZe Clan,Terrorist,15.0,5.0,False,False,2,13-2,2
+Quarterfinals,Inferno,MOUZ,FaZe Clan,Both,15.0,5.0,False,False,2,13-2,2
+Quarterfinals,Inferno,Natus Vincere,FURIA Esports,Counter Terrorist,,,True,False,2,16-13,3
+Quarterfinals,Inferno,Natus Vincere,FURIA Esports,Terrorist,29.0,9.0,True,False,2,16-13,3
+Quarterfinals,Inferno,Natus Vincere,FURIA Esports,Both,29.0,9.0,True,False,2,16-13,3
+Quarterfinals,Mirage,FURIA Esports,Natus Vincere,Counter Terrorist,18.0,9.0,False,False,1,13-5,3
+Quarterfinals,Mirage,FURIA Esports,Natus Vincere,Terrorist,,,False,False,1,13-5,3
+Quarterfinals,Mirage,FURIA Esports,Natus Vincere,Both,18.0,9.0,False,False,1,13-5,3
+Quarterfinals,Mirage,Natus Vincere,FURIA Esports,Counter Terrorist,,,True,True,1,13-5,3
+Quarterfinals,Mirage,Natus Vincere,FURIA Esports,Terrorist,18.0,9.0,True,True,1,13-5,3
+Quarterfinals,Mirage,Natus Vincere,FURIA Esports,Both,18.0,9.0,True,True,1,13-5,3
+Quarterfinals,Mirage,Team Vitality,The MongolZ,Counter Terrorist,18.0,7.0,True,True,1,13-5,2
+Quarterfinals,Mirage,Team Vitality,The MongolZ,Terrorist,,,True,True,1,13-5,2
+Quarterfinals,Mirage,Team Vitality,The MongolZ,Both,18.0,7.0,True,True,1,13-5,2
+Quarterfinals,Mirage,The MongolZ,Team Vitality,Counter Terrorist,,,False,False,1,13-5,2
+Quarterfinals,Mirage,The MongolZ,Team Vitality,Terrorist,18.0,11.0,False,False,1,13-5,2
+Quarterfinals,Mirage,The MongolZ,Team Vitality,Both,18.0,11.0,False,False,1,13-5,2
+Quarterfinals,Nuke,FaZe Clan,MOUZ,Counter Terrorist,24.0,7.0,True,True,1,13-11,2
+Quarterfinals,Nuke,FaZe Clan,MOUZ,Terrorist,,,True,True,1,13-11,2
+Quarterfinals,Nuke,FaZe Clan,MOUZ,Both,24.0,7.0,True,True,1,13-11,2
+Quarterfinals,Nuke,MOUZ,FaZe Clan,Counter Terrorist,,,False,False,1,13-11,2
+Quarterfinals,Nuke,MOUZ,FaZe Clan,Terrorist,24.0,17.0,False,False,1,13-11,2
+Quarterfinals,Nuke,MOUZ,FaZe Clan,Both,24.0,17.0,False,False,1,13-11,2
+Quarterfinals,Nuke,Team Falcons,Team Spirit,Counter Terrorist,,,False,False,1,13-4,2
+Quarterfinals,Nuke,Team Falcons,Team Spirit,Terrorist,17.0,9.0,False,False,1,13-4,2
+Quarterfinals,Nuke,Team Falcons,Team Spirit,Both,17.0,9.0,False,False,1,13-4,2
+Quarterfinals,Nuke,Team Spirit,Team Falcons,Counter Terrorist,17.0,8.0,True,True,1,13-4,2
+Quarterfinals,Nuke,Team Spirit,Team Falcons,Terrorist,,,True,True,1,13-4,2
+Quarterfinals,Nuke,Team Spirit,Team Falcons,Both,17.0,8.0,True,True,1,13-4,2
+Quarterfinals,Train,FURIA Esports,Natus Vincere,Counter Terrorist,16.0,5.0,False,False,3,13-3,3
+Quarterfinals,Train,FURIA Esports,Natus Vincere,Terrorist,,,False,False,3,13-3,3
+Quarterfinals,Train,FURIA Esports,Natus Vincere,Both,16.0,5.0,False,False,3,13-3,3
+Quarterfinals,Train,Natus Vincere,FURIA Esports,Counter Terrorist,,,True,True,3,13-3,3
+Quarterfinals,Train,Natus Vincere,FURIA Esports,Terrorist,16.0,11.0,True,True,3,13-3,3
+Quarterfinals,Train,Natus Vincere,FURIA Esports,Both,16.0,11.0,True,True,3,13-3,3
+Semifinals,Ancient,FaZe Clan,Natus Vincere,Counter Terrorist,18.0,5.0,True,False,1,13-5,3
+Semifinals,Ancient,FaZe Clan,Natus Vincere,Terrorist,,,True,False,1,13-5,3
+Semifinals,Ancient,FaZe Clan,Natus Vincere,Both,18.0,5.0,True,False,1,13-5,3
+Semifinals,Ancient,Natus Vincere,FaZe Clan,Counter Terrorist,,,False,True,1,13-5,3
+Semifinals,Ancient,Natus Vincere,FaZe Clan,Terrorist,18.0,13.0,False,True,1,13-5,3
+Semifinals,Ancient,Natus Vincere,FaZe Clan,Both,18.0,13.0,False,True,1,13-5,3
+Semifinals,Dust2,Team Spirit,Team Vitality,Counter Terrorist,,,False,False,2,13-8,2
+Semifinals,Dust2,Team Spirit,Team Vitality,Terrorist,21.0,13.0,False,False,2,13-8,2
+Semifinals,Dust2,Team Spirit,Team Vitality,Both,21.0,13.0,False,False,2,13-8,2
+Semifinals,Dust2,Team Vitality,Team Spirit,Counter Terrorist,21.0,8.0,True,True,2,13-8,2
+Semifinals,Dust2,Team Vitality,Team Spirit,Terrorist,,,True,True,2,13-8,2
+Semifinals,Dust2,Team Vitality,Team Spirit,Both,21.0,8.0,True,True,2,13-8,2
+Semifinals,Inferno,FaZe Clan,Natus Vincere,Counter Terrorist,21.0,14.0,True,True,3,13-8,3
+Semifinals,Inferno,FaZe Clan,Natus Vincere,Terrorist,,,True,True,3,13-8,3
+Semifinals,Inferno,FaZe Clan,Natus Vincere,Both,21.0,14.0,True,True,3,13-8,3
+Semifinals,Inferno,Natus Vincere,FaZe Clan,Counter Terrorist,,,False,False,3,13-8,3
+Semifinals,Inferno,Natus Vincere,FaZe Clan,Terrorist,21.0,7.0,False,False,3,13-8,3
+Semifinals,Inferno,Natus Vincere,FaZe Clan,Both,21.0,7.0,False,False,3,13-8,3
+Semifinals,Mirage,Team Spirit,Team Vitality,Counter Terrorist,36.0,21.0,False,False,1,19-17,2
+Semifinals,Mirage,Team Spirit,Team Vitality,Terrorist,,,False,False,1,19-17,2
+Semifinals,Mirage,Team Spirit,Team Vitality,Both,36.0,21.0,False,False,1,19-17,2
+Semifinals,Mirage,Team Vitality,Team Spirit,Counter Terrorist,,,True,True,1,19-17,2
+Semifinals,Mirage,Team Vitality,Team Spirit,Terrorist,36.0,15.0,True,True,1,19-17,2
+Semifinals,Mirage,Team Vitality,Team Spirit,Both,36.0,15.0,True,True,1,19-17,2
+Semifinals,Nuke,FaZe Clan,Natus Vincere,Counter Terrorist,24.0,17.0,True,True,2,13-11,3
+Semifinals,Nuke,FaZe Clan,Natus Vincere,Terrorist,,,True,True,2,13-11,3
+Semifinals,Nuke,FaZe Clan,Natus Vincere,Both,24.0,17.0,True,True,2,13-11,3
+Semifinals,Nuke,Natus Vincere,FaZe Clan,Counter Terrorist,,,False,False,2,13-11,3
+Semifinals,Nuke,Natus Vincere,FaZe Clan,Terrorist,24.0,7.0,False,False,2,13-11,3
+Semifinals,Nuke,Natus Vincere,FaZe Clan,Both,24.0,7.0,False,False,2,13-11,3

@@ -1,0 +1,196 @@
+{
+  "tournament": "StarLadder Budapest Major 2025",
+  "stages": {
+    "Quarterfinals": [
+      {
+        "teams_played": [
+          "Team Spirit",
+          "Team Falcons"
+        ],
+        "overall_winner": "Team Spirit",
+        "overall_score": "2-0",
+        "total_maps_played": 2,
+        "maps_played": [
+          {
+            "map_number": 1,
+            "map_name": "Nuke",
+            "winner": "Team Spirit",
+            "score": "13-4"
+          },
+          {
+            "map_number": 2,
+            "map_name": "Dust2",
+            "winner": "Team Spirit",
+            "score": "16-12"
+          }
+        ]
+      },
+      {
+        "teams_played": [
+          "The MongolZ",
+          "Team Vitality"
+        ],
+        "overall_winner": "Team Vitality",
+        "overall_score": "2-0",
+        "total_maps_played": 2,
+        "maps_played": [
+          {
+            "map_number": 1,
+            "map_name": "Mirage",
+            "winner": "Team Vitality",
+            "score": "13-5"
+          },
+          {
+            "map_number": 2,
+            "map_name": "Dust2",
+            "winner": "Team Vitality",
+            "score": "13-4"
+          }
+        ]
+      },
+      {
+        "teams_played": [
+          "MOUZ",
+          "FaZe Clan"
+        ],
+        "overall_winner": "FaZe Clan",
+        "overall_score": "2-0",
+        "total_maps_played": 2,
+        "maps_played": [
+          {
+            "map_number": 1,
+            "map_name": "Nuke",
+            "winner": "FaZe Clan",
+            "score": "13-11"
+          },
+          {
+            "map_number": 2,
+            "map_name": "Inferno",
+            "winner": "FaZe Clan",
+            "score": "13-2"
+          }
+        ]
+      },
+      {
+        "teams_played": [
+          "Natus Vincere",
+          "FURIA Esports"
+        ],
+        "overall_winner": "Natus Vincere",
+        "overall_score": "2-1",
+        "total_maps_played": 3,
+        "maps_played": [
+          {
+            "map_number": 1,
+            "map_name": "Mirage",
+            "winner": "Natus Vincere",
+            "score": "13-5"
+          },
+          {
+            "map_number": 2,
+            "map_name": "Inferno",
+            "winner": "FURIA Esports",
+            "score": "16-13"
+          },
+          {
+            "map_number": 3,
+            "map_name": "Train",
+            "winner": "Natus Vincere",
+            "score": "13-3"
+          }
+        ]
+      }
+    ],
+    "Semifinals": [
+      {
+        "teams_played": [
+          "Team Spirit",
+          "Team Vitality"
+        ],
+        "overall_winner": "Team Vitality",
+        "overall_score": "2-0",
+        "total_maps_played": 2,
+        "maps_played": [
+          {
+            "map_number": 1,
+            "map_name": "Mirage",
+            "winner": "Team Vitality",
+            "score": "19-17"
+          },
+          {
+            "map_number": 2,
+            "map_name": "Dust2",
+            "winner": "Team Vitality",
+            "score": "13-8"
+          }
+        ]
+      },
+      {
+        "teams_played": [
+          "FaZe Clan",
+          "Natus Vincere"
+        ],
+        "overall_winner": "FaZe Clan",
+        "overall_score": "2-1",
+        "total_maps_played": 3,
+        "maps_played": [
+          {
+            "map_number": 1,
+            "map_name": "Ancient",
+            "winner": "Natus Vincere",
+            "score": "13-5"
+          },
+          {
+            "map_number": 2,
+            "map_name": "Nuke",
+            "winner": "FaZe Clan",
+            "score": "13-11"
+          },
+          {
+            "map_number": 3,
+            "map_name": "Inferno",
+            "winner": "FaZe Clan",
+            "score": "13-8"
+          }
+        ]
+      }
+    ],
+    "Final": [
+      {
+        "teams_played": [
+          "Team Vitality",
+          "FaZe Clan"
+        ],
+        "overall_winner": "Team Vitality",
+        "overall_score": "3-1",
+        "total_maps_played": 4,
+        "maps_played": [
+          {
+            "map_number": 1,
+            "map_name": "Nuke",
+            "winner": "FaZe Clan",
+            "score": "13-6"
+          },
+          {
+            "map_number": 2,
+            "map_name": "Dust2",
+            "winner": "Team Vitality",
+            "score": "13-3"
+          },
+          {
+            "map_number": 3,
+            "map_name": "Inferno",
+            "winner": "Team Vitality",
+            "score": "13-9"
+          },
+          {
+            "map_number": 4,
+            "map_name": "Overpass",
+            "winner": "Team Vitality",
+            "score": "13-2"
+          }
+        ]
+      }
+    ]
+  }
+}

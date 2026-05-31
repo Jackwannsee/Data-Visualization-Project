@@ -1,0 +1,1 @@
+https://github.com/MurkyYT/cs2-map-icons/tree/main
