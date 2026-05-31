@@ -222,6 +222,7 @@ with st.sidebar:
     st.page_link("pages/2_🕷️_Player_Performance.py", label="Player Performance", icon="🕷️")
     st.page_link("pages/3_🎯_Headshot_Analysis.py", label="Headshot Analysis", icon="🎯")
     st.page_link("pages/4_🗺️_Position_Heatmap.py", label="Position Heatmap", icon="🗺️")
+    st.page_link("pages/5_📊_Side_Comparison.py", label="Side Comparison", icon="📊")
     st.markdown("---")
     st.markdown("**StarLadder Budapest Major 2025**")
     st.markdown(
@@ -348,9 +349,11 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-col1, col2, col3, col4 = st.columns(4, gap="medium")
+cols1 = st.columns(3, gap="medium")
+st.markdown("<div style='margin-bottom: 1.5rem;'></div>", unsafe_allow_html=True)
+_, col2_1, col2_2, _ = st.columns([0.5, 1, 1, 0.5], gap="medium")
 
-with col1:
+with cols1[0]:
     st.markdown(
         """
         <a href="/Economy_Analysis" target="_self" class="nav-card-link">
@@ -367,7 +370,7 @@ with col1:
         unsafe_allow_html=True,
     )
 
-with col2:
+with cols1[1]:
     st.markdown(
         """
         <a href="/Player_Performance" target="_self" class="nav-card-link">
@@ -384,7 +387,7 @@ with col2:
         unsafe_allow_html=True,
     )
 
-with col3:
+with cols1[2]:
     st.markdown(
         """
         <a href="/Headshot_Analysis" target="_self" class="nav-card-link">
@@ -400,7 +403,7 @@ with col3:
         unsafe_allow_html=True,
     )
 
-with col4:
+with col2_1:
     st.markdown(
         """
         <a href="/Position_Heatmap" target="_self" class="nav-card-link">
@@ -417,12 +420,28 @@ with col4:
         unsafe_allow_html=True,
     )
 
+with col2_2:
+    st.markdown(
+        """
+        <a href="/Side_Comparison" target="_self" class="nav-card-link">
+            <div class="nav-card">
+                <h3>Side Comparison</h3>
+                <p>
+                    Interactive stacked bar chart comparing CT vs T side performances.
+                    Analyze this at a team level or drill down into individual player contributions.
+                </p>
+            </div>
+        </a>
+        """,
+        unsafe_allow_html=True,
+    )
+
 # ── Footer ───────────────────────────────────────────────────────────────────
 st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
 st.markdown(
     """
     <div style="text-align:center; color:#555; font-size:0.8rem; padding:1rem 0;">
-        CS2 Budapest Major Dashboard · Data Visualization Project · 2025
+        CS2 Budapest Major Dashboard · Data Visualization Project · 2026
     </div>
     """,
     unsafe_allow_html=True,

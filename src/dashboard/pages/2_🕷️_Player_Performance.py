@@ -226,6 +226,7 @@ with st.sidebar:
     st.page_link("pages/2_🕷️_Player_Performance.py", label="Player Performance", icon="🕷️")
     st.page_link("pages/3_🎯_Headshot_Analysis.py", label="Headshot Analysis", icon="🎯")
     st.page_link("pages/4_🗺️_Position_Heatmap.py", label="Position Heatmap", icon="🗺️")
+    st.page_link("pages/5_📊_Side_Comparison.py", label="Side Comparison", icon="📊")
     st.markdown("---")
 
     # ── Player Selection ──
