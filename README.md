@@ -1,4 +1,4 @@
-# CS:GO Demo Analyzer
+# Counter Strike, Budapest Major Tournament
 A comprehensive data visualization project for analyzing professional CS:GO demo files. This project provides tools for parsing, processing, visualizing, and creating interactive dashboards from .dem files.
 
 ## Setup Instructions
