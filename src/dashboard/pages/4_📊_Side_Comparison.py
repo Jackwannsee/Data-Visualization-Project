@@ -247,11 +247,11 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("##### 📊 Pages")
     st.page_link("app.py", label="Home", icon="🏠")
-    st.page_link("pages/1_💰_Economy_Analysis.py", label="Economy Analysis", icon="💰")
-    st.page_link("pages/2_🕷️_Player_Performance.py", label="Player Performance", icon="🕷️")
+    st.page_link("pages/1_🕷️_Player_Performance.py", label="Player Performance", icon="🕷️")
+    st.page_link("pages/2_🗺️_Position_Heatmap.py", label="Position Heatmap", icon="🗺️")
     st.page_link("pages/3_🎯_Headshot_Analysis.py", label="Headshot Analysis", icon="🎯")
-    st.page_link("pages/4_🗺️_Position_Heatmap.py", label="Position Heatmap", icon="🗺️")
-    st.page_link("pages/5_📊_Side_Comparison.py", label="Side Comparison", icon="📊")
+    st.page_link("pages/4_📊_Side_Comparison.py", label="Side Comparison", icon="📊")
+    st.page_link("pages/5_💰_Economy_Analysis.py", label="Economy Analysis", icon="💰")
     st.markdown("---")
 
     analysis_scope = st.radio(
@@ -360,6 +360,88 @@ try:
                 st.plotly_chart(format_plot(fig2), use_container_width=True, key="team2_chart")
             else:
                 st.warning("No data available for Team 2 in this matchup.")
+                
+            try:
+                map_matches = get_map_match_info(selected_game['map'])
+                match_info = next((m for m in map_matches if m['stage'] == selected_game['stage'] and 
+                                 ((m['team1'] == selected_game['team1'] and m['team2'] == selected_game['team2']) or
+                                  (m['team1'] == selected_game['team2'] and m['team2'] == selected_game['team1']))), None)
+                
+                if match_info:
+                    csv_path = os.path.join(SRC_DIR, "../analysis_results/budapest_major_stats.csv")
+                    df_all = load_csv(csv_path)
+                    df_match = df_all[(df_all['stages'] == selected_game['stage']) & (df_all['map'] == selected_game['map'])]
+                    
+                    def get_rounds(team_name, side):
+                        side_df = df_match[(df_match['team'] == team_name) & (df_match['side'] == side)]
+                        return int(side_df['Rounds Played'].iloc[0]) if not side_df.empty else 0
+                        
+                    t1_ct = get_rounds(selected_game['team1'], 'Counter Terrorist')
+                    t1_t = get_rounds(selected_game['team1'], 'Terrorist')
+                    t2_ct = get_rounds(selected_game['team2'], 'Counter Terrorist')
+                    t2_t = get_rounds(selected_game['team2'], 'Terrorist')
+                    
+                    # Calculate rounds won
+                    outcomes_path = os.path.join(SRC_DIR, "../analysis_results/budapest_major_team_outcomes.csv")
+                    df_outcomes = load_csv(outcomes_path)
+                    
+                    def parse_rounds(r_str):
+                        if pd.isna(r_str) or not str(r_str).strip(): return []
+                        r_list = []
+                        for part in str(r_str).split(','):
+                            if '-' in part:
+                                s, e = part.split('-')
+                                r_list.extend(range(int(s), int(e) + 1))
+                            else:
+                                r_list.append(int(part))
+                        return r_list
+                        
+                    def get_won_rounds(team_name, side_col):
+                        out_df = df_outcomes[(df_outcomes['stage'] == selected_game['stage']) & 
+                                             (df_outcomes['map'] == selected_game['map']) & 
+                                             (df_outcomes['team'] == team_name)]
+                        if out_df.empty: return 0
+                        row = out_df.iloc[0]
+                        r_list = parse_rounds(row[side_col])
+                        won = 0
+                        for r in r_list:
+                            col = f"r_{r}_outcome"
+                            if col in row and row[col] == True:
+                                won += 1
+                        return won
+
+                    t1_ct_won = get_won_rounds(selected_game['team1'], 'CT_rounds')
+                    t1_t_won = get_won_rounds(selected_game['team1'], 'T_rounds')
+                    t2_ct_won = get_won_rounds(selected_game['team2'], 'CT_rounds')
+                    t2_t_won = get_won_rounds(selected_game['team2'], 'T_rounds')
+                    
+                    winner = match_info['winner']
+                    score = match_info['score']
+                    
+                    st.markdown(
+                        f'''
+                        <div class="player-card" style="border-left: 5px solid #FAB200; max-width: 800px; margin: 2rem auto;">
+                            <div class="player-card-header" style="justify-content: center; border-bottom: none; color: #FAB200;">
+                                🏆 Winner: {winner} ({score})
+                            </div>
+                            <div style="display: flex; justify-content: space-around; padding-top: 1rem; border-top: 1px solid #2a2d35;">
+                                <div style="text-align: center;">
+                                    <h4 style="color: #fff; margin-bottom: 0.5rem;">{selected_game['team1']}</h4>
+                                    <div style="color: #888; font-size: 0.95rem;">CT Rounds: <span style="color: #fff; font-family: monospace;">{t1_ct} <span style="color: #aaa; font-size: 0.85rem;">(Won {t1_ct_won})</span></span></div>
+                                    <div style="color: #888; font-size: 0.95rem;">T Rounds: <span style="color: #fff; font-family: monospace;">{t1_t} <span style="color: #aaa; font-size: 0.85rem;">(Won {t1_t_won})</span></span></div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <h4 style="color: #fff; margin-bottom: 0.5rem;">{selected_game['team2']}</h4>
+                                    <div style="color: #888; font-size: 0.95rem;">CT Rounds: <span style="color: #fff; font-family: monospace;">{t2_ct} <span style="color: #aaa; font-size: 0.85rem;">(Won {t2_ct_won})</span></span></div>
+                                    <div style="color: #888; font-size: 0.95rem;">T Rounds: <span style="color: #fff; font-family: monospace;">{t2_t} <span style="color: #aaa; font-size: 0.85rem;">(Won {t2_t_won})</span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        ''', 
+                        unsafe_allow_html=True
+                    )
+            except Exception as e:
+                pass
                 
         st.markdown("<hr class='section-divider'>", unsafe_allow_html=True)
         st.markdown("### 🏆 Select Matchup")

@@ -102,7 +102,9 @@ def calculate_aggregated_metrics(df):
         if total_rounds == 0:
             return None
             
-        res = {'Rounds': total_rounds, 'raw': {}, 'norm': {}, 'hover': {}}
+        actual_rounds = side_df.groupby(['stages', 'map', 'team'])['Rounds Played'].first().sum()
+            
+        res = {'Rounds': actual_rounds, 'raw': {}, 'norm': {}, 'hover': {}}
         
         total_kills = side_df['Kills'].sum()
         total_deaths = side_df['Deaths'].sum()
@@ -114,10 +116,10 @@ def calculate_aggregated_metrics(df):
                 res['raw'][metric] = raw
                 res['norm'][metric] = (raw / GLOBAL_NORMS[metric]) * 100.0 if GLOBAL_NORMS[metric] > 0 else 0
                 res['hover'][metric] = (
-                    f"K/D Ratio: {raw:.2f}<br>"
+                    f"K/D Ratio (Overall): {raw:.2f}<br>"
                     f"Total Kills: {total_kills:.0f}<br>"
                     f"Total Deaths: {total_deaths:.0f}<br>"
-                    f"Rounds: {total_rounds:.0f}"
+                    f"Actual Rounds: {actual_rounds:.0f}"
                 )
             elif metric == "Headshot %":
                 raw = (total_headshots / total_kills) * 100.0 if total_kills > 0 else 0.0
@@ -127,7 +129,7 @@ def calculate_aggregated_metrics(df):
                     f"Headshot %: {raw:.2f}%<br>"
                     f"Total Headshots: {total_headshots:.0f}<br>"
                     f"Total Kills: {total_kills:.0f}<br>"
-                    f"Rounds: {total_rounds:.0f}"
+                    f"Actual Rounds: {actual_rounds:.0f}"
                 )
             else:
                 total_metric = side_df[metric].sum()
@@ -135,9 +137,9 @@ def calculate_aggregated_metrics(df):
                 res['raw'][metric] = per_round
                 res['norm'][metric] = (per_round / GLOBAL_NORMS[metric]) * 100.0 if GLOBAL_NORMS[metric] > 0 else 0
                 res['hover'][metric] = (
-                    f"{metric}/round: {per_round:.2f}<br>"
+                    f"Avg {metric}/round (per player): {per_round:.2f}<br>"
                     f"Total {metric}: {total_metric:.0f}<br>"
-                    f"Rounds: {total_rounds:.0f}"
+                    f"Actual Rounds: {actual_rounds:.0f}"
                 )
         return res
 
