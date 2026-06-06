@@ -148,10 +148,8 @@ def calculate_metrics(df, metrics):
         elif metric == "Headshot %":
             result[metric] = (total_headshots / total_kills) * 100.0 if total_kills > 0 else 0.0
         elif metric == "Deaths":
-            # For deaths, we want to invert (lower is better)
-            # Return negative so it can be inverted during normalization
-            # We calculate deaths per round
-            result[metric] = -(total_deaths / total_rounds) if total_rounds > 0 else 0.0
+            # Return positive deaths per round
+            result[metric] = (total_deaths / total_rounds) if total_rounds > 0 else 0.0
         elif metric == "Rounds Played":
             result[metric] = total_rounds
         else:
@@ -204,7 +202,7 @@ def create_spider_chart(
         player_names = ["ZywOo"]
     
     if metrics is None:
-        metrics = ["Kills", "Assists", "K/D Ratio", "Smokes Thrown", "Molotovs Thrown", "Grenades"]
+        metrics = ["Kills", "Assists", "Deaths", "Smokes Thrown", "Molotovs Thrown", "Grenades"]
     
     # Validate inputs
     available_players = get_available_players()
@@ -231,23 +229,7 @@ def create_spider_chart(
     if len(df) == 0:
         raise ValueError(f"No data found for players {player_names} with the specified filters")
     
-    # Get normalization values from ALL data (for consistency)
-    norm_values = {}
-    for metric in metrics:
-        if metric == "K/D Ratio":
-            kd_ratios = df_all.apply(
-                lambda row: row['Kills'] / row['Deaths'] if row['Deaths'] > 0 else 0.0, axis=1
-            )
-            norm_values[metric] = kd_ratios.max()
-        elif metric == "Headshot %":
-            norm_values[metric] = df_all['Headshot %'].max() if 'Headshot %' in df_all.columns else 100.0
-        elif metric == "Deaths":
-            # Normalize against max per-round death rate
-            norm_values[metric] = (df_all['Deaths'] / df_all['Rounds Played']).max()
-        else:
-            # Normalize against max per-round rate
-            norm_values[metric] = (df_all[metric] / df_all['Rounds Played']).max()
-    
+    # Removing normalization logic as we now plot raw values directly
     # Create figure
     fig = go.Figure()
     
@@ -271,20 +253,10 @@ def create_spider_chart(
             # Calculate metric values and rounds count
             metric_values, total_rounds = calculate_metrics(player_df, metrics)
             
-            # Normalize values to 0-100 scale
-            normalized_values = []
+            # Use raw actual values
+            plot_values = []
             for metric in metrics:
-                max_val = norm_values[metric]
-                if max_val == 0:
-                    normalized_values.append(0)
-                else:
-                    if metric == "Deaths":
-                        # Invert deaths (lower is better, so 0 is 100%, max_val is 0%)
-                        # metric_values[metric] is negative, so -metric_values[metric] is positive
-                        actual_val = -metric_values[metric]
-                        normalized_values.append((1.0 - (actual_val / max_val)) * 100.0)
-                    else:
-                        normalized_values.append((metric_values[metric] / max_val) * 100.0)
+                plot_values.append(metric_values[metric])
             
             # Determine color
             if len(player_names) == 1:
@@ -316,10 +288,8 @@ def create_spider_chart(
             
             # Build custom hover text that shows the actual average value for each metric
             custom_hover_texts = []
-            for metric, norm_val in zip(metrics, normalized_values):
+            for metric, p_val in zip(metrics, plot_values):
                 raw_value = metric_values[metric]
-                if metric == "Deaths":
-                    raw_value = -raw_value  # Invert back for display
                 
                 if metric == "K/D Ratio":
                     total_kills = player_df['Kills'].sum()
@@ -360,7 +330,7 @@ def create_spider_chart(
             has_multiple_traces = trace_count > 1
             
             # Close the polygon by appending the first value at the end
-            r_values = normalized_values + [normalized_values[0]]
+            r_values = plot_values + [plot_values[0]]
             theta_values = list(metrics) + [metrics[0]]
             hover_values = list(custom_hover_texts) + [custom_hover_texts[0]]
             
@@ -378,10 +348,10 @@ def create_spider_chart(
             ))
     
     # Calculate max value for radial axis
-    all_normalized_values = []
+    all_plot_values = []
     for trace in fig.data:
-        all_normalized_values.extend(trace.r)
-    max_r_value = max(all_normalized_values) if all_normalized_values else 100
+        all_plot_values.extend(trace.r)
+    max_r_value = max(all_plot_values) if all_plot_values else 1
     # Add 10% padding
     radial_max = max_r_value * 1.1
     
@@ -389,7 +359,12 @@ def create_spider_chart(
     tick_count = 5
     tick_step = radial_max / (tick_count - 1)
     tickvals = [i * tick_step for i in range(tick_count)]
-    ticktext = [f"{int(v)}" for v in tickvals]
+    
+    # If the max value is small, use float formatting
+    if radial_max < 10:
+        ticktext = [f"{v:.2f}" for v in tickvals]
+    else:
+        ticktext = [f"{int(v)}" for v in tickvals]
     
     # Update layout
     fig.update_layout(

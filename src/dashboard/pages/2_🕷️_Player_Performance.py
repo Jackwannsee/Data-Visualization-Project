@@ -257,7 +257,7 @@ with st.sidebar:
     all_metrics = cached_columns() + ["K/D Ratio"]
     default_metrics = [
         m
-        for m in ["Kills", "Assists", "K/D Ratio", "Smokes Thrown", "Molotovs Thrown", "Grenades"]
+        for m in ["Assists", "Smokes Thrown", "Molotovs Thrown", "Grenades", "Kills", "Deaths"]
         if m in all_metrics
     ]
 
