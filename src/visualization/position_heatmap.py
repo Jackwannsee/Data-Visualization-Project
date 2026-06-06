@@ -49,32 +49,38 @@ MAP_CONFIG = {
         'images': {
             'upper': 'de_nuke_radar_psd.png',
             'lower': 'de_nuke_lower_radar_psd.png',
-        }
+        },
+        'pos_x': -3453, 'pos_y': 2887, 'scale': 7.0
     },
     'Dust2': {
         'key': 'de_dust2',
         'has_levels': False,
-        'images': {'upper': 'de_dust2_radar_psd.png'}
+        'images': {'upper': 'de_dust2_radar_psd.png'},
+        'pos_x': -2476, 'pos_y': 3239, 'scale': 4.4
     },
     'Inferno': {
         'key': 'de_inferno',
         'has_levels': False,
-        'images': {'upper': 'de_inferno_radar_psd.png'}
+        'images': {'upper': 'de_inferno_radar_psd.png'},
+        'pos_x': -2087, 'pos_y': 3870, 'scale': 4.9
     },
     'Mirage': {
         'key': 'de_mirage',
         'has_levels': False,
-        'images': {'upper': 'de_mirage_radar_psd.png'}
+        'images': {'upper': 'de_mirage_radar_psd.png'},
+        'pos_x': -3230, 'pos_y': 1713, 'scale': 5.0
     },
     'Ancient': {
         'key': 'de_ancient',
         'has_levels': False,
-        'images': {'upper': 'de_ancient_radar_psd.png'}
+        'images': {'upper': 'de_ancient_radar_psd.png'},
+        'pos_x': -2953, 'pos_y': 2164, 'scale': 5.0
     },
     'Overpass': {
         'key': 'de_overpass',
         'has_levels': False,
-        'images': {'upper': 'de_overpass_radar_psd.png'}
+        'images': {'upper': 'de_overpass_radar_psd.png'},
+        'pos_x': -4831, 'pos_y': 1781, 'scale': 5.2
     },
     'Train': {
         'key': 'de_train',
@@ -82,7 +88,8 @@ MAP_CONFIG = {
         'images': {
             'upper': 'de_train_radar_psd.png',
             'lower': 'de_train_lower_radar_psd.png',
-        }
+        },
+        'pos_x': -2308, 'pos_y': 2078, 'scale': 4.082077
     },
 }
 
@@ -219,9 +226,15 @@ def create_position_heatmap(
 
     # Build the pixel grid
     config = MAP_CONFIG[map_name]
-    from awpy.data.map_data import MAP_DATA
-    meta = MAP_DATA[config['key']]
-    pos_x, pos_y, scale = meta['pos_x'], meta['pos_y'], meta['scale']
+    
+    # Use hardcoded awpy map metadata to prevent KeyErrors on Streamlit deployment
+    pos_x, pos_y, scale = config.get('pos_x'), config.get('pos_y'), config.get('scale')
+    
+    # Fallback to awpy MAP_DATA if not found in our hardcoded config
+    if pos_x is None:
+        from awpy.data.map_data import MAP_DATA
+        meta = MAP_DATA[config['key']]
+        pos_x, pos_y, scale = meta['pos_x'], meta['pos_y'], meta['scale']
 
     pixel_cell = granularity / scale  # pixel size of each grid cell
     n_cells = max(1, int(IMG_SIZE / pixel_cell))

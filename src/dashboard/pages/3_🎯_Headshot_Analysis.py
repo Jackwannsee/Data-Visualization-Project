@@ -96,11 +96,11 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("##### 📊 Pages")
     st.page_link("app.py", label="Home", icon="🏠")
-    st.page_link("pages/1_💰_Economy_Analysis.py", label="Economy Analysis", icon="💰")
-    st.page_link("pages/2_🕷️_Player_Performance.py", label="Player Performance", icon="🕷️")
+    st.page_link("pages/1_🕷️_Player_Performance.py", label="Player Performance", icon="🕷️")
+    st.page_link("pages/2_🗺️_Position_Heatmap.py", label="Position Heatmap", icon="🗺️")
     st.page_link("pages/3_🎯_Headshot_Analysis.py", label="Headshot Analysis", icon="🎯")
-    st.page_link("pages/4_🗺️_Position_Heatmap.py", label="Position Heatmap", icon="🗺️")
-    st.page_link("pages/5_📊_Side_Comparison.py", label="Side Comparison", icon="📊")
+    st.page_link("pages/4_📊_Side_Comparison.py", label="Side Comparison", icon="📊")
+    st.page_link("pages/5_💰_Economy_Analysis.py", label="Economy Analysis", icon="💰")
     st.markdown("---")
 
     # ── Metric Selection (X-Axis) ──
